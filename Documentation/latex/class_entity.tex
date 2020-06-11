@@ -1,0 +1,585 @@
+\hypertarget{class_entity}{}\doxysection{Entity Class Reference}
+\label{class_entity}\index{Entity@{Entity}}
+
+
+Is the base class for all entities that can execute actions like walking or attacking. It unifies the duplicate state and behaviour from \mbox{\hyperlink{class_enemy_actions}{Enemy\+Actions}} and \mbox{\hyperlink{class_player_actions}{Player\+Actions}}.  
+
+
+Inheritance diagram for Entity\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_entity}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_entity_a0e9df075da06c6cefe78c39ea96261f0}{Reset\+Entity\+Animations}} ()
+\begin{DoxyCompactList}\small\item\em Resets the entity animations. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_entity_a29ef117705dd5b74631f9fc995a6fea4}{Reset\+Movement}} ()
+\begin{DoxyCompactList}\small\item\em Resets the movement. The vertical movement is ignored. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_entity_a7f12b50a9c55cb91864fc8644555e175}{Start\+Attacking}} ()
+\begin{DoxyCompactList}\small\item\em Start\+Attacking is triggered by the attack animations in order to mark the time window where the attack deals damage. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_entity_a4737c0fbc3f55e9e76a061316b18b055}{Stop\+Attacking}} ()
+\begin{DoxyCompactList}\small\item\em Stop\+Attacking is triggered by the attack animations in order to mark the time window where the attack deals damage. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_entity_ab4ebabbba56e271ee60889fb47f26434}{Reset\+Entity\+Actions}} ()
+\begin{DoxyCompactList}\small\item\em Resets the entity actions. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_entity_ab5c6b4e69a3614429bb7dcec007cad5a}{Is\+Facing\+Right}} ()
+\begin{DoxyCompactList}\small\item\em Determines whether the entity \mbox{[}is facing right\mbox{]}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_entity_ac20e21dab40da64ec53c9ec501f6241d}{Is\+Attack\+Cancelling}} (int attack\+Direction\+From\+Other\+Entity, bool other\+Entity\+Is\+Facing\+Right)
+\begin{DoxyCompactList}\small\item\em Determines whether the attack in cancelling. Attacks cancel each other if they are on the same height, both are currently in the deal damage window and the facing direction is not the same. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_entity_a437fb53af8c93d45a39f80072ae7d55d}{Get\+Attack\+Direction}} ()
+\begin{DoxyCompactList}\small\item\em Gets the attack direction. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_entity_a9a12957b5e026b2d25d4cda9cd7514a3}{Get\+Attack\+Damage}} ()
+\begin{DoxyCompactList}\small\item\em Gets the attack damage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static readonly string \mbox{\hyperlink{class_entity_a47b9f3eafe692856062b1e5ef94bac8e}{D\+E\+A\+T\+H\+\_\+\+Z\+O\+N\+E\+S\+\_\+\+N\+A\+ME}} = \char`\"{}Death\+Zones\char`\"{}
+\begin{DoxyCompactList}\small\item\em The death zones name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_entity_aa4cfcfa274641645c5357da93098d6f7}{Awake}} ()
+\begin{DoxyCompactList}\small\item\em Awakes this instance by setting all referenced components. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_entity_a38985eb127db7177b924f32615f44209}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Starts this instance. Initially flips the enemy if it is not facing right. It also ensures that the entity is currently not attacking and disables the weapon collider. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_entity_a2813f460ee354c72290c81a83348ee4f}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Updates this instance by setting the grounded status. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_entity_a16496ad73443a839dc24d251c5d1bf96}{Update\+Is\+Grounded}} ()
+\begin{DoxyCompactList}\small\item\em Updates the grounded status. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_entity_a5eb646c0c5071f7a2fdcb1853c012ed8}{Flip\+Entity}} ()
+\begin{DoxyCompactList}\small\item\em Flips the entity sprite. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_entity_ab21979ed302e0bb64b7cc760bf16d789}{Die}} ()
+\begin{DoxyCompactList}\small\item\em Executes the common behavior when an entity is dying. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_entity_a9b54f077224a0dcfa19cb4eb1fc43fda}{On\+Trigger\+Enter2D}} (Collider2D collider)
+\begin{DoxyCompactList}\small\item\em Called when entered the trigger. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_entity_af3218def40646a881aa504ce06890d0c}{On\+Jump}} (Input\+Value value)
+\begin{DoxyCompactList}\small\item\em Called when the entity should jump e.\+g. the player presses the jump button. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_entity_a5aa6a84bea2ca4a908dc457693a9026e}{Reset\+Attack\+Animation}} ()
+\begin{DoxyCompactList}\small\item\em Resets the attack animations. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Box\+Collider2D \mbox{\hyperlink{class_entity_a090c92a97551bfd3a0f1a04c93a036f6}{m\+\_\+weapon\+Collider}}
+\begin{DoxyCompactList}\small\item\em The weapon collider from the entity. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_entity_a2d8dc86e5b37afa8d45ff11d405d2a64}{m\+\_\+is\+Facing\+Right}}
+\begin{DoxyCompactList}\small\item\em Is the entity facing in right. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_entity_a4ced3f83239197620ba9b5e94ecdb373}{m\+\_\+jump\+Force}} = 22.\+0f
+\begin{DoxyCompactList}\small\item\em The jump force of the entity. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_entity_a782ab84cd1e641fad82dd9138570a128}{m\+\_\+move\+Speed}} = 10.\+0f
+\begin{DoxyCompactList}\small\item\em The move speed of the entity. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_entity_aa8205e0ea5a24e74b3430729a24d5f9c}{m\+\_\+attack\+Damage}} = 1
+\begin{DoxyCompactList}\small\item\em The attack damage of the entity. \end{DoxyCompactList}\item 
+Animator \mbox{\hyperlink{class_entity_a0dae523549376f756adc5c64e34c1d4f}{m\+\_\+animator}}
+\begin{DoxyCompactList}\small\item\em The animator of the entity. \end{DoxyCompactList}\item 
+Rigidbody2D \mbox{\hyperlink{class_entity_abaf5d5d7d224f54466e1df524f21b76b}{m\+\_\+rigidbody2D}}
+\begin{DoxyCompactList}\small\item\em The rigidbody of the entity. \end{DoxyCompactList}\item 
+Box\+Collider2D \mbox{\hyperlink{class_entity_aa6e1d9ce2cbe991e29e8f326c949bdf2}{m\+\_\+collider}}
+\begin{DoxyCompactList}\small\item\em The collider of the entity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_entity_health}{Entity\+Health}} \mbox{\hyperlink{class_entity_a003543ef768bc70a883b447c26fc9acc}{m\+\_\+entity\+Health}}
+\begin{DoxyCompactList}\small\item\em The entity health of the entity. Can be null in order to create an invincible entity. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_entity_a3afd6ff42f8f35782f78c5a5cbda6191}{m\+\_\+is\+Grounded}} = false
+\begin{DoxyCompactList}\small\item\em Is the entity grounded. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_entity_a8696777e1e7fbf5f05050e1a8363917b}{m\+\_\+current\+Attacking\+Direction}} = 0
+\begin{DoxyCompactList}\small\item\em The current attacking direction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static readonly float \mbox{\hyperlink{class_entity_a5d1b85f1693b514e0fd0f106770341a6}{H\+O\+R\+I\+Z\+O\+N\+T\+A\+L\+\_\+\+I\+S\+\_\+\+G\+R\+O\+U\+N\+D\+E\+D\+\_\+\+D\+I\+S\+T\+A\+N\+CE}} = 0.\+1f
+\begin{DoxyCompactList}\small\item\em The horizontal is grounded distance. Is used to smooth jumping. \end{DoxyCompactList}\item 
+static readonly float \mbox{\hyperlink{class_entity_a6cf1e66f21496c5af63bedb38e84850a}{V\+E\+R\+T\+I\+C\+A\+L\+\_\+\+I\+S\+\_\+\+G\+R\+O\+U\+N\+D\+E\+D\+\_\+\+D\+I\+S\+T\+A\+N\+CE}} = 0.\+2f
+\begin{DoxyCompactList}\small\item\em The vertical is grounded distance. Is used to smooth jumping. \end{DoxyCompactList}\item 
+static readonly string\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_entity_a4a3d70720f67d711dc1e0154e09ecb4f}{A\+T\+T\+A\+C\+K\+\_\+\+A\+N\+I\+M\+A\+T\+O\+R\+\_\+\+P\+A\+R\+A\+M\+E\+T\+E\+R\+\_\+\+N\+A\+M\+ES}} = \{ \char`\"{}Attacking\+Up\char`\"{}, \char`\"{}Attacking\char`\"{}, \char`\"{}Attacking\+Down\char`\"{} \}
+\begin{DoxyCompactList}\small\item\em The attack animator parameter names. \end{DoxyCompactList}\item 
+static readonly string \mbox{\hyperlink{class_entity_a1e36116cb5cc08f53f86f96e6582b0cb}{J\+U\+M\+P\+I\+N\+G\+\_\+\+A\+N\+I\+M\+A\+T\+O\+R\+\_\+\+P\+A\+R\+A\+M\+E\+T\+E\+R\+\_\+\+N\+A\+ME}} = \char`\"{}Is\+Jumping\char`\"{}
+\begin{DoxyCompactList}\small\item\em The jumping animator parameter name. \end{DoxyCompactList}\item 
+static readonly string \mbox{\hyperlink{class_entity_aaebfe344b0dfbb23d3b02e016618256b}{S\+P\+E\+E\+D\+\_\+\+A\+N\+I\+M\+A\+T\+O\+R\+\_\+\+P\+A\+R\+A\+M\+E\+T\+E\+R\+\_\+\+N\+A\+ME}} = \char`\"{}Speed\char`\"{}
+\begin{DoxyCompactList}\small\item\em The speed animator parameter name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_entity_af80632048321456b41a4d3c93525accd}{Is\+Input\+Locked}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a value indicating whether this instance is input locked. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_entity_a9bde22889c58ccdbfbf9d716ce748d9f}{Is\+Attacking}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a value indicating whether this instance is attacking. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_entity_a1df9652c74daf9c11ab8a7bfe89bf719}{Is\+Rolling}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a value indicating whether this instance is rolling. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_entity_ae85cda015e6234347865de418f63cc94}\label{class_entity_ae85cda015e6234347865de418f63cc94}} 
+Layer\+Mask {\bfseries m\+\_\+what\+Is\+Ground}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Is the base class for all entities that can execute actions like walking or attacking. It unifies the duplicate state and behaviour from \mbox{\hyperlink{class_enemy_actions}{Enemy\+Actions}} and \mbox{\hyperlink{class_player_actions}{Player\+Actions}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_entity_aa4cfcfa274641645c5357da93098d6f7}\label{class_entity_aa4cfcfa274641645c5357da93098d6f7}} 
+\index{Entity@{Entity}!Awake@{Awake}}
+\index{Awake@{Awake}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily virtual void Entity.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Awakes this instance by setting all referenced components. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_player_actions_a68b1811652c519e9aaaddf6d3f76dba3}{Player\+Actions}}, and \mbox{\hyperlink{class_enemy_actions_a3c20cc50c3adcb839954a8377bbe17de}{Enemy\+Actions}}.
+
+\mbox{\Hypertarget{class_entity_ab21979ed302e0bb64b7cc760bf16d789}\label{class_entity_ab21979ed302e0bb64b7cc760bf16d789}} 
+\index{Entity@{Entity}!Die@{Die}}
+\index{Die@{Die}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{Die()}{Die()}}
+{\footnotesize\ttfamily virtual void Entity.\+Die (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Executes the common behavior when an entity is dying. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_player_actions_a668c9d5d9a68b9f64c013170f4d02a47}{Player\+Actions}}, and \mbox{\hyperlink{class_enemy_actions_af7529e5da029dbc72c45848a302a3d96}{Enemy\+Actions}}.
+
+\mbox{\Hypertarget{class_entity_a5eb646c0c5071f7a2fdcb1853c012ed8}\label{class_entity_a5eb646c0c5071f7a2fdcb1853c012ed8}} 
+\index{Entity@{Entity}!FlipEntity@{FlipEntity}}
+\index{FlipEntity@{FlipEntity}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{FlipEntity()}{FlipEntity()}}
+{\footnotesize\ttfamily virtual void Entity.\+Flip\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Flips the entity sprite. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_player_actions_abef46ee2f65ac72fec2a4c35cf186085}{Player\+Actions}}.
+
+\mbox{\Hypertarget{class_entity_a9a12957b5e026b2d25d4cda9cd7514a3}\label{class_entity_a9a12957b5e026b2d25d4cda9cd7514a3}} 
+\index{Entity@{Entity}!GetAttackDamage@{GetAttackDamage}}
+\index{GetAttackDamage@{GetAttackDamage}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{GetAttackDamage()}{GetAttackDamage()}}
+{\footnotesize\ttfamily int Entity.\+Get\+Attack\+Damage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the attack damage. 
+
+\begin{DoxyReturn}{Returns}
+Returns the attack damage.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_attack_a450215f76d448bac5457aa48a358e3ca}{I\+Attack}}.
+
+\mbox{\Hypertarget{class_entity_a437fb53af8c93d45a39f80072ae7d55d}\label{class_entity_a437fb53af8c93d45a39f80072ae7d55d}} 
+\index{Entity@{Entity}!GetAttackDirection@{GetAttackDirection}}
+\index{GetAttackDirection@{GetAttackDirection}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{GetAttackDirection()}{GetAttackDirection()}}
+{\footnotesize\ttfamily int Entity.\+Get\+Attack\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the attack direction. 
+
+\begin{DoxyReturn}{Returns}
+The current attacking direction.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_attack_a6b7e01408ca747f791c2dffc6807566b}{I\+Attack}}.
+
+\mbox{\Hypertarget{class_entity_ac20e21dab40da64ec53c9ec501f6241d}\label{class_entity_ac20e21dab40da64ec53c9ec501f6241d}} 
+\index{Entity@{Entity}!IsAttackCancelling@{IsAttackCancelling}}
+\index{IsAttackCancelling@{IsAttackCancelling}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{IsAttackCancelling()}{IsAttackCancelling()}}
+{\footnotesize\ttfamily bool Entity.\+Is\+Attack\+Cancelling (\begin{DoxyParamCaption}\item[{int}]{attack\+Direction\+From\+Other\+Entity,  }\item[{bool}]{other\+Entity\+Is\+Facing\+Right }\end{DoxyParamCaption})}
+
+
+
+Determines whether the attack in cancelling. Attacks cancel each other if they are on the same height, both are currently in the deal damage window and the facing direction is not the same. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em attack\+Direction\+From\+Other\+Entity} & The attack direction from the other entity.\\
+\hline
+{\em other\+Entity\+Is\+Facing\+Right} & If the other entity is facing right.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the attack is canceled; otherwise, {\ttfamily false}.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_entity_ab5c6b4e69a3614429bb7dcec007cad5a}\label{class_entity_ab5c6b4e69a3614429bb7dcec007cad5a}} 
+\index{Entity@{Entity}!IsFacingRight@{IsFacingRight}}
+\index{IsFacingRight@{IsFacingRight}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{IsFacingRight()}{IsFacingRight()}}
+{\footnotesize\ttfamily bool Entity.\+Is\+Facing\+Right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Determines whether the entity \mbox{[}is facing right\mbox{]}. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if \mbox{[}is facing right\mbox{]}; otherwise, {\ttfamily false}.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_attack_a52a9d4253e062182f8aecfaca8fb6b3a}{I\+Attack}}.
+
+\mbox{\Hypertarget{class_entity_af3218def40646a881aa504ce06890d0c}\label{class_entity_af3218def40646a881aa504ce06890d0c}} 
+\index{Entity@{Entity}!OnJump@{OnJump}}
+\index{OnJump@{OnJump}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{OnJump()}{OnJump()}}
+{\footnotesize\ttfamily void Entity.\+On\+Jump (\begin{DoxyParamCaption}\item[{Input\+Value}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Called when the entity should jump e.\+g. the player presses the jump button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The input value which is not used but necessary to fit the Player\+Input-\/\+Interface from Unity.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_entity_a9b54f077224a0dcfa19cb4eb1fc43fda}\label{class_entity_a9b54f077224a0dcfa19cb4eb1fc43fda}} 
+\index{Entity@{Entity}!OnTriggerEnter2D@{OnTriggerEnter2D}}
+\index{OnTriggerEnter2D@{OnTriggerEnter2D}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{OnTriggerEnter2D()}{OnTriggerEnter2D()}}
+{\footnotesize\ttfamily virtual void Entity.\+On\+Trigger\+Enter2D (\begin{DoxyParamCaption}\item[{Collider2D}]{collider }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Called when entered the trigger. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collider} & The collider that entered the entity collider.\\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_enemy_actions_af9fc9e00ad241efa99d275a3e7510336}{Enemy\+Actions}}.
+
+\mbox{\Hypertarget{class_entity_a5aa6a84bea2ca4a908dc457693a9026e}\label{class_entity_a5aa6a84bea2ca4a908dc457693a9026e}} 
+\index{Entity@{Entity}!ResetAttackAnimation@{ResetAttackAnimation}}
+\index{ResetAttackAnimation@{ResetAttackAnimation}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{ResetAttackAnimation()}{ResetAttackAnimation()}}
+{\footnotesize\ttfamily void Entity.\+Reset\+Attack\+Animation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Resets the attack animations. 
+
+\mbox{\Hypertarget{class_entity_ab4ebabbba56e271ee60889fb47f26434}\label{class_entity_ab4ebabbba56e271ee60889fb47f26434}} 
+\index{Entity@{Entity}!ResetEntityActions@{ResetEntityActions}}
+\index{ResetEntityActions@{ResetEntityActions}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{ResetEntityActions()}{ResetEntityActions()}}
+{\footnotesize\ttfamily void Entity.\+Reset\+Entity\+Actions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Resets the entity actions. 
+
+\mbox{\Hypertarget{class_entity_a0e9df075da06c6cefe78c39ea96261f0}\label{class_entity_a0e9df075da06c6cefe78c39ea96261f0}} 
+\index{Entity@{Entity}!ResetEntityAnimations@{ResetEntityAnimations}}
+\index{ResetEntityAnimations@{ResetEntityAnimations}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{ResetEntityAnimations()}{ResetEntityAnimations()}}
+{\footnotesize\ttfamily virtual void Entity.\+Reset\+Entity\+Animations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Resets the entity animations. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_player_actions_a1b12f069efd3768ab7961591609edea8}{Player\+Actions}}.
+
+\mbox{\Hypertarget{class_entity_a29ef117705dd5b74631f9fc995a6fea4}\label{class_entity_a29ef117705dd5b74631f9fc995a6fea4}} 
+\index{Entity@{Entity}!ResetMovement@{ResetMovement}}
+\index{ResetMovement@{ResetMovement}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{ResetMovement()}{ResetMovement()}}
+{\footnotesize\ttfamily virtual void Entity.\+Reset\+Movement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Resets the movement. The vertical movement is ignored. 
+
+\mbox{\Hypertarget{class_entity_a38985eb127db7177b924f32615f44209}\label{class_entity_a38985eb127db7177b924f32615f44209}} 
+\index{Entity@{Entity}!Start@{Start}}
+\index{Start@{Start}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily virtual void Entity.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Starts this instance. Initially flips the enemy if it is not facing right. It also ensures that the entity is currently not attacking and disables the weapon collider. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_player_actions_a7e64db4e11368a0aac250b01f1157152}{Player\+Actions}}, and \mbox{\hyperlink{class_enemy_actions_a23f6cb42b17642a8e3926295bb66abe1}{Enemy\+Actions}}.
+
+\mbox{\Hypertarget{class_entity_a7f12b50a9c55cb91864fc8644555e175}\label{class_entity_a7f12b50a9c55cb91864fc8644555e175}} 
+\index{Entity@{Entity}!StartAttacking@{StartAttacking}}
+\index{StartAttacking@{StartAttacking}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{StartAttacking()}{StartAttacking()}}
+{\footnotesize\ttfamily void Entity.\+Start\+Attacking (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Start\+Attacking is triggered by the attack animations in order to mark the time window where the attack deals damage. 
+
+\mbox{\Hypertarget{class_entity_a4737c0fbc3f55e9e76a061316b18b055}\label{class_entity_a4737c0fbc3f55e9e76a061316b18b055}} 
+\index{Entity@{Entity}!StopAttacking@{StopAttacking}}
+\index{StopAttacking@{StopAttacking}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{StopAttacking()}{StopAttacking()}}
+{\footnotesize\ttfamily virtual void Entity.\+Stop\+Attacking (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Stop\+Attacking is triggered by the attack animations in order to mark the time window where the attack deals damage. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_enemy_actions_a200ce401033c766961da891477d50fe4}{Enemy\+Actions}}.
+
+\mbox{\Hypertarget{class_entity_a2813f460ee354c72290c81a83348ee4f}\label{class_entity_a2813f460ee354c72290c81a83348ee4f}} 
+\index{Entity@{Entity}!Update@{Update}}
+\index{Update@{Update}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily virtual void Entity.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Updates this instance by setting the grounded status. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_player_actions_a323bd0786fb60b63be364995c20da05e}{Player\+Actions}}, and \mbox{\hyperlink{class_enemy_actions_a16ec5e4e72a1f34877f769535edcc573}{Enemy\+Actions}}.
+
+\mbox{\Hypertarget{class_entity_a16496ad73443a839dc24d251c5d1bf96}\label{class_entity_a16496ad73443a839dc24d251c5d1bf96}} 
+\index{Entity@{Entity}!UpdateIsGrounded@{UpdateIsGrounded}}
+\index{UpdateIsGrounded@{UpdateIsGrounded}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{UpdateIsGrounded()}{UpdateIsGrounded()}}
+{\footnotesize\ttfamily void Entity.\+Update\+Is\+Grounded (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Updates the grounded status. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_entity_a4a3d70720f67d711dc1e0154e09ecb4f}\label{class_entity_a4a3d70720f67d711dc1e0154e09ecb4f}} 
+\index{Entity@{Entity}!ATTACK\_ANIMATOR\_PARAMETER\_NAMES@{ATTACK\_ANIMATOR\_PARAMETER\_NAMES}}
+\index{ATTACK\_ANIMATOR\_PARAMETER\_NAMES@{ATTACK\_ANIMATOR\_PARAMETER\_NAMES}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{ATTACK\_ANIMATOR\_PARAMETER\_NAMES}{ATTACK\_ANIMATOR\_PARAMETER\_NAMES}}
+{\footnotesize\ttfamily readonly string \mbox{[}$\,$\mbox{]} Entity.\+A\+T\+T\+A\+C\+K\+\_\+\+A\+N\+I\+M\+A\+T\+O\+R\+\_\+\+P\+A\+R\+A\+M\+E\+T\+E\+R\+\_\+\+N\+A\+M\+ES = \{ \char`\"{}Attacking\+Up\char`\"{}, \char`\"{}Attacking\char`\"{}, \char`\"{}Attacking\+Down\char`\"{} \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+The attack animator parameter names. 
+
+\mbox{\Hypertarget{class_entity_a47b9f3eafe692856062b1e5ef94bac8e}\label{class_entity_a47b9f3eafe692856062b1e5ef94bac8e}} 
+\index{Entity@{Entity}!DEATH\_ZONES\_NAME@{DEATH\_ZONES\_NAME}}
+\index{DEATH\_ZONES\_NAME@{DEATH\_ZONES\_NAME}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{DEATH\_ZONES\_NAME}{DEATH\_ZONES\_NAME}}
+{\footnotesize\ttfamily readonly string Entity.\+D\+E\+A\+T\+H\+\_\+\+Z\+O\+N\+E\+S\+\_\+\+N\+A\+ME = \char`\"{}Death\+Zones\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The death zones name. 
+
+\mbox{\Hypertarget{class_entity_a5d1b85f1693b514e0fd0f106770341a6}\label{class_entity_a5d1b85f1693b514e0fd0f106770341a6}} 
+\index{Entity@{Entity}!HORIZONTAL\_IS\_GROUNDED\_DISTANCE@{HORIZONTAL\_IS\_GROUNDED\_DISTANCE}}
+\index{HORIZONTAL\_IS\_GROUNDED\_DISTANCE@{HORIZONTAL\_IS\_GROUNDED\_DISTANCE}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{HORIZONTAL\_IS\_GROUNDED\_DISTANCE}{HORIZONTAL\_IS\_GROUNDED\_DISTANCE}}
+{\footnotesize\ttfamily readonly float Entity.\+H\+O\+R\+I\+Z\+O\+N\+T\+A\+L\+\_\+\+I\+S\+\_\+\+G\+R\+O\+U\+N\+D\+E\+D\+\_\+\+D\+I\+S\+T\+A\+N\+CE = 0.\+1f\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+The horizontal is grounded distance. Is used to smooth jumping. 
+
+\mbox{\Hypertarget{class_entity_a1e36116cb5cc08f53f86f96e6582b0cb}\label{class_entity_a1e36116cb5cc08f53f86f96e6582b0cb}} 
+\index{Entity@{Entity}!JUMPING\_ANIMATOR\_PARAMETER\_NAME@{JUMPING\_ANIMATOR\_PARAMETER\_NAME}}
+\index{JUMPING\_ANIMATOR\_PARAMETER\_NAME@{JUMPING\_ANIMATOR\_PARAMETER\_NAME}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{JUMPING\_ANIMATOR\_PARAMETER\_NAME}{JUMPING\_ANIMATOR\_PARAMETER\_NAME}}
+{\footnotesize\ttfamily readonly string Entity.\+J\+U\+M\+P\+I\+N\+G\+\_\+\+A\+N\+I\+M\+A\+T\+O\+R\+\_\+\+P\+A\+R\+A\+M\+E\+T\+E\+R\+\_\+\+N\+A\+ME = \char`\"{}Is\+Jumping\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+The jumping animator parameter name. 
+
+\mbox{\Hypertarget{class_entity_a0dae523549376f756adc5c64e34c1d4f}\label{class_entity_a0dae523549376f756adc5c64e34c1d4f}} 
+\index{Entity@{Entity}!m\_animator@{m\_animator}}
+\index{m\_animator@{m\_animator}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{m\_animator}{m\_animator}}
+{\footnotesize\ttfamily Animator Entity.\+m\+\_\+animator\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The animator of the entity. 
+
+\mbox{\Hypertarget{class_entity_aa8205e0ea5a24e74b3430729a24d5f9c}\label{class_entity_aa8205e0ea5a24e74b3430729a24d5f9c}} 
+\index{Entity@{Entity}!m\_attackDamage@{m\_attackDamage}}
+\index{m\_attackDamage@{m\_attackDamage}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{m\_attackDamage}{m\_attackDamage}}
+{\footnotesize\ttfamily int Entity.\+m\+\_\+attack\+Damage = 1\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The attack damage of the entity. 
+
+\mbox{\Hypertarget{class_entity_aa6e1d9ce2cbe991e29e8f326c949bdf2}\label{class_entity_aa6e1d9ce2cbe991e29e8f326c949bdf2}} 
+\index{Entity@{Entity}!m\_collider@{m\_collider}}
+\index{m\_collider@{m\_collider}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{m\_collider}{m\_collider}}
+{\footnotesize\ttfamily Box\+Collider2D Entity.\+m\+\_\+collider\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The collider of the entity. 
+
+\mbox{\Hypertarget{class_entity_a8696777e1e7fbf5f05050e1a8363917b}\label{class_entity_a8696777e1e7fbf5f05050e1a8363917b}} 
+\index{Entity@{Entity}!m\_currentAttackingDirection@{m\_currentAttackingDirection}}
+\index{m\_currentAttackingDirection@{m\_currentAttackingDirection}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{m\_currentAttackingDirection}{m\_currentAttackingDirection}}
+{\footnotesize\ttfamily int Entity.\+m\+\_\+current\+Attacking\+Direction = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The current attacking direction. 
+
+\mbox{\Hypertarget{class_entity_a003543ef768bc70a883b447c26fc9acc}\label{class_entity_a003543ef768bc70a883b447c26fc9acc}} 
+\index{Entity@{Entity}!m\_entityHealth@{m\_entityHealth}}
+\index{m\_entityHealth@{m\_entityHealth}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{m\_entityHealth}{m\_entityHealth}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_entity_health}{Entity\+Health}} Entity.\+m\+\_\+entity\+Health\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The entity health of the entity. Can be null in order to create an invincible entity. 
+
+\mbox{\Hypertarget{class_entity_a2d8dc86e5b37afa8d45ff11d405d2a64}\label{class_entity_a2d8dc86e5b37afa8d45ff11d405d2a64}} 
+\index{Entity@{Entity}!m\_isFacingRight@{m\_isFacingRight}}
+\index{m\_isFacingRight@{m\_isFacingRight}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{m\_isFacingRight}{m\_isFacingRight}}
+{\footnotesize\ttfamily bool Entity.\+m\+\_\+is\+Facing\+Right\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Is the entity facing in right. 
+
+\mbox{\Hypertarget{class_entity_a3afd6ff42f8f35782f78c5a5cbda6191}\label{class_entity_a3afd6ff42f8f35782f78c5a5cbda6191}} 
+\index{Entity@{Entity}!m\_isGrounded@{m\_isGrounded}}
+\index{m\_isGrounded@{m\_isGrounded}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{m\_isGrounded}{m\_isGrounded}}
+{\footnotesize\ttfamily bool Entity.\+m\+\_\+is\+Grounded = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Is the entity grounded. 
+
+\mbox{\Hypertarget{class_entity_a4ced3f83239197620ba9b5e94ecdb373}\label{class_entity_a4ced3f83239197620ba9b5e94ecdb373}} 
+\index{Entity@{Entity}!m\_jumpForce@{m\_jumpForce}}
+\index{m\_jumpForce@{m\_jumpForce}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{m\_jumpForce}{m\_jumpForce}}
+{\footnotesize\ttfamily float Entity.\+m\+\_\+jump\+Force = 22.\+0f\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The jump force of the entity. 
+
+\mbox{\Hypertarget{class_entity_a782ab84cd1e641fad82dd9138570a128}\label{class_entity_a782ab84cd1e641fad82dd9138570a128}} 
+\index{Entity@{Entity}!m\_moveSpeed@{m\_moveSpeed}}
+\index{m\_moveSpeed@{m\_moveSpeed}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{m\_moveSpeed}{m\_moveSpeed}}
+{\footnotesize\ttfamily float Entity.\+m\+\_\+move\+Speed = 10.\+0f\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The move speed of the entity. 
+
+\mbox{\Hypertarget{class_entity_abaf5d5d7d224f54466e1df524f21b76b}\label{class_entity_abaf5d5d7d224f54466e1df524f21b76b}} 
+\index{Entity@{Entity}!m\_rigidbody2D@{m\_rigidbody2D}}
+\index{m\_rigidbody2D@{m\_rigidbody2D}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{m\_rigidbody2D}{m\_rigidbody2D}}
+{\footnotesize\ttfamily Rigidbody2D Entity.\+m\+\_\+rigidbody2D\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The rigidbody of the entity. 
+
+\mbox{\Hypertarget{class_entity_a090c92a97551bfd3a0f1a04c93a036f6}\label{class_entity_a090c92a97551bfd3a0f1a04c93a036f6}} 
+\index{Entity@{Entity}!m\_weaponCollider@{m\_weaponCollider}}
+\index{m\_weaponCollider@{m\_weaponCollider}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{m\_weaponCollider}{m\_weaponCollider}}
+{\footnotesize\ttfamily Box\+Collider2D Entity.\+m\+\_\+weapon\+Collider\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The weapon collider from the entity. 
+
+\mbox{\Hypertarget{class_entity_aaebfe344b0dfbb23d3b02e016618256b}\label{class_entity_aaebfe344b0dfbb23d3b02e016618256b}} 
+\index{Entity@{Entity}!SPEED\_ANIMATOR\_PARAMETER\_NAME@{SPEED\_ANIMATOR\_PARAMETER\_NAME}}
+\index{SPEED\_ANIMATOR\_PARAMETER\_NAME@{SPEED\_ANIMATOR\_PARAMETER\_NAME}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{SPEED\_ANIMATOR\_PARAMETER\_NAME}{SPEED\_ANIMATOR\_PARAMETER\_NAME}}
+{\footnotesize\ttfamily readonly string Entity.\+S\+P\+E\+E\+D\+\_\+\+A\+N\+I\+M\+A\+T\+O\+R\+\_\+\+P\+A\+R\+A\+M\+E\+T\+E\+R\+\_\+\+N\+A\+ME = \char`\"{}Speed\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+The speed animator parameter name. 
+
+\mbox{\Hypertarget{class_entity_a6cf1e66f21496c5af63bedb38e84850a}\label{class_entity_a6cf1e66f21496c5af63bedb38e84850a}} 
+\index{Entity@{Entity}!VERTICAL\_IS\_GROUNDED\_DISTANCE@{VERTICAL\_IS\_GROUNDED\_DISTANCE}}
+\index{VERTICAL\_IS\_GROUNDED\_DISTANCE@{VERTICAL\_IS\_GROUNDED\_DISTANCE}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{VERTICAL\_IS\_GROUNDED\_DISTANCE}{VERTICAL\_IS\_GROUNDED\_DISTANCE}}
+{\footnotesize\ttfamily readonly float Entity.\+V\+E\+R\+T\+I\+C\+A\+L\+\_\+\+I\+S\+\_\+\+G\+R\+O\+U\+N\+D\+E\+D\+\_\+\+D\+I\+S\+T\+A\+N\+CE = 0.\+2f\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+The vertical is grounded distance. Is used to smooth jumping. 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_entity_a9bde22889c58ccdbfbf9d716ce748d9f}\label{class_entity_a9bde22889c58ccdbfbf9d716ce748d9f}} 
+\index{Entity@{Entity}!IsAttacking@{IsAttacking}}
+\index{IsAttacking@{IsAttacking}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{IsAttacking}{IsAttacking}}
+{\footnotesize\ttfamily bool Entity.\+Is\+Attacking\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Gets or sets a value indicating whether this instance is attacking. 
+
+{\ttfamily true} if attacking; otherwise, {\ttfamily false}.\mbox{\Hypertarget{class_entity_af80632048321456b41a4d3c93525accd}\label{class_entity_af80632048321456b41a4d3c93525accd}} 
+\index{Entity@{Entity}!IsInputLocked@{IsInputLocked}}
+\index{IsInputLocked@{IsInputLocked}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{IsInputLocked}{IsInputLocked}}
+{\footnotesize\ttfamily bool Entity.\+Is\+Input\+Locked = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets a value indicating whether this instance is input locked. 
+
+{\ttfamily true} if this instance is input locked; otherwise, {\ttfamily false}.\mbox{\Hypertarget{class_entity_a1df9652c74daf9c11ab8a7bfe89bf719}\label{class_entity_a1df9652c74daf9c11ab8a7bfe89bf719}} 
+\index{Entity@{Entity}!IsRolling@{IsRolling}}
+\index{IsRolling@{IsRolling}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{IsRolling}{IsRolling}}
+{\footnotesize\ttfamily bool Entity.\+Is\+Rolling = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Gets or sets a value indicating whether this instance is rolling. 
+
+{\ttfamily true} if this instance is rolling; otherwise, {\ttfamily false}.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+X\+\_\+\+P\+I\+X\+E\+L\+S/pixelborne/\+Assets/\+Scripts/\+Entity/Entity.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,86 @@
+\hypertarget{class_dialogue}{}\doxysection{Dialogue Class Reference}
+\label{class_dialogue}\index{Dialogue@{Dialogue}}
+
+
+Implements basic functionality of a dialogue.  
+
+
+Inheritance diagram for Dialogue\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_dialogue}
+\end{center}
+\end{figure}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dialogue_adbada7b783262be05e47d16996209d40}\label{class_dialogue_adbada7b783262be05e47d16996209d40}} 
+virtual void {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{class_dialogue_a1897e66455e92390f4a7d2c040a9841d}\label{class_dialogue_a1897e66455e92390f4a7d2c040a9841d}} 
+virtual void {\bfseries Set\+Dialogue\+Visibility} (bool is\+Visible)
+\item 
+\mbox{\Hypertarget{class_dialogue_af7f45c3955e611c50eae4c01e25a1906}\label{class_dialogue_af7f45c3955e611c50eae4c01e25a1906}} 
+void {\bfseries Insert\+Name} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dialogue_a670ec01a85347a955c4e9266cdfd4244}\label{class_dialogue_a670ec01a85347a955c4e9266cdfd4244}} 
+int {\bfseries m\+\_\+display\+Time} = 3000
+\item 
+\mbox{\Hypertarget{class_dialogue_a8903badc88c0b81cff4fda49fb90b738}\label{class_dialogue_a8903badc88c0b81cff4fda49fb90b738}} 
+Image {\bfseries m\+\_\+dialogue\+Background}
+\item 
+\mbox{\Hypertarget{class_dialogue_a7b9552f945f461befaafd666b4ff91aa}\label{class_dialogue_a7b9552f945f461befaafd666b4ff91aa}} 
+Text\+Mesh\+Pro\+U\+G\+UI {\bfseries m\+\_\+dialogue}
+\item 
+\mbox{\Hypertarget{class_dialogue_ab57735c9d161de1a2e28f94a3c665590}\label{class_dialogue_ab57735c9d161de1a2e28f94a3c665590}} 
+Text\+Mesh\+Pro\+U\+G\+UI {\bfseries m\+\_\+name\+Tag}
+\item 
+\mbox{\Hypertarget{class_dialogue_a02aaf21f904b0791e0780bb584372a69}\label{class_dialogue_a02aaf21f904b0791e0780bb584372a69}} 
+int {\bfseries m\+\_\+text\+Part} = 0
+\item 
+\mbox{\Hypertarget{class_dialogue_a29b6ba7018ff3fe3d41fd7079a122fe2}\label{class_dialogue_a29b6ba7018ff3fe3d41fd7079a122fe2}} 
+int {\bfseries m\+\_\+dialogue\+Part} = 0
+\item 
+\mbox{\Hypertarget{class_dialogue_a7ca3e27e795a933e23b99b69f8c327ce}\label{class_dialogue_a7ca3e27e795a933e23b99b69f8c327ce}} 
+Stopwatch {\bfseries m\+\_\+stopwatch} = new Stopwatch()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dialogue_aa9ef4d59db84e16d967de2e24f78fe21}\label{class_dialogue_aa9ef4d59db84e16d967de2e24f78fe21}} 
+static readonly string {\bfseries D\+E\+F\+A\+U\+L\+T\+\_\+\+K\+N\+I\+G\+HT} = \char`\"{}Ni\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_dialogue_afd7be04a0a969ecf966f9150e108ec8a}{Has\+Player\+Progressed}} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a value indicating whether the player has progressed in a singleplayer stage. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_dialogue_ae4a17c1aa81f976f1cb4b4e003da9f3c}\label{class_dialogue_ae4a17c1aa81f976f1cb4b4e003da9f3c}} 
+virtual string\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} {\bfseries Dialogue\+Holder}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implements basic functionality of a dialogue. 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_dialogue_afd7be04a0a969ecf966f9150e108ec8a}\label{class_dialogue_afd7be04a0a969ecf966f9150e108ec8a}} 
+\index{Dialogue@{Dialogue}!HasPlayerProgressed@{HasPlayerProgressed}}
+\index{HasPlayerProgressed@{HasPlayerProgressed}!Dialogue@{Dialogue}}
+\doxysubsubsection{\texorpdfstring{HasPlayerProgressed}{HasPlayerProgressed}}
+{\footnotesize\ttfamily bool Dialogue.\+Has\+Player\+Progressed = false\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets a value indicating whether the player has progressed in a singleplayer stage. 
+
+{\ttfamily true} if the player has progressed; otherwise, {\ttfamily false}.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+X\+\_\+\+P\+I\+X\+E\+L\+S/pixelborne/\+Assets/\+Scripts/\+Story/Dialogue.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,188 @@
+\hypertarget{class_scene_changer}{}\doxysection{Scene\+Changer Class Reference}
+\label{class_scene_changer}\index{SceneChanger@{SceneChanger}}
+
+
+Provides static methods that implement various scene changing behaviour.  
+
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_scene_changer_a3edd837537d9ae301996be27ac16c104}{Load\+Singleplayer\+Stage\+As\+Active\+Scene}} (int index)
+\begin{DoxyCompactList}\small\item\em Loads the singleplayer stage as active scene. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_scene_changer_a05cc0ad797078711294623d1921c98e5}{Set\+Multiplayer\+As\+Active\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em Sets the \mbox{\hyperlink{class_multiplayer}{Multiplayer}} as active scene. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_scene_changer_aea8c5ec3283e55ddad502edaa68beccc}{Set\+Main\+Menu\+As\+Active\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em Sets the main menu as active scene. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_scene_changer_a96bfd86e1bafc6a16be6afe5116b1dbf}{Set\+Winning\+Screen\+As\+Active\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em Sets the winning screen as active scene. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_scene_changer_ad562488629c70a8aae81042bc423dc93}{Load\+Scene\+As\+Active\+Scene}} (int index)
+\begin{DoxyCompactList}\small\item\em Loads the scene as active scene. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_scene_changer_a7619ea7eafd7d865516479d0f1b8f4d3}{Load\+Scene\+Additive}} (int index)
+\begin{DoxyCompactList}\small\item\em Loads the scene additive. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_scene_changer_a04f379305e4e2be4c6f31a9401b5e5e1}{Load\+Pause\+Menu\+Additive}} ()
+\begin{DoxyCompactList}\small\item\em Loads the pause menu from the scene. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_scene_changer_a79f1fd45d01cc977b0d3b08a3907509e}{Unload\+Pause\+Menu\+Additive}} ()
+\begin{DoxyCompactList}\small\item\em Unloads the pause menu from the scene. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_scene_changer_a02d197afc2f8f46be15415e5fad5e24e}{Load\+Selling\+Screen\+Additive}} ()
+\begin{DoxyCompactList}\small\item\em Loads the selling screen from scene. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_scene_changer_a9841c104f11597e0469eae08940ca1fc}{Unload\+Selling\+Screen\+Additive}} ()
+\begin{DoxyCompactList}\small\item\em Unloads the selling screen from the scene. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_scene_changer_a9c4f92c19d73d9361ceb98b2b7241b2a}\label{class_scene_changer_a9c4f92c19d73d9361ceb98b2b7241b2a}} 
+static bool {\bfseries Is\+Scene\+Already\+Loaded} (int index)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_scene_changer_ad1080b75d915e795f372d0a71447cdca}\label{class_scene_changer_ad1080b75d915e795f372d0a71447cdca}} 
+static readonly int {\bfseries M\+A\+I\+N\+\_\+\+M\+E\+N\+U\+\_\+\+S\+C\+E\+N\+E\+\_\+\+I\+N\+D\+EX} = 0
+\item 
+\mbox{\Hypertarget{class_scene_changer_ae2878ca0128175a0704bb333d729574a}\label{class_scene_changer_ae2878ca0128175a0704bb333d729574a}} 
+static readonly int {\bfseries P\+A\+U\+S\+E\+\_\+\+M\+E\+N\+U\+\_\+\+S\+C\+E\+N\+E\+\_\+\+I\+N\+D\+EX} = 1
+\item 
+\mbox{\Hypertarget{class_scene_changer_a061902b1c30b25dff8ff02108278f9eb}\label{class_scene_changer_a061902b1c30b25dff8ff02108278f9eb}} 
+static readonly int {\bfseries M\+U\+L\+T\+I\+P\+L\+A\+Y\+E\+R\+\_\+\+S\+C\+E\+N\+E\+\_\+\+I\+N\+D\+EX} = 2
+\item 
+\mbox{\Hypertarget{class_scene_changer_a511131c7798d3a76c42fd752d7fcbd8a}\label{class_scene_changer_a511131c7798d3a76c42fd752d7fcbd8a}} 
+static readonly int {\bfseries S\+E\+L\+L\+I\+N\+G\+\_\+\+S\+C\+R\+E\+E\+N\+\_\+\+S\+C\+E\+N\+E\+\_\+\+I\+N\+D\+EX} = 3
+\item 
+\mbox{\Hypertarget{class_scene_changer_ac978aa5f0925f33444040517f37d2b8e}\label{class_scene_changer_ac978aa5f0925f33444040517f37d2b8e}} 
+static readonly int {\bfseries W\+I\+N\+N\+I\+N\+G\+\_\+\+S\+C\+R\+E\+E\+N\+\_\+\+S\+C\+E\+N\+E\+\_\+\+I\+N\+D\+EX} = 4
+\item 
+\mbox{\Hypertarget{class_scene_changer_a166d88ce120a73b603d583e351ec8dce}\label{class_scene_changer_a166d88ce120a73b603d583e351ec8dce}} 
+static readonly int\mbox{[}$\,$\mbox{]} {\bfseries S\+I\+N\+G\+L\+E\+P\+L\+A\+Y\+E\+R\+\_\+\+S\+T\+A\+G\+E\+S\+\_\+\+I\+N\+D\+I\+C\+ES} = \{ 5, 6, 7, 8 , 9, 10 \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides static methods that implement various scene changing behaviour. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_scene_changer_a04f379305e4e2be4c6f31a9401b5e5e1}\label{class_scene_changer_a04f379305e4e2be4c6f31a9401b5e5e1}} 
+\index{SceneChanger@{SceneChanger}!LoadPauseMenuAdditive@{LoadPauseMenuAdditive}}
+\index{LoadPauseMenuAdditive@{LoadPauseMenuAdditive}!SceneChanger@{SceneChanger}}
+\doxysubsubsection{\texorpdfstring{LoadPauseMenuAdditive()}{LoadPauseMenuAdditive()}}
+{\footnotesize\ttfamily static void Scene\+Changer.\+Load\+Pause\+Menu\+Additive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Loads the pause menu from the scene. 
+
+\mbox{\Hypertarget{class_scene_changer_a7619ea7eafd7d865516479d0f1b8f4d3}\label{class_scene_changer_a7619ea7eafd7d865516479d0f1b8f4d3}} 
+\index{SceneChanger@{SceneChanger}!LoadSceneAdditive@{LoadSceneAdditive}}
+\index{LoadSceneAdditive@{LoadSceneAdditive}!SceneChanger@{SceneChanger}}
+\doxysubsubsection{\texorpdfstring{LoadSceneAdditive()}{LoadSceneAdditive()}}
+{\footnotesize\ttfamily static void Scene\+Changer.\+Load\+Scene\+Additive (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Loads the scene additive. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_scene_changer_ad562488629c70a8aae81042bc423dc93}\label{class_scene_changer_ad562488629c70a8aae81042bc423dc93}} 
+\index{SceneChanger@{SceneChanger}!LoadSceneAsActiveScene@{LoadSceneAsActiveScene}}
+\index{LoadSceneAsActiveScene@{LoadSceneAsActiveScene}!SceneChanger@{SceneChanger}}
+\doxysubsubsection{\texorpdfstring{LoadSceneAsActiveScene()}{LoadSceneAsActiveScene()}}
+{\footnotesize\ttfamily static void Scene\+Changer.\+Load\+Scene\+As\+Active\+Scene (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Loads the scene as active scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The build index of the scene.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_scene_changer_a02d197afc2f8f46be15415e5fad5e24e}\label{class_scene_changer_a02d197afc2f8f46be15415e5fad5e24e}} 
+\index{SceneChanger@{SceneChanger}!LoadSellingScreenAdditive@{LoadSellingScreenAdditive}}
+\index{LoadSellingScreenAdditive@{LoadSellingScreenAdditive}!SceneChanger@{SceneChanger}}
+\doxysubsubsection{\texorpdfstring{LoadSellingScreenAdditive()}{LoadSellingScreenAdditive()}}
+{\footnotesize\ttfamily static void Scene\+Changer.\+Load\+Selling\+Screen\+Additive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Loads the selling screen from scene. 
+
+\mbox{\Hypertarget{class_scene_changer_a3edd837537d9ae301996be27ac16c104}\label{class_scene_changer_a3edd837537d9ae301996be27ac16c104}} 
+\index{SceneChanger@{SceneChanger}!LoadSingleplayerStageAsActiveScene@{LoadSingleplayerStageAsActiveScene}}
+\index{LoadSingleplayerStageAsActiveScene@{LoadSingleplayerStageAsActiveScene}!SceneChanger@{SceneChanger}}
+\doxysubsubsection{\texorpdfstring{LoadSingleplayerStageAsActiveScene()}{LoadSingleplayerStageAsActiveScene()}}
+{\footnotesize\ttfamily static bool Scene\+Changer.\+Load\+Singleplayer\+Stage\+As\+Active\+Scene (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Loads the singleplayer stage as active scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true$>${\ttfamily  if loading the singleplayer scene was successful; otherwise, {\ttfamily false$<$c$>$}}}
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_scene_changer_aea8c5ec3283e55ddad502edaa68beccc}\label{class_scene_changer_aea8c5ec3283e55ddad502edaa68beccc}} 
+\index{SceneChanger@{SceneChanger}!SetMainMenuAsActiveScene@{SetMainMenuAsActiveScene}}
+\index{SetMainMenuAsActiveScene@{SetMainMenuAsActiveScene}!SceneChanger@{SceneChanger}}
+\doxysubsubsection{\texorpdfstring{SetMainMenuAsActiveScene()}{SetMainMenuAsActiveScene()}}
+{\footnotesize\ttfamily static void Scene\+Changer.\+Set\+Main\+Menu\+As\+Active\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sets the main menu as active scene. 
+
+\mbox{\Hypertarget{class_scene_changer_a05cc0ad797078711294623d1921c98e5}\label{class_scene_changer_a05cc0ad797078711294623d1921c98e5}} 
+\index{SceneChanger@{SceneChanger}!SetMultiplayerAsActiveScene@{SetMultiplayerAsActiveScene}}
+\index{SetMultiplayerAsActiveScene@{SetMultiplayerAsActiveScene}!SceneChanger@{SceneChanger}}
+\doxysubsubsection{\texorpdfstring{SetMultiplayerAsActiveScene()}{SetMultiplayerAsActiveScene()}}
+{\footnotesize\ttfamily static void Scene\+Changer.\+Set\+Multiplayer\+As\+Active\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sets the \mbox{\hyperlink{class_multiplayer}{Multiplayer}} as active scene. 
+
+\mbox{\Hypertarget{class_scene_changer_a96bfd86e1bafc6a16be6afe5116b1dbf}\label{class_scene_changer_a96bfd86e1bafc6a16be6afe5116b1dbf}} 
+\index{SceneChanger@{SceneChanger}!SetWinningScreenAsActiveScene@{SetWinningScreenAsActiveScene}}
+\index{SetWinningScreenAsActiveScene@{SetWinningScreenAsActiveScene}!SceneChanger@{SceneChanger}}
+\doxysubsubsection{\texorpdfstring{SetWinningScreenAsActiveScene()}{SetWinningScreenAsActiveScene()}}
+{\footnotesize\ttfamily static void Scene\+Changer.\+Set\+Winning\+Screen\+As\+Active\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sets the winning screen as active scene. 
+
+\mbox{\Hypertarget{class_scene_changer_a79f1fd45d01cc977b0d3b08a3907509e}\label{class_scene_changer_a79f1fd45d01cc977b0d3b08a3907509e}} 
+\index{SceneChanger@{SceneChanger}!UnloadPauseMenuAdditive@{UnloadPauseMenuAdditive}}
+\index{UnloadPauseMenuAdditive@{UnloadPauseMenuAdditive}!SceneChanger@{SceneChanger}}
+\doxysubsubsection{\texorpdfstring{UnloadPauseMenuAdditive()}{UnloadPauseMenuAdditive()}}
+{\footnotesize\ttfamily static void Scene\+Changer.\+Unload\+Pause\+Menu\+Additive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Unloads the pause menu from the scene. 
+
+\mbox{\Hypertarget{class_scene_changer_a9841c104f11597e0469eae08940ca1fc}\label{class_scene_changer_a9841c104f11597e0469eae08940ca1fc}} 
+\index{SceneChanger@{SceneChanger}!UnloadSellingScreenAdditive@{UnloadSellingScreenAdditive}}
+\index{UnloadSellingScreenAdditive@{UnloadSellingScreenAdditive}!SceneChanger@{SceneChanger}}
+\doxysubsubsection{\texorpdfstring{UnloadSellingScreenAdditive()}{UnloadSellingScreenAdditive()}}
+{\footnotesize\ttfamily static void Scene\+Changer.\+Unload\+Selling\+Screen\+Additive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Unloads the selling screen from the scene. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+X\+\_\+\+P\+I\+X\+E\+L\+S/pixelborne/\+Assets/\+Scripts/\+Tools/Scene\+Changer.\+cs\end{DoxyCompactItemize}

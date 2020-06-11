@@ -1,0 +1,349 @@
+\hypertarget{class_player_actions}{}\doxysection{Player\+Actions Class Reference}
+\label{class_player_actions}\index{PlayerActions@{PlayerActions}}
+
+
+Handles the player input and executes these actions. It adds the user input dependent code, rolling and revive position functionality.  
+
+
+Inheritance diagram for Player\+Actions\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_player_actions}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_player_actions_a1b12f069efd3768ab7961591609edea8}{Reset\+Entity\+Animations}} ()
+\begin{DoxyCompactList}\small\item\em Resets the player animations. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_actions_acef190d24a0ba81091a022e8246d4c29}{Set\+Position}} (int index)
+\begin{DoxyCompactList}\small\item\em Sets the position of the player by an index. Used by the multiplayer to set the spawn positions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_actions_a77da2c8c3f6b04d118035f4052a88cb0}{Set\+Position\+For\+Revive}} (Vector2 revive\+Position)
+\begin{DoxyCompactList}\small\item\em Sets the position of the player when reviving. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_actions_a90288329ffa5c61d0c80ad3fc7fa08f0}{On\+Pause\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Called when the pause game button is pressed. It causes the game to stop. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_actions_a9f329b0dd116b323bfd72a11948350ca}{Change\+Order\+In\+Layer}} ()
+\begin{DoxyCompactList}\small\item\em Changes the weapon of the entity to alternate between these two states\+: Weapon rendered before player, weapon rendered behind player. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_player_actions_a68b1811652c519e9aaaddf6d3f76dba3}{Awake}} ()
+\begin{DoxyCompactList}\small\item\em Awakes this instance and sets all resources that need to be acquired. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_player_actions_a7e64db4e11368a0aac250b01f1157152}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Starts this instance by acquiring resources that are now available. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_player_actions_a323bd0786fb60b63be364995c20da05e}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Updates this instance by executing necessary steps for the revive position, rolling and attacking. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_player_actions_abef46ee2f65ac72fec2a4c35cf186085}{Flip\+Entity}} ()
+\begin{DoxyCompactList}\small\item\em Flips the entity. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_player_actions_a668c9d5d9a68b9f64c013170f4d02a47}{Die}} ()
+\begin{DoxyCompactList}\small\item\em Triggers all necessary actions when the player dies by telling the active game that the player died. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \mbox{\hyperlink{class_player_actions_a273667e275b9ca3cb9d7f9426a8ca19e}{Player\+Sword}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the player sword. \end{DoxyCompactList}\item 
+I\+List$<$ Vector2 $>$ \mbox{\hyperlink{class_player_actions_a06c68ffac4c629edcfd94d3f0c413327}{Positions}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the positions as a list of vectors which is used by the multiplayer. \end{DoxyCompactList}\item 
+Vector2 \mbox{\hyperlink{class_player_actions_a932918cde72a86b245cb63b7f335756c}{Revive\+Position}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the revive position. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_player_actions_afc488a58f9e8758551f7d85a56c36bbe}{Index}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the player index which is used by the multiplayer to differentiate between the two players. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_player_actions_a4bd90f292335ea3b9825228c4ced6b0c}\label{class_player_actions_a4bd90f292335ea3b9825228c4ced6b0c}} 
+void {\bfseries Update\+Revive\+Position} ()
+\item 
+\mbox{\Hypertarget{class_player_actions_ab03aee84399dd54ea820236e329a5715}\label{class_player_actions_ab03aee84399dd54ea820236e329a5715}} 
+void {\bfseries Update\+Rolling} ()
+\item 
+\mbox{\Hypertarget{class_player_actions_aae6ad1104ab77f2c0abb9402bc9c66a7}\label{class_player_actions_aae6ad1104ab77f2c0abb9402bc9c66a7}} 
+void {\bfseries Update\+Attacking} ()
+\item 
+\mbox{\Hypertarget{class_player_actions_a9dbf08805fbddef8094d575817b9518e}\label{class_player_actions_a9dbf08805fbddef8094d575817b9518e}} 
+void {\bfseries On\+Roll} (Input\+Value value)
+\item 
+\mbox{\Hypertarget{class_player_actions_a4279c38ef363d2fd1722e3c7507c06b7}\label{class_player_actions_a4279c38ef363d2fd1722e3c7507c06b7}} 
+void {\bfseries On\+Attack} (Input\+Value value)
+\item 
+\mbox{\Hypertarget{class_player_actions_a729d3786fb62a6e90b433d9b5ecd8628}\label{class_player_actions_a729d3786fb62a6e90b433d9b5ecd8628}} 
+void {\bfseries On\+Attack\+Direction} (Input\+Value value)
+\item 
+\mbox{\Hypertarget{class_player_actions_a997e0b31aa9250f9b110db8d65ea7d0f}\label{class_player_actions_a997e0b31aa9250f9b110db8d65ea7d0f}} 
+void {\bfseries On\+Movement} (Input\+Value value)
+\item 
+\mbox{\Hypertarget{class_player_actions_adcfba5b44b5b0e8f84c97b662d919b95}\label{class_player_actions_adcfba5b44b5b0e8f84c97b662d919b95}} 
+void {\bfseries On\+Record} (Input\+Value value)
+\item 
+\mbox{\Hypertarget{class_player_actions_a7aa280f2d37950f09ad80576d3074027}\label{class_player_actions_a7aa280f2d37950f09ad80576d3074027}} 
+void {\bfseries Determine\+Attacking\+Parameter} (float attack\+Direction\+Axis\+Value)
+\item 
+\mbox{\Hypertarget{class_player_actions_adb73c6d464e2d2f95b243ba2bee49bbd}\label{class_player_actions_adb73c6d464e2d2f95b243ba2bee49bbd}} 
+void {\bfseries On\+Destroy} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_player_actions_a86679e2cee7012622afc830c9e94738a}\label{class_player_actions_a86679e2cee7012622afc830c9e94738a}} 
+Game\+Object {\bfseries m\+\_\+player\+Sword}
+\item 
+\mbox{\Hypertarget{class_player_actions_a48d4f0492e3643cbf8c00ff9519d30c4}\label{class_player_actions_a48d4f0492e3643cbf8c00ff9519d30c4}} 
+int {\bfseries m\+\_\+player\+Index} = 1
+\item 
+\mbox{\Hypertarget{class_player_actions_a83f82705c80f550275406e2c94a5064a}\label{class_player_actions_a83f82705c80f550275406e2c94a5064a}} 
+Transform {\bfseries m\+\_\+player\+Positions\+Transform}
+\item 
+\mbox{\Hypertarget{class_player_actions_aad3378b39c3837ae3648fab079d7fdbc}\label{class_player_actions_aad3378b39c3837ae3648fab079d7fdbc}} 
+bool {\bfseries m\+\_\+has\+Stable\+Position} = false
+\item 
+\mbox{\Hypertarget{class_player_actions_a4cdf1e21952859a33a1bf7cd8ca8d24b}\label{class_player_actions_a4cdf1e21952859a33a1bf7cd8ca8d24b}} 
+float {\bfseries m\+\_\+attack\+Duration}
+\item 
+\mbox{\Hypertarget{class_player_actions_ab8ca2fc1dd785db9369833421281e413}\label{class_player_actions_ab8ca2fc1dd785db9369833421281e413}} 
+float {\bfseries m\+\_\+attack\+Direction}
+\item 
+\mbox{\Hypertarget{class_player_actions_a0fbdfdc0769cb04a4f977eac923925ca}\label{class_player_actions_a0fbdfdc0769cb04a4f977eac923925ca}} 
+float {\bfseries m\+\_\+rolling\+Duration}
+\item 
+\mbox{\Hypertarget{class_player_actions_a522fd681eddf4b7247f2ce2beb69c5b2}\label{class_player_actions_a522fd681eddf4b7247f2ce2beb69c5b2}} 
+float {\bfseries m\+\_\+rolling\+MovementX}
+\item 
+\mbox{\Hypertarget{class_player_actions_acbbf8dfcbc06abdcae104b27d7db0688}\label{class_player_actions_acbbf8dfcbc06abdcae104b27d7db0688}} 
+\mbox{\hyperlink{interface_i_game}{I\+Game}} {\bfseries m\+\_\+active\+Game}
+\item 
+\mbox{\Hypertarget{class_player_actions_a244494b25171defd51a84f3fa987c6a4}\label{class_player_actions_a244494b25171defd51a84f3fa987c6a4}} 
+Sprite\+Renderer {\bfseries m\+\_\+sword\+Renderer}
+\item 
+\mbox{\Hypertarget{class_player_actions_ac5e019a9771cc081745c9602f8d4fe4d}\label{class_player_actions_ac5e019a9771cc081745c9602f8d4fe4d}} 
+Stopwatch {\bfseries m\+\_\+stopwatch\+Revive} = new Stopwatch()
+\item 
+\mbox{\Hypertarget{class_player_actions_a6fe62b4d894bb37fadbd70d3edceac64}\label{class_player_actions_a6fe62b4d894bb37fadbd70d3edceac64}} 
+Stopwatch {\bfseries m\+\_\+stopwatch\+Attack} = new Stopwatch()
+\item 
+\mbox{\Hypertarget{class_player_actions_a2bcbd9fe85ef95fecd652c3806cc36ef}\label{class_player_actions_a2bcbd9fe85ef95fecd652c3806cc36ef}} 
+Stopwatch {\bfseries m\+\_\+stopwatch\+Rolling} = new Stopwatch()
+\item 
+\mbox{\Hypertarget{class_player_actions_aa5494482260a3d6e02b0b4fb207347ed}\label{class_player_actions_aa5494482260a3d6e02b0b4fb207347ed}} 
+Vector2 {\bfseries m\+\_\+non\+Rolling\+Collider\+Size}
+\item 
+\mbox{\Hypertarget{class_player_actions_a599b4c5b3a2ede30f9c38171041d6b65}\label{class_player_actions_a599b4c5b3a2ede30f9c38171041d6b65}} 
+Vector2 {\bfseries m\+\_\+rolling\+Collider\+Size}
+\item 
+\mbox{\Hypertarget{class_player_actions_ac187d94ce7a220e1c2e885482f8b59f3}\label{class_player_actions_ac187d94ce7a220e1c2e885482f8b59f3}} 
+Vector2 {\bfseries m\+\_\+last\+Checked\+Position}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_player_actions_af1dc3b4f7a20b5f19b46e35827c1828d}\label{class_player_actions_af1dc3b4f7a20b5f19b46e35827c1828d}} 
+static readonly float {\bfseries C\+O\+N\+T\+R\+O\+L\+L\+E\+R\+\_\+\+D\+E\+A\+D\+Z\+O\+NE} = 0.\+3f
+\item 
+\mbox{\Hypertarget{class_player_actions_a6611840bcda2feca4d12c031e1cf7418}\label{class_player_actions_a6611840bcda2feca4d12c031e1cf7418}} 
+static readonly float {\bfseries R\+O\+L\+L\+I\+N\+G\+\_\+\+I\+N\+V\+I\+N\+C\+I\+B\+I\+L\+I\+T\+Y\+\_\+\+T\+I\+M\+E\+\_\+\+S\+P\+A\+N\+\_\+\+S\+T\+A\+RT} = 0.\+2f
+\item 
+\mbox{\Hypertarget{class_player_actions_a1350492ef80c73dabc0bedc18c566425}\label{class_player_actions_a1350492ef80c73dabc0bedc18c566425}} 
+static readonly float {\bfseries R\+O\+L\+L\+I\+N\+G\+\_\+\+I\+N\+V\+I\+N\+C\+I\+B\+I\+L\+I\+T\+Y\+\_\+\+T\+I\+M\+E\+\_\+\+S\+P\+A\+N\+\_\+\+E\+ND} = 0.\+8f
+\item 
+\mbox{\Hypertarget{class_player_actions_ab8bd551373e831546706cdf38ce44e0f}\label{class_player_actions_ab8bd551373e831546706cdf38ce44e0f}} 
+static readonly string {\bfseries P\+L\+A\+Y\+E\+R\+\_\+\+A\+T\+T\+A\+C\+K\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+N\+\_\+\+N\+A\+ME} = \char`\"{}Player\+\_\+1\+\_\+attack\char`\"{}
+\item 
+\mbox{\Hypertarget{class_player_actions_a155458c88be24d9a7c9773d93b512dd9}\label{class_player_actions_a155458c88be24d9a7c9773d93b512dd9}} 
+static readonly string {\bfseries P\+L\+A\+Y\+E\+R\+\_\+\+R\+O\+L\+L\+I\+N\+G\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+N\+\_\+\+N\+A\+ME} = \char`\"{}Player\+\_\+1\+\_\+roll\char`\"{}
+\item 
+\mbox{\Hypertarget{class_player_actions_a8c092365a708960a3b1f36aadec36690}\label{class_player_actions_a8c092365a708960a3b1f36aadec36690}} 
+static readonly string {\bfseries R\+O\+L\+L\+I\+N\+G\+\_\+\+A\+N\+I\+M\+A\+T\+O\+R\+\_\+\+N\+A\+ME} = \char`\"{}Rolling\char`\"{}
+\item 
+\mbox{\Hypertarget{class_player_actions_a3f0267d9dac131e8e3a72e065293c8b7}\label{class_player_actions_a3f0267d9dac131e8e3a72e065293c8b7}} 
+static readonly float {\bfseries I\+N\+T\+E\+R\+V\+A\+L\+\_\+\+F\+O\+R\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+C\+H\+E\+CK} = 400
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Handles the player input and executes these actions. It adds the user input dependent code, rolling and revive position functionality. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_player_actions_a68b1811652c519e9aaaddf6d3f76dba3}\label{class_player_actions_a68b1811652c519e9aaaddf6d3f76dba3}} 
+\index{PlayerActions@{PlayerActions}!Awake@{Awake}}
+\index{Awake@{Awake}!PlayerActions@{PlayerActions}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily override void Player\+Actions.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Awakes this instance and sets all resources that need to be acquired. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_entity_aa4cfcfa274641645c5357da93098d6f7}{Entity}}.
+
+\mbox{\Hypertarget{class_player_actions_a9f329b0dd116b323bfd72a11948350ca}\label{class_player_actions_a9f329b0dd116b323bfd72a11948350ca}} 
+\index{PlayerActions@{PlayerActions}!ChangeOrderInLayer@{ChangeOrderInLayer}}
+\index{ChangeOrderInLayer@{ChangeOrderInLayer}!PlayerActions@{PlayerActions}}
+\doxysubsubsection{\texorpdfstring{ChangeOrderInLayer()}{ChangeOrderInLayer()}}
+{\footnotesize\ttfamily void Player\+Actions.\+Change\+Order\+In\+Layer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Changes the weapon of the entity to alternate between these two states\+: Weapon rendered before player, weapon rendered behind player. 
+
+\mbox{\Hypertarget{class_player_actions_a668c9d5d9a68b9f64c013170f4d02a47}\label{class_player_actions_a668c9d5d9a68b9f64c013170f4d02a47}} 
+\index{PlayerActions@{PlayerActions}!Die@{Die}}
+\index{Die@{Die}!PlayerActions@{PlayerActions}}
+\doxysubsubsection{\texorpdfstring{Die()}{Die()}}
+{\footnotesize\ttfamily override void Player\+Actions.\+Die (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Triggers all necessary actions when the player dies by telling the active game that the player died. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_entity_ab21979ed302e0bb64b7cc760bf16d789}{Entity}}.
+
+\mbox{\Hypertarget{class_player_actions_abef46ee2f65ac72fec2a4c35cf186085}\label{class_player_actions_abef46ee2f65ac72fec2a4c35cf186085}} 
+\index{PlayerActions@{PlayerActions}!FlipEntity@{FlipEntity}}
+\index{FlipEntity@{FlipEntity}!PlayerActions@{PlayerActions}}
+\doxysubsubsection{\texorpdfstring{FlipEntity()}{FlipEntity()}}
+{\footnotesize\ttfamily override void Player\+Actions.\+Flip\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Flips the entity. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_entity_a5eb646c0c5071f7a2fdcb1853c012ed8}{Entity}}.
+
+\mbox{\Hypertarget{class_player_actions_a90288329ffa5c61d0c80ad3fc7fa08f0}\label{class_player_actions_a90288329ffa5c61d0c80ad3fc7fa08f0}} 
+\index{PlayerActions@{PlayerActions}!OnPauseGame@{OnPauseGame}}
+\index{OnPauseGame@{OnPauseGame}!PlayerActions@{PlayerActions}}
+\doxysubsubsection{\texorpdfstring{OnPauseGame()}{OnPauseGame()}}
+{\footnotesize\ttfamily void Player\+Actions.\+On\+Pause\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Called when the pause game button is pressed. It causes the game to stop. 
+
+\mbox{\Hypertarget{class_player_actions_a1b12f069efd3768ab7961591609edea8}\label{class_player_actions_a1b12f069efd3768ab7961591609edea8}} 
+\index{PlayerActions@{PlayerActions}!ResetEntityAnimations@{ResetEntityAnimations}}
+\index{ResetEntityAnimations@{ResetEntityAnimations}!PlayerActions@{PlayerActions}}
+\doxysubsubsection{\texorpdfstring{ResetEntityAnimations()}{ResetEntityAnimations()}}
+{\footnotesize\ttfamily override void Player\+Actions.\+Reset\+Entity\+Animations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Resets the player animations. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_entity_a0e9df075da06c6cefe78c39ea96261f0}{Entity}}.
+
+\mbox{\Hypertarget{class_player_actions_acef190d24a0ba81091a022e8246d4c29}\label{class_player_actions_acef190d24a0ba81091a022e8246d4c29}} 
+\index{PlayerActions@{PlayerActions}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!PlayerActions@{PlayerActions}}
+\doxysubsubsection{\texorpdfstring{SetPosition()}{SetPosition()}}
+{\footnotesize\ttfamily void Player\+Actions.\+Set\+Position (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Sets the position of the player by an index. Used by the multiplayer to set the spawn positions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_actions_a77da2c8c3f6b04d118035f4052a88cb0}\label{class_player_actions_a77da2c8c3f6b04d118035f4052a88cb0}} 
+\index{PlayerActions@{PlayerActions}!SetPositionForRevive@{SetPositionForRevive}}
+\index{SetPositionForRevive@{SetPositionForRevive}!PlayerActions@{PlayerActions}}
+\doxysubsubsection{\texorpdfstring{SetPositionForRevive()}{SetPositionForRevive()}}
+{\footnotesize\ttfamily void Player\+Actions.\+Set\+Position\+For\+Revive (\begin{DoxyParamCaption}\item[{Vector2}]{revive\+Position }\end{DoxyParamCaption})}
+
+
+
+Sets the position of the player when reviving. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em revive\+Position} & The revive position.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_actions_a7e64db4e11368a0aac250b01f1157152}\label{class_player_actions_a7e64db4e11368a0aac250b01f1157152}} 
+\index{PlayerActions@{PlayerActions}!Start@{Start}}
+\index{Start@{Start}!PlayerActions@{PlayerActions}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily override void Player\+Actions.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Starts this instance by acquiring resources that are now available. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_entity_a38985eb127db7177b924f32615f44209}{Entity}}.
+
+\mbox{\Hypertarget{class_player_actions_a323bd0786fb60b63be364995c20da05e}\label{class_player_actions_a323bd0786fb60b63be364995c20da05e}} 
+\index{PlayerActions@{PlayerActions}!Update@{Update}}
+\index{Update@{Update}!PlayerActions@{PlayerActions}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily override void Player\+Actions.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Updates this instance by executing necessary steps for the revive position, rolling and attacking. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_entity_a2813f460ee354c72290c81a83348ee4f}{Entity}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_player_actions_afc488a58f9e8758551f7d85a56c36bbe}\label{class_player_actions_afc488a58f9e8758551f7d85a56c36bbe}} 
+\index{PlayerActions@{PlayerActions}!Index@{Index}}
+\index{Index@{Index}!PlayerActions@{PlayerActions}}
+\doxysubsubsection{\texorpdfstring{Index}{Index}}
+{\footnotesize\ttfamily int Player\+Actions.\+Index\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the player index which is used by the multiplayer to differentiate between the two players. 
+
+The player index.\mbox{\Hypertarget{class_player_actions_a273667e275b9ca3cb9d7f9426a8ca19e}\label{class_player_actions_a273667e275b9ca3cb9d7f9426a8ca19e}} 
+\index{PlayerActions@{PlayerActions}!PlayerSword@{PlayerSword}}
+\index{PlayerSword@{PlayerSword}!PlayerActions@{PlayerActions}}
+\doxysubsubsection{\texorpdfstring{PlayerSword}{PlayerSword}}
+{\footnotesize\ttfamily Game\+Object Player\+Actions.\+Player\+Sword\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the player sword. 
+
+The player sword.\mbox{\Hypertarget{class_player_actions_a06c68ffac4c629edcfd94d3f0c413327}\label{class_player_actions_a06c68ffac4c629edcfd94d3f0c413327}} 
+\index{PlayerActions@{PlayerActions}!Positions@{Positions}}
+\index{Positions@{Positions}!PlayerActions@{PlayerActions}}
+\doxysubsubsection{\texorpdfstring{Positions}{Positions}}
+{\footnotesize\ttfamily I\+List$<$Vector2$>$ Player\+Actions.\+Positions\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the positions as a list of vectors which is used by the multiplayer. 
+
+The positions as a list of vectors.\mbox{\Hypertarget{class_player_actions_a932918cde72a86b245cb63b7f335756c}\label{class_player_actions_a932918cde72a86b245cb63b7f335756c}} 
+\index{PlayerActions@{PlayerActions}!RevivePosition@{RevivePosition}}
+\index{RevivePosition@{RevivePosition}!PlayerActions@{PlayerActions}}
+\doxysubsubsection{\texorpdfstring{RevivePosition}{RevivePosition}}
+{\footnotesize\ttfamily Vector2 Player\+Actions.\+Revive\+Position\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Gets the revive position. 
+
+The revive position.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+X\+\_\+\+P\+I\+X\+E\+L\+S/pixelborne/\+Assets/\+Scripts/\+Player/Player\+Actions.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,92 @@
+\hypertarget{class_toolkit}{}\doxysection{Toolkit Class Reference}
+\label{class_toolkit}\index{Toolkit@{Toolkit}}
+
+
+Contains various miscellaneous utility methods for other classes.  
+
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static float \mbox{\hyperlink{class_toolkit_a423e57dbdba2a54738fb86c528d70003}{Get\+Animation\+Length}} (Animator animator, string name)
+\begin{DoxyCompactList}\small\item\em Gets the time of the animation that is identified by the provided parameter string name. \end{DoxyCompactList}\item 
+static List$<$ string $>$ \mbox{\hyperlink{class_toolkit_a6dd5abcbcbb503304216ceed7f764855}{Get\+Files}} (string root, List$<$ string $>$ file\+Extensions, Cancellation\+Token token=new Cancellation\+Token())
+\begin{DoxyCompactList}\small\item\em Gets all file paths for files with a certain file\+Ending in the root directory and all subdirectories. Additionally, it writes and saves the found file paths in an extra file. (source
+
+). Access to certain paths can be denied, so using Directory.\+Get\+Files() could cause exceptions. Therefore, implementing recursion ourselves is the best way to avoid those exceptions. See\end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_toolkit_ac6250fa7e42e1f03b1ba1b40b473295b}{Log\+To\+File}} (string log\+Message, string log\+File)
+\begin{DoxyCompactList}\small\item\em Logs a message to the given file. See\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains various miscellaneous utility methods for other classes. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_toolkit_a423e57dbdba2a54738fb86c528d70003}\label{class_toolkit_a423e57dbdba2a54738fb86c528d70003}} 
+\index{Toolkit@{Toolkit}!GetAnimationLength@{GetAnimationLength}}
+\index{GetAnimationLength@{GetAnimationLength}!Toolkit@{Toolkit}}
+\doxysubsubsection{\texorpdfstring{GetAnimationLength()}{GetAnimationLength()}}
+{\footnotesize\ttfamily static float Toolkit.\+Get\+Animation\+Length (\begin{DoxyParamCaption}\item[{Animator}]{animator,  }\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the time of the animation that is identified by the provided parameter string name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em animator} & The animator which contains the animation.\\
+\hline
+{\em name} & The name of the animation.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The duration of the animation as a float.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_toolkit_a6dd5abcbcbb503304216ceed7f764855}\label{class_toolkit_a6dd5abcbcbb503304216ceed7f764855}} 
+\index{Toolkit@{Toolkit}!GetFiles@{GetFiles}}
+\index{GetFiles@{GetFiles}!Toolkit@{Toolkit}}
+\doxysubsubsection{\texorpdfstring{GetFiles()}{GetFiles()}}
+{\footnotesize\ttfamily static List$<$string$>$ Toolkit.\+Get\+Files (\begin{DoxyParamCaption}\item[{string}]{root,  }\item[{List$<$ string $>$}]{file\+Extensions,  }\item[{Cancellation\+Token}]{token = {\ttfamily new~CancellationToken()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets all file paths for files with a certain file\+Ending in the root directory and all subdirectories. Additionally, it writes and saves the found file paths in an extra file. (source
+
+). Access to certain paths can be denied, so using Directory.\+Get\+Files() could cause exceptions. Therefore, implementing recursion ourselves is the best way to avoid those exceptions. See
+
+
+\begin{DoxyParams}{Parameters}
+{\em root} & The root directory from where the search should be executed.\\
+\hline
+{\em file\+Extensions} & The file extensions.\\
+\hline
+{\em token} & The cancellation token.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_toolkit_ac6250fa7e42e1f03b1ba1b40b473295b}\label{class_toolkit_ac6250fa7e42e1f03b1ba1b40b473295b}} 
+\index{Toolkit@{Toolkit}!LogToFile@{LogToFile}}
+\index{LogToFile@{LogToFile}!Toolkit@{Toolkit}}
+\doxysubsubsection{\texorpdfstring{LogToFile()}{LogToFile()}}
+{\footnotesize\ttfamily static void Toolkit.\+Log\+To\+File (\begin{DoxyParamCaption}\item[{string}]{log\+Message,  }\item[{string}]{log\+File }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Logs a message to the given file. See
+
+
+\begin{DoxyParams}{Parameters}
+{\em log\+Message} & The log message.\\
+\hline
+{\em log\+File} & The log file.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+X\+\_\+\+P\+I\+X\+E\+L\+S/pixelborne/\+Assets/\+Scripts/\+Tools/Toolkit.\+cs\end{DoxyCompactItemize}

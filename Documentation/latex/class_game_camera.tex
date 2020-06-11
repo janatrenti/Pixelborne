@@ -1,0 +1,233 @@
+\hypertarget{class_game_camera}{}\doxysection{Game\+Camera Class Reference}
+\label{class_game_camera}\index{GameCamera@{GameCamera}}
+
+
+Implements the fading and hudsymbol swapping for cameras of the game.  
+
+
+Inheritance diagram for Game\+Camera\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_game_camera}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_game_camera_a923e9c460e8069fff7da34908ef6d3e6}{Fade\+Out}} ()
+\begin{DoxyCompactList}\small\item\em Triggers the fade to black animation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_camera_ae45e2cf924cadb5481a3ec90090ac954}{Fade\+In}} ()
+\begin{DoxyCompactList}\small\item\em Triggers the fade in animation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_camera_a0b82a6b8b563744df6a518e36ba6ebe4}{Swap\+Hud\+Symbol}} (Game\+Object game\+Object, Sprite sprite)
+\begin{DoxyCompactList}\small\item\em Swaps the hud symbol. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_game_camera_acb7e0dc996780739192e8d345733c931}{Fade\+Mode}} \{ \mbox{\hyperlink{class_game_camera_acb7e0dc996780739192e8d345733c931a294f48edd972b58ced15c2284db56f82}{Fade\+Mode.\+Fade\+In}}, 
+\mbox{\hyperlink{class_game_camera_acb7e0dc996780739192e8d345733c931af8be2875b8fa26739660f6f090938475}{Fade\+Mode.\+Fade\+Out}}, 
+\mbox{\hyperlink{class_game_camera_acb7e0dc996780739192e8d345733c931a9fa020bf79972cda5ae0e0a002ef9802}{Fade\+Mode.\+No\+Fade}}
+ \}
+\begin{DoxyCompactList}\small\item\em Describes the fade mode of the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_game_camera_ab0c3501aadfc6ce419e672ec2eeac9ed}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Updates this instance by executing the fade function. \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{class_game_camera_ac171feb57fe779fd10fa33a1b4b06b01}{Faded\+Out}} ()
+\begin{DoxyCompactList}\small\item\em Is invoked when the fade out has finished. \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{class_game_camera_abbae085944df68d0a9fec35066c2daa2}{Faded\+In}} ()
+\begin{DoxyCompactList}\small\item\em Is invoked when the fade in has finished. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_game_camera_a964bebb4a4d480687f7e15543a1f7286}{m\+\_\+fade\+Time}} = 1500
+\begin{DoxyCompactList}\small\item\em The time how long a fade takes. \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_game_camera_ab3e2d8b56e561e2f2203a66da35e3ab6}{m\+\_\+fade\+Image}}
+\begin{DoxyCompactList}\small\item\em The fade image. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_camera_acb7e0dc996780739192e8d345733c931}{Fade\+Mode}} \mbox{\hyperlink{class_game_camera_aa019d0224bd7feaefa93d0a0b901f878}{m\+\_\+fade\+Mode}} = \mbox{\hyperlink{class_game_camera_acb7e0dc996780739192e8d345733c931a9fa020bf79972cda5ae0e0a002ef9802}{Fade\+Mode.\+No\+Fade}}
+\begin{DoxyCompactList}\small\item\em The fade mode. \end{DoxyCompactList}\item 
+Stopwatch \mbox{\hyperlink{class_game_camera_a483178fa0b4d70674c4259773c0d0801}{m\+\_\+fade\+Stopwatch}} = new Stopwatch()
+\begin{DoxyCompactList}\small\item\em The fade stopwatch which is used to determine when the fading is finished. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_camera_aabf99fc3ee4466195bd078debddfedf7}\label{class_game_camera_aabf99fc3ee4466195bd078debddfedf7}} 
+void {\bfseries Fade} ()
+\item 
+\mbox{\Hypertarget{class_game_camera_a6f208c7337ab2e007e64f8f149d1d174}\label{class_game_camera_a6f208c7337ab2e007e64f8f149d1d174}} 
+void {\bfseries Fade\+Completed} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implements the fading and hudsymbol swapping for cameras of the game. 
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_game_camera_acb7e0dc996780739192e8d345733c931}\label{class_game_camera_acb7e0dc996780739192e8d345733c931}} 
+\index{GameCamera@{GameCamera}!FadeMode@{FadeMode}}
+\index{FadeMode@{FadeMode}!GameCamera@{GameCamera}}
+\doxysubsubsection{\texorpdfstring{FadeMode}{FadeMode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_game_camera_acb7e0dc996780739192e8d345733c931}{Game\+Camera.\+Fade\+Mode}}\hspace{0.3cm}{\ttfamily [strong]}, {\ttfamily [protected]}}
+
+
+
+Describes the fade mode of the game. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FadeIn@{FadeIn}!GameCamera@{GameCamera}}\index{GameCamera@{GameCamera}!FadeIn@{FadeIn}}}\mbox{\Hypertarget{class_game_camera_acb7e0dc996780739192e8d345733c931a294f48edd972b58ced15c2284db56f82}\label{class_game_camera_acb7e0dc996780739192e8d345733c931a294f48edd972b58ced15c2284db56f82}} 
+Fade\+In&The fade in mode. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FadeOut@{FadeOut}!GameCamera@{GameCamera}}\index{GameCamera@{GameCamera}!FadeOut@{FadeOut}}}\mbox{\Hypertarget{class_game_camera_acb7e0dc996780739192e8d345733c931af8be2875b8fa26739660f6f090938475}\label{class_game_camera_acb7e0dc996780739192e8d345733c931af8be2875b8fa26739660f6f090938475}} 
+Fade\+Out&The fade out mode. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NoFade@{NoFade}!GameCamera@{GameCamera}}\index{GameCamera@{GameCamera}!NoFade@{NoFade}}}\mbox{\Hypertarget{class_game_camera_acb7e0dc996780739192e8d345733c931a9fa020bf79972cda5ae0e0a002ef9802}\label{class_game_camera_acb7e0dc996780739192e8d345733c931a9fa020bf79972cda5ae0e0a002ef9802}} 
+No\+Fade&The no fade mode. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_camera_abbae085944df68d0a9fec35066c2daa2}\label{class_game_camera_abbae085944df68d0a9fec35066c2daa2}} 
+\index{GameCamera@{GameCamera}!FadedIn@{FadedIn}}
+\index{FadedIn@{FadedIn}!GameCamera@{GameCamera}}
+\doxysubsubsection{\texorpdfstring{FadedIn()}{FadedIn()}}
+{\footnotesize\ttfamily abstract void Game\+Camera.\+Faded\+In (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Is invoked when the fade in has finished. 
+
+
+
+Implemented in \mbox{\hyperlink{class_camera_multiplayer_ab3d5009994dabdcc90ddeb964ddf4432}{Camera\+Multiplayer}}, and \mbox{\hyperlink{class_camera_singleplayer_a65d2dbfc7219e84391462ba417553b09}{Camera\+Singleplayer}}.
+
+\mbox{\Hypertarget{class_game_camera_ac171feb57fe779fd10fa33a1b4b06b01}\label{class_game_camera_ac171feb57fe779fd10fa33a1b4b06b01}} 
+\index{GameCamera@{GameCamera}!FadedOut@{FadedOut}}
+\index{FadedOut@{FadedOut}!GameCamera@{GameCamera}}
+\doxysubsubsection{\texorpdfstring{FadedOut()}{FadedOut()}}
+{\footnotesize\ttfamily abstract void Game\+Camera.\+Faded\+Out (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Is invoked when the fade out has finished. 
+
+
+
+Implemented in \mbox{\hyperlink{class_camera_multiplayer_a6acb6c65dabb69035cbfe0cff1b6131b}{Camera\+Multiplayer}}, and \mbox{\hyperlink{class_camera_singleplayer_ae9ac7279e708bbdeac7abe7ce47cee9e}{Camera\+Singleplayer}}.
+
+\mbox{\Hypertarget{class_game_camera_ae45e2cf924cadb5481a3ec90090ac954}\label{class_game_camera_ae45e2cf924cadb5481a3ec90090ac954}} 
+\index{GameCamera@{GameCamera}!FadeIn@{FadeIn}}
+\index{FadeIn@{FadeIn}!GameCamera@{GameCamera}}
+\doxysubsubsection{\texorpdfstring{FadeIn()}{FadeIn()}}
+{\footnotesize\ttfamily void Game\+Camera.\+Fade\+In (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Triggers the fade in animation. 
+
+
+
+Implements \mbox{\hyperlink{interface_i_camera_ae3b85d9bbd268e3250ab05d3f00b140c}{I\+Camera}}.
+
+\mbox{\Hypertarget{class_game_camera_a923e9c460e8069fff7da34908ef6d3e6}\label{class_game_camera_a923e9c460e8069fff7da34908ef6d3e6}} 
+\index{GameCamera@{GameCamera}!FadeOut@{FadeOut}}
+\index{FadeOut@{FadeOut}!GameCamera@{GameCamera}}
+\doxysubsubsection{\texorpdfstring{FadeOut()}{FadeOut()}}
+{\footnotesize\ttfamily void Game\+Camera.\+Fade\+Out (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Triggers the fade to black animation. 
+
+
+
+Implements \mbox{\hyperlink{interface_i_camera_a4bac234e70b74cd101b05ea8ccf24423}{I\+Camera}}.
+
+\mbox{\Hypertarget{class_game_camera_a0b82a6b8b563744df6a518e36ba6ebe4}\label{class_game_camera_a0b82a6b8b563744df6a518e36ba6ebe4}} 
+\index{GameCamera@{GameCamera}!SwapHudSymbol@{SwapHudSymbol}}
+\index{SwapHudSymbol@{SwapHudSymbol}!GameCamera@{GameCamera}}
+\doxysubsubsection{\texorpdfstring{SwapHudSymbol()}{SwapHudSymbol()}}
+{\footnotesize\ttfamily void Game\+Camera.\+Swap\+Hud\+Symbol (\begin{DoxyParamCaption}\item[{Game\+Object}]{game\+Object,  }\item[{Sprite}]{sprite }\end{DoxyParamCaption})}
+
+
+
+Swaps the hud symbol. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Object} & The game object.\\
+\hline
+{\em sprite} & The sprite.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_i_camera_ad8a2073853f494d440decbda5df2f69a}{I\+Camera}}.
+
+\mbox{\Hypertarget{class_game_camera_ab0c3501aadfc6ce419e672ec2eeac9ed}\label{class_game_camera_ab0c3501aadfc6ce419e672ec2eeac9ed}} 
+\index{GameCamera@{GameCamera}!Update@{Update}}
+\index{Update@{Update}!GameCamera@{GameCamera}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily virtual void Game\+Camera.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Updates this instance by executing the fade function. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_camera_singleplayer_a041452113e6b9b43c835c5d975805131}{Camera\+Singleplayer}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_camera_ab3e2d8b56e561e2f2203a66da35e3ab6}\label{class_game_camera_ab3e2d8b56e561e2f2203a66da35e3ab6}} 
+\index{GameCamera@{GameCamera}!m\_fadeImage@{m\_fadeImage}}
+\index{m\_fadeImage@{m\_fadeImage}!GameCamera@{GameCamera}}
+\doxysubsubsection{\texorpdfstring{m\_fadeImage}{m\_fadeImage}}
+{\footnotesize\ttfamily Game\+Object Game\+Camera.\+m\+\_\+fade\+Image\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The fade image. 
+
+\mbox{\Hypertarget{class_game_camera_aa019d0224bd7feaefa93d0a0b901f878}\label{class_game_camera_aa019d0224bd7feaefa93d0a0b901f878}} 
+\index{GameCamera@{GameCamera}!m\_fadeMode@{m\_fadeMode}}
+\index{m\_fadeMode@{m\_fadeMode}!GameCamera@{GameCamera}}
+\doxysubsubsection{\texorpdfstring{m\_fadeMode}{m\_fadeMode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_camera_acb7e0dc996780739192e8d345733c931}{Fade\+Mode}} Game\+Camera.\+m\+\_\+fade\+Mode = \mbox{\hyperlink{class_game_camera_acb7e0dc996780739192e8d345733c931a9fa020bf79972cda5ae0e0a002ef9802}{Fade\+Mode.\+No\+Fade}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The fade mode. 
+
+\mbox{\Hypertarget{class_game_camera_a483178fa0b4d70674c4259773c0d0801}\label{class_game_camera_a483178fa0b4d70674c4259773c0d0801}} 
+\index{GameCamera@{GameCamera}!m\_fadeStopwatch@{m\_fadeStopwatch}}
+\index{m\_fadeStopwatch@{m\_fadeStopwatch}!GameCamera@{GameCamera}}
+\doxysubsubsection{\texorpdfstring{m\_fadeStopwatch}{m\_fadeStopwatch}}
+{\footnotesize\ttfamily Stopwatch Game\+Camera.\+m\+\_\+fade\+Stopwatch = new Stopwatch()\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The fade stopwatch which is used to determine when the fading is finished. 
+
+\mbox{\Hypertarget{class_game_camera_a964bebb4a4d480687f7e15543a1f7286}\label{class_game_camera_a964bebb4a4d480687f7e15543a1f7286}} 
+\index{GameCamera@{GameCamera}!m\_fadeTime@{m\_fadeTime}}
+\index{m\_fadeTime@{m\_fadeTime}!GameCamera@{GameCamera}}
+\doxysubsubsection{\texorpdfstring{m\_fadeTime}{m\_fadeTime}}
+{\footnotesize\ttfamily float Game\+Camera.\+m\+\_\+fade\+Time = 1500\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The time how long a fade takes. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+X\+\_\+\+P\+I\+X\+E\+L\+S/pixelborne/\+Assets/\+Scripts/\+Camera/Game\+Camera.\+cs\end{DoxyCompactItemize}

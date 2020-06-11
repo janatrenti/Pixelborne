@@ -1,0 +1,175 @@
+\hypertarget{class_image_manager}{}\doxysection{Image\+Manager Class Reference}
+\label{class_image_manager}\index{ImageManager@{ImageManager}}
+
+
+Handles loading and application of images. It is a Singleton. N\+O\+TE\+: In order to be able to use coroutines (to be thread safe) it has to derive from Mono\+Behaviour.  
+
+
+Inheritance diagram for Image\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_image_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_image_manager_ab188de597f7435fa986581ba0cb4c820}{Prepare\+For\+First\+Load}} (bool do\+Set\+New\+Scene\+Images)
+\begin{DoxyCompactList}\small\item\em Prepares for first load of images for a scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_image_manager_a64f70e18c8ea89d1ea4ac8b5991117c4}{Set\+New\+Scene\+Images}} ()
+\begin{DoxyCompactList}\small\item\em Sets the new scene images. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_image_manager_a9e3dbc6522c9a64125dcd284a2f1939d}{Update\+Alpha\+Value}} ()
+\begin{DoxyCompactList}\small\item\em Updates the alpha value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_image_manager_a4fb67c2a5db6a22a3ceba982bbd12557}{Is\+First\+Load}} = true\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a value indicating whether this instance is first load. \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_image_manager_a53bf6c6b24bf07e4866ecac02c0e07b8}{Image\+Holder}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the image holder. \end{DoxyCompactList}\item 
+Vector2 \mbox{\hyperlink{class_image_manager_aeea17444e20f1f9c60e28cc049dc31f6}{Player\+Spawn\+Position}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the player spawn position. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_image_manager}{Image\+Manager}} \mbox{\hyperlink{class_image_manager_a34c3cdfa5ee39a9b0f24856049db81de}{Instance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_image_manager_a591c474018cc812dfd970cfafa05926d}\label{class_image_manager_a591c474018cc812dfd970cfafa05926d}} 
+async void {\bfseries Load\+All\+Paths} ()
+\item 
+\mbox{\Hypertarget{class_image_manager_a342e5aec1c12b7fa3f529d4500f200a1}\label{class_image_manager_a342e5aec1c12b7fa3f529d4500f200a1}} 
+I\+Enumerator {\bfseries Store\+All\+Images} ()
+\item 
+\mbox{\Hypertarget{class_image_manager_a78c70570cc412e8ba5552476b13bae77}\label{class_image_manager_a78c70570cc412e8ba5552476b13bae77}} 
+I\+Enumerator {\bfseries Load\+New\+Images} (Action$<$ List$<$ Texture2D $>$$>$ image\+Callback)
+\item 
+\mbox{\Hypertarget{class_image_manager_a8e79f4585cb4885d59c401a2459b96e9}\label{class_image_manager_a8e79f4585cb4885d59c401a2459b96e9}} 
+I\+Enumerator {\bfseries Apply\+Images} (List$<$ Texture2D $>$ images)
+\item 
+\mbox{\Hypertarget{class_image_manager_ac2fdcf66bfab186ede5eb7ba8c28e064}\label{class_image_manager_ac2fdcf66bfab186ede5eb7ba8c28e064}} 
+void {\bfseries On\+Destroy} ()
+\item 
+\mbox{\Hypertarget{class_image_manager_a7b1c2adaea3e990bfa1502f392c7d887}\label{class_image_manager_a7b1c2adaea3e990bfa1502f392c7d887}} 
+void {\bfseries On\+Application\+Quit} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_image_manager_a9d7bbc9f55445cc0613a61f1a0376cb7}\label{class_image_manager_a9d7bbc9f55445cc0613a61f1a0376cb7}} 
+bool {\bfseries m\+\_\+is\+Loading\+Paths} = true
+\item 
+\mbox{\Hypertarget{class_image_manager_ab7c3528443ecd865745f4a06e9851b6d}\label{class_image_manager_ab7c3528443ecd865745f4a06e9851b6d}} 
+float {\bfseries m\+\_\+alpha}
+\item 
+\mbox{\Hypertarget{class_image_manager_ad42abbcc49e3b2fefb830dd3b1d824c0}\label{class_image_manager_ad42abbcc49e3b2fefb830dd3b1d824c0}} 
+List$<$ string $>$ {\bfseries m\+\_\+image\+Paths} = new List$<$string$>$()
+\item 
+\mbox{\Hypertarget{class_image_manager_ae14288aff98f0f03f8769102abe8cfb4}\label{class_image_manager_ae14288aff98f0f03f8769102abe8cfb4}} 
+List$<$ Texture2D $>$ {\bfseries m\+\_\+image\+Store} = new List$<$Texture2D$>$()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_image_manager_aef2d0898402fbbf937e9ef8e5d551970}\label{class_image_manager_aef2d0898402fbbf937e9ef8e5d551970}} 
+static bool {\bfseries s\+\_\+is\+Instance\+Destroyed} = false
+\item 
+\mbox{\Hypertarget{class_image_manager_a3b6b4b7163960e28a67a7b3bc6d28873}\label{class_image_manager_a3b6b4b7163960e28a67a7b3bc6d28873}} 
+static \mbox{\hyperlink{class_image_manager}{Image\+Manager}} {\bfseries s\+\_\+instance} = null
+\item 
+\mbox{\Hypertarget{class_image_manager_aca8d2fac05c4748cd97433630afaf04d}\label{class_image_manager_aca8d2fac05c4748cd97433630afaf04d}} 
+static readonly Cancellation\+Token\+Source {\bfseries C\+TS} = new Cancellation\+Token\+Source()
+\item 
+\mbox{\Hypertarget{class_image_manager_a6ee49c41f73d84636d8755b73cfe7ec6}\label{class_image_manager_a6ee49c41f73d84636d8755b73cfe7ec6}} 
+static readonly int {\bfseries A\+L\+P\+H\+A\+\_\+\+D\+I\+S\+T\+A\+N\+CE} = 100
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles loading and application of images. It is a Singleton. N\+O\+TE\+: In order to be able to use coroutines (to be thread safe) it has to derive from Mono\+Behaviour. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_image_manager_ab188de597f7435fa986581ba0cb4c820}\label{class_image_manager_ab188de597f7435fa986581ba0cb4c820}} 
+\index{ImageManager@{ImageManager}!PrepareForFirstLoad@{PrepareForFirstLoad}}
+\index{PrepareForFirstLoad@{PrepareForFirstLoad}!ImageManager@{ImageManager}}
+\doxysubsubsection{\texorpdfstring{PrepareForFirstLoad()}{PrepareForFirstLoad()}}
+{\footnotesize\ttfamily void Image\+Manager.\+Prepare\+For\+First\+Load (\begin{DoxyParamCaption}\item[{bool}]{do\+Set\+New\+Scene\+Images }\end{DoxyParamCaption})}
+
+
+
+Prepares for first load of images for a scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em do\+Set\+New\+Scene\+Images} & if set to {\ttfamily true} if it is needed to set new images in the scene.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_image_manager_a64f70e18c8ea89d1ea4ac8b5991117c4}\label{class_image_manager_a64f70e18c8ea89d1ea4ac8b5991117c4}} 
+\index{ImageManager@{ImageManager}!SetNewSceneImages@{SetNewSceneImages}}
+\index{SetNewSceneImages@{SetNewSceneImages}!ImageManager@{ImageManager}}
+\doxysubsubsection{\texorpdfstring{SetNewSceneImages()}{SetNewSceneImages()}}
+{\footnotesize\ttfamily void Image\+Manager.\+Set\+New\+Scene\+Images (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets the new scene images. 
+
+\mbox{\Hypertarget{class_image_manager_a9e3dbc6522c9a64125dcd284a2f1939d}\label{class_image_manager_a9e3dbc6522c9a64125dcd284a2f1939d}} 
+\index{ImageManager@{ImageManager}!UpdateAlphaValue@{UpdateAlphaValue}}
+\index{UpdateAlphaValue@{UpdateAlphaValue}!ImageManager@{ImageManager}}
+\doxysubsubsection{\texorpdfstring{UpdateAlphaValue()}{UpdateAlphaValue()}}
+{\footnotesize\ttfamily void Image\+Manager.\+Update\+Alpha\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates the alpha value. 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_image_manager_a53bf6c6b24bf07e4866ecac02c0e07b8}\label{class_image_manager_a53bf6c6b24bf07e4866ecac02c0e07b8}} 
+\index{ImageManager@{ImageManager}!ImageHolder@{ImageHolder}}
+\index{ImageHolder@{ImageHolder}!ImageManager@{ImageManager}}
+\doxysubsubsection{\texorpdfstring{ImageHolder}{ImageHolder}}
+{\footnotesize\ttfamily Game\+Object Image\+Manager.\+Image\+Holder\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the image holder. 
+
+The \mbox{\hyperlink{}{that holds all images in a scene.}} \mbox{\Hypertarget{class_image_manager_a34c3cdfa5ee39a9b0f24856049db81de}\label{class_image_manager_a34c3cdfa5ee39a9b0f24856049db81de}} 
+\index{ImageManager@{ImageManager}!Instance@{Instance}}
+\index{Instance@{Instance}!ImageManager@{ImageManager}}
+\doxysubsubsection{\texorpdfstring{Instance}{Instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_image_manager}{Image\+Manager}} Image\+Manager.\+Instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Gets the instance. 
+
+\mbox{\Hypertarget{class_image_manager_a4fb67c2a5db6a22a3ceba982bbd12557}\label{class_image_manager_a4fb67c2a5db6a22a3ceba982bbd12557}} 
+\index{ImageManager@{ImageManager}!IsFirstLoad@{IsFirstLoad}}
+\index{IsFirstLoad@{IsFirstLoad}!ImageManager@{ImageManager}}
+\doxysubsubsection{\texorpdfstring{IsFirstLoad}{IsFirstLoad}}
+{\footnotesize\ttfamily bool Image\+Manager.\+Is\+First\+Load = true\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets a value indicating whether this instance is first load. 
+
+{\ttfamily true} if it is the first time loading images into the scene; otherwise, {\ttfamily false}.\mbox{\Hypertarget{class_image_manager_aeea17444e20f1f9c60e28cc049dc31f6}\label{class_image_manager_aeea17444e20f1f9c60e28cc049dc31f6}} 
+\index{ImageManager@{ImageManager}!PlayerSpawnPosition@{PlayerSpawnPosition}}
+\index{PlayerSpawnPosition@{PlayerSpawnPosition}!ImageManager@{ImageManager}}
+\doxysubsubsection{\texorpdfstring{PlayerSpawnPosition}{PlayerSpawnPosition}}
+{\footnotesize\ttfamily Vector2 Image\+Manager.\+Player\+Spawn\+Position\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the player spawn position. 
+
+The player\textquotesingle{}s spawn position.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+X\+\_\+\+P\+I\+X\+E\+L\+S/pixelborne/\+Assets/\+Scripts/\+Images/Image\+Manager.\+cs\end{DoxyCompactItemize}

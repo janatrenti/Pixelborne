@@ -1,0 +1,156 @@
+\hypertarget{class_dialogue_stage4}{}\doxysection{Dialogue\+Stage4 Class Reference}
+\label{class_dialogue_stage4}\index{DialogueStage4@{DialogueStage4}}
+
+
+Manages the displaying of the dialog in stage 4 of the singleplayer mode.  
+
+
+Inheritance diagram for Dialogue\+Stage4\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_dialogue_stage4}
+\end{center}
+\end{figure}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dialogue_stage4_a6e9323ebc62367a221143de54cc3fe04}\label{class_dialogue_stage4_a6e9323ebc62367a221143de54cc3fe04}} 
+override void {\bfseries Start} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dialogue_stage4_a90ca859df09c2188d5894c0af7fb5453}\label{class_dialogue_stage4_a90ca859df09c2188d5894c0af7fb5453}} 
+override string\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} {\bfseries Dialogue\+Holder}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dialogue_stage4_ada07508fa03e86828d7a70e1df7e2673}\label{class_dialogue_stage4_ada07508fa03e86828d7a70e1df7e2673}} 
+enum {\bfseries Mode} \{ \newline
+{\bfseries Not\+Started}, 
+{\bfseries Displaying}, 
+{\bfseries Waiting\+For\+Trigger}, 
+{\bfseries Flashing}, 
+\newline
+{\bfseries Animating}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dialogue_stage4_a4b3caf2ee97d252e1a34242c993f7187}\label{class_dialogue_stage4_a4b3caf2ee97d252e1a34242c993f7187}} 
+void {\bfseries Update} ()
+\item 
+\mbox{\Hypertarget{class_dialogue_stage4_ac121c0def4ab4a1441b4c10c7f4b8260}\label{class_dialogue_stage4_ac121c0def4ab4a1441b4c10c7f4b8260}} 
+void {\bfseries Flash\+Violet} ()
+\item 
+\mbox{\Hypertarget{class_dialogue_stage4_af7615c7e71aff73e234335b5c59c695e}\label{class_dialogue_stage4_af7615c7e71aff73e234335b5c59c695e}} 
+void {\bfseries Animate} ()
+\item 
+\mbox{\Hypertarget{class_dialogue_stage4_a5be9acd08ab8502a667f5f562e01412f}\label{class_dialogue_stage4_a5be9acd08ab8502a667f5f562e01412f}} 
+void {\bfseries Change\+Part} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dialogue_stage4_a2d4434081a9f88828a3097a9e0496138}\label{class_dialogue_stage4_a2d4434081a9f88828a3097a9e0496138}} 
+int {\bfseries m\+\_\+animation\+Duration} = 500
+\item 
+\mbox{\Hypertarget{class_dialogue_stage4_a880ab3e569046ea6e811829e52efc769}\label{class_dialogue_stage4_a880ab3e569046ea6e811829e52efc769}} 
+int {\bfseries m\+\_\+flash\+Duration} = 100
+\item 
+\mbox{\Hypertarget{class_dialogue_stage4_ab406faac27c4b1351a14af02aaab5058}\label{class_dialogue_stage4_ab406faac27c4b1351a14af02aaab5058}} 
+Sprite\+Renderer {\bfseries m\+\_\+filter\+Image}
+\item 
+\mbox{\Hypertarget{class_dialogue_stage4_a1e470e91cdabe34329868be5e69ebc44}\label{class_dialogue_stage4_a1e470e91cdabe34329868be5e69ebc44}} 
+Image {\bfseries m\+\_\+background\+Image}
+\item 
+\mbox{\Hypertarget{class_dialogue_stage4_ac5a44c0244fdce4e895b901234cdc49b}\label{class_dialogue_stage4_ac5a44c0244fdce4e895b901234cdc49b}} 
+Game\+Object {\bfseries m\+\_\+demon\+King}
+\item 
+\mbox{\Hypertarget{class_dialogue_stage4_a3a1c57100b5861fa7440f5b21f9e6e00}\label{class_dialogue_stage4_a3a1c57100b5861fa7440f5b21f9e6e00}} 
+Game\+Object {\bfseries m\+\_\+endboss}
+\item 
+\mbox{\Hypertarget{class_dialogue_stage4_a0645e4e4dc710cf38b5b8179eb45a234}\label{class_dialogue_stage4_a0645e4e4dc710cf38b5b8179eb45a234}} 
+Game\+Object {\bfseries m\+\_\+princess}
+\item 
+\mbox{\Hypertarget{class_dialogue_stage4_a6bb770bb72b0f5628f2ccad2549e3838}\label{class_dialogue_stage4_a6bb770bb72b0f5628f2ccad2549e3838}} 
+Game\+Object {\bfseries m\+\_\+king}
+\item 
+\mbox{\Hypertarget{class_dialogue_stage4_a82468cbf81e4aa7251a6f7ad37ca7d26}\label{class_dialogue_stage4_a82468cbf81e4aa7251a6f7ad37ca7d26}} 
+int {\bfseries m\+\_\+animation\+Part}
+\item 
+\mbox{\Hypertarget{class_dialogue_stage4_ab9a5b8df74df18ec374783ca6c3c27fb}\label{class_dialogue_stage4_ab9a5b8df74df18ec374783ca6c3c27fb}} 
+Mode {\bfseries m\+\_\+mode}
+\item 
+\mbox{\Hypertarget{class_dialogue_stage4_a56793ad652e6d1b26248dad4bcd43646}\label{class_dialogue_stage4_a56793ad652e6d1b26248dad4bcd43646}} 
+string {\bfseries m\+\_\+active\+Character}
+\item 
+\mbox{\Hypertarget{class_dialogue_stage4_a95ec98e5d6402acbaf8e0df839094f10}\label{class_dialogue_stage4_a95ec98e5d6402acbaf8e0df839094f10}} 
+string\mbox{[}$\,$\mbox{]} {\bfseries m\+\_\+dialogue\+Text}
+\item 
+\mbox{\Hypertarget{class_dialogue_stage4_a199056aa7bd5e4f36ef1aa9cc5ccf4f0}\label{class_dialogue_stage4_a199056aa7bd5e4f36ef1aa9cc5ccf4f0}} 
+string\mbox{[}$\,$\mbox{]} {\bfseries m\+\_\+animation\+Images}
+\item 
+string\mbox{[}$\,$\mbox{]} {\bfseries m\+\_\+animation\+Images0}
+\item 
+string\mbox{[}$\,$\mbox{]} {\bfseries m\+\_\+animation\+Images1}
+\item 
+\mbox{\Hypertarget{class_dialogue_stage4_a2799701c4320113ad2a74ede2f77681e}\label{class_dialogue_stage4_a2799701c4320113ad2a74ede2f77681e}} 
+string\mbox{[}$\,$\mbox{]} {\bfseries m\+\_\+character\+Holder}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dialogue_stage4_a1a01ffb3772565a03efda77c27cddb3b}\label{class_dialogue_stage4_a1a01ffb3772565a03efda77c27cddb3b}} 
+static readonly string {\bfseries P\+R\+I\+N\+C\+E\+SS} = \char`\"{}Princess\char`\"{}
+\item 
+\mbox{\Hypertarget{class_dialogue_stage4_aabe65aa92ca5b47f73d62e8b190a1250}\label{class_dialogue_stage4_aabe65aa92ca5b47f73d62e8b190a1250}} 
+static readonly string {\bfseries K\+I\+NG} = \char`\"{}King\char`\"{}
+\item 
+\mbox{\Hypertarget{class_dialogue_stage4_a4ed6ae028b3a4813c362be2c072cf2a5}\label{class_dialogue_stage4_a4ed6ae028b3a4813c362be2c072cf2a5}} 
+static readonly string {\bfseries D\+A\+R\+K\+\_\+\+K\+I\+NG} = \char`\"{}Dark King\char`\"{}
+\item 
+\mbox{\Hypertarget{class_dialogue_stage4_a745d1a2b02098f5b7a93560094108c79}\label{class_dialogue_stage4_a745d1a2b02098f5b7a93560094108c79}} 
+static readonly string {\bfseries U\+N\+K\+N\+O\+WN} = \char`\"{}???\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Manages the displaying of the dialog in stage 4 of the singleplayer mode. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_dialogue_stage4_a7b08e3cbe891917898f3d8aa152f5d37}\label{class_dialogue_stage4_a7b08e3cbe891917898f3d8aa152f5d37}} 
+\index{DialogueStage4@{DialogueStage4}!m\_animationImages0@{m\_animationImages0}}
+\index{m\_animationImages0@{m\_animationImages0}!DialogueStage4@{DialogueStage4}}
+\doxysubsubsection{\texorpdfstring{m\_animationImages0}{m\_animationImages0}}
+{\footnotesize\ttfamily string \mbox{[}$\,$\mbox{]} Dialogue\+Stage4.\+m\+\_\+animation\+Images0\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{ \textcolor{stringliteral}{"OutroImages/spilled\_stones\_blood\_3"},}
+\DoxyCodeLine{                                            \textcolor{stringliteral}{"OutroImages/awakening"} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_dialogue_stage4_a9d40ca0ab6b49c7cdcf54fe12c445df3}\label{class_dialogue_stage4_a9d40ca0ab6b49c7cdcf54fe12c445df3}} 
+\index{DialogueStage4@{DialogueStage4}!m\_animationImages1@{m\_animationImages1}}
+\index{m\_animationImages1@{m\_animationImages1}!DialogueStage4@{DialogueStage4}}
+\doxysubsubsection{\texorpdfstring{m\_animationImages1}{m\_animationImages1}}
+{\footnotesize\ttfamily string \mbox{[}$\,$\mbox{]} Dialogue\+Stage4.\+m\+\_\+animation\+Images1\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{ \textcolor{stringliteral}{"OutroImages/dark\_crown"},}
+\DoxyCodeLine{                                            \textcolor{stringliteral}{"OutroImages/hit\_animation"},}
+\DoxyCodeLine{                                            \textcolor{stringliteral}{"OutroImages/dark\_crown\_destroyed"} \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+X\+\_\+\+P\+I\+X\+E\+L\+S/pixelborne/\+Assets/\+Scripts/\+Story/Dialogue\+Stage4.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,94 @@
+\hypertarget{class_intro_scene}{}\doxysection{Intro\+Scene Class Reference}
+\label{class_intro_scene}\index{IntroScene@{IntroScene}}
+
+
+Manages the displaying of images and text in the intro scene of the singleplayer mode.  
+
+
+Inheritance diagram for Intro\+Scene\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_intro_scene}
+\end{center}
+\end{figure}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_intro_scene_a2606f7f4529a18d33d490ed61d70766c}\label{class_intro_scene_a2606f7f4529a18d33d490ed61d70766c}} 
+override void {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{class_intro_scene_a0aabba2dccb40bc6df66ac29406fd1f3}\label{class_intro_scene_a0aabba2dccb40bc6df66ac29406fd1f3}} 
+override Cut\+Scene\+Mode {\bfseries Change\+Story\+Part} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+override string\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} {\bfseries Story\+Holder}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string\mbox{[}$\,$\mbox{]} {\bfseries m\+\_\+image\+Holder}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Manages the displaying of images and text in the intro scene of the singleplayer mode. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_intro_scene_a7da397168ab2bfbdd41d1b35947eb106}\label{class_intro_scene_a7da397168ab2bfbdd41d1b35947eb106}} 
+\index{IntroScene@{IntroScene}!m\_imageHolder@{m\_imageHolder}}
+\index{m\_imageHolder@{m\_imageHolder}!IntroScene@{IntroScene}}
+\doxysubsubsection{\texorpdfstring{m\_imageHolder}{m\_imageHolder}}
+{\footnotesize\ttfamily string \mbox{[}$\,$\mbox{]} Intro\+Scene.\+m\+\_\+image\+Holder\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{"IntroImages/peaceful"},}
+\DoxyCodeLine{        \textcolor{stringliteral}{"IntroImages/war"},}
+\DoxyCodeLine{        \textcolor{stringliteral}{"IntroImages/castle\_gates"}}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_intro_scene_a5c18447822ed1a9d489e96259a6b92f4}\label{class_intro_scene_a5c18447822ed1a9d489e96259a6b92f4}} 
+\index{IntroScene@{IntroScene}!StoryHolder@{StoryHolder}}
+\index{StoryHolder@{StoryHolder}!IntroScene@{IntroScene}}
+\doxysubsubsection{\texorpdfstring{StoryHolder}{StoryHolder}}
+{\footnotesize\ttfamily override string \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} Intro\+Scene.\+Story\+Holder\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keyword}{new} \textcolor{keywordtype}{string}[] \{ \textcolor{stringliteral}{"Prologue\(\backslash\)n\(\backslash\)nDarkness"} \},}
+\DoxyCodeLine{        \textcolor{keyword}{new} \textcolor{keywordtype}{string}[] \{}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Once upon a time, there was a peaceful kingdom, full of light and happiness."},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"The people lived content lives under the rule of a just king."},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"And everything was bright and colorful."}}
+\DoxyCodeLine{        \},}
+\DoxyCodeLine{        \textcolor{keyword}{new} \textcolor{keywordtype}{string}[] \{}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Until one day, darkness erupted."},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"A dark energy claimed the land, and with it came darker creatures, ancient and full of malice."},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"They burnt the towns. They slaughtered the people."}}
+\DoxyCodeLine{        \},}
+\DoxyCodeLine{        \textcolor{keyword}{new} \textcolor{keywordtype}{string}[] \{}
+\DoxyCodeLine{            \textcolor{stringliteral}{"And eventually, they reached the castle gates."},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"The kingdom was weak, and the gates could not be held."},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"But a few brave knights remained, and they fought back with everything they had."}}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+X\+\_\+\+P\+I\+X\+E\+L\+S/pixelborne/\+Assets/\+Scripts/\+Story/Intro\+Scene.\+cs\end{DoxyCompactItemize}

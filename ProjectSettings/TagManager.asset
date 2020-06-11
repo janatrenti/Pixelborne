@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Player_1_sword
+  - Player_1
+  - Player_2
+  - Player_2_sword
+  - GameMediator
+  - WindowLandscape
+  - WindowPortrait
+  - Enemy
+  - Storytrigger
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Player
+  - Player_1
+  - Player_2
+  - Enemy
+  - King
+  - Ground
+  - Walls
+  - Flashes
+  - Princess
+  - DisabledCollisionLayer
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: BackBackground
+    uniqueID: 3936565815
+    locked: 0
+  - name: Backdetails
+    uniqueID: 3380256679
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Pictures
+    uniqueID: 3869052335
+    locked: 0
+  - name: level
+    uniqueID: 765317395
+    locked: 0
+  - name: HUD
+    uniqueID: 2922741033
+    locked: 0
+  - name: Foreground
+    uniqueID: 4072669561
+    locked: 0
+  - name: MainMenu
+    uniqueID: 1480247883
+    locked: 0

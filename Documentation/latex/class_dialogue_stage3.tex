@@ -1,0 +1,81 @@
+\hypertarget{class_dialogue_stage3}{}\doxysection{Dialogue\+Stage3 Class Reference}
+\label{class_dialogue_stage3}\index{DialogueStage3@{DialogueStage3}}
+
+
+Manages the displaying of the dialog in stage 3 of the singleplayer mode.  
+
+
+Inheritance diagram for Dialogue\+Stage3\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_dialogue_stage3}
+\end{center}
+\end{figure}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dialogue_stage3_a26768f4d3e3a76db13032ed67ca0a613}\label{class_dialogue_stage3_a26768f4d3e3a76db13032ed67ca0a613}} 
+override void {\bfseries Start} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+override string\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} {\bfseries Dialogue\+Holder}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dialogue_stage3_a258164745064e4a98eba1b82a3882578}\label{class_dialogue_stage3_a258164745064e4a98eba1b82a3882578}} 
+enum {\bfseries Mode} \{ {\bfseries Displaying}, 
+{\bfseries Waiting\+For\+Trigger}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dialogue_stage3_a1d80d144e7e9c1ab474f9d404c6c3230}\label{class_dialogue_stage3_a1d80d144e7e9c1ab474f9d404c6c3230}} 
+void {\bfseries Update} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dialogue_stage3_a4805ea7f0034d137a20c239cd2022067}\label{class_dialogue_stage3_a4805ea7f0034d137a20c239cd2022067}} 
+Mode {\bfseries m\+\_\+mode} = Mode.\+Waiting\+For\+Trigger
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Manages the displaying of the dialog in stage 3 of the singleplayer mode. 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_dialogue_stage3_a4f951bae024ed8a4912fdba6cda0bef5}\label{class_dialogue_stage3_a4f951bae024ed8a4912fdba6cda0bef5}} 
+\index{DialogueStage3@{DialogueStage3}!DialogueHolder@{DialogueHolder}}
+\index{DialogueHolder@{DialogueHolder}!DialogueStage3@{DialogueStage3}}
+\doxysubsubsection{\texorpdfstring{DialogueHolder}{DialogueHolder}}
+{\footnotesize\ttfamily override string \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} Dialogue\+Stage3.\+Dialogue\+Holder\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{    \{ }
+\DoxyCodeLine{        \textcolor{keyword}{new} \textcolor{keywordtype}{string}[] \{}
+\DoxyCodeLine{            \$\textcolor{stringliteral}{"Knight \{DEFAULT\_KNIGHT\}! Is that you?"},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"You found me! Thank goodness."},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"And I started to fear those vile demons might succeed."},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"You must know, they believe the royal blood holds ancient power."},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Power they wanted to use to summon their Dark King from his -\/"},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Hold on! Is that the Dark King's crown you have there?"},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"What a relief. We shall take it with us, so that they may never be able to use it."},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Come now, let us return to the castle at once!"}}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+X\+\_\+\+P\+I\+X\+E\+L\+S/pixelborne/\+Assets/\+Scripts/\+Story/Dialogue\+Stage3.\+cs\end{DoxyCompactItemize}

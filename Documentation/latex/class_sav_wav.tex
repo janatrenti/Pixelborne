@@ -1,0 +1,138 @@
+\hypertarget{class_sav_wav}{}\doxysection{Sav\+Wav Class Reference}
+\label{class_sav_wav}\index{SavWav@{SavWav}}
+
+
+ 
+
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static async void \mbox{\hyperlink{class_sav_wav_ae4f6c8e36fb41663b3776f7a2bbd70cd}{Save}} (string filename, Audio\+Clip clip)
+\begin{DoxyCompactList}\small\item\em Saves the specified filename. \end{DoxyCompactList}\item 
+static Audio\+Clip \mbox{\hyperlink{class_sav_wav_aa9201af1b474657d15aa80b89bcfa04a}{Trim\+Silence}} (Audio\+Clip clip, float min)
+\begin{DoxyCompactList}\small\item\em Trims the silence. \end{DoxyCompactList}\item 
+static Audio\+Clip \mbox{\hyperlink{class_sav_wav_a5543f63c8825d24c5a5e8216625f269f}{Trim\+Silence}} (List$<$ float $>$ samples, float min, int channels, int hz)
+\begin{DoxyCompactList}\small\item\em Trims the silence. \end{DoxyCompactList}\item 
+static Audio\+Clip \mbox{\hyperlink{class_sav_wav_a6d37009ed30c2b81683d64caf0315d3f}{Trim\+Silence}} (List$<$ float $>$ samples, float min, int channels, int hz, bool \+\_\+3D, bool stream)
+\begin{DoxyCompactList}\small\item\em Trims the silence. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sav_wav_aabb022317c87da9d21a459d8a9f1fb2b}\label{class_sav_wav_aabb022317c87da9d21a459d8a9f1fb2b}} 
+static File\+Stream {\bfseries Create\+Empty} (string filepath)
+\item 
+\mbox{\Hypertarget{class_sav_wav_ac8a073f42dbe1e4a9d846a6ec50419e9}\label{class_sav_wav_ac8a073f42dbe1e4a9d846a6ec50419e9}} 
+static void {\bfseries Convert\+And\+Write} (Memory\+Stream mem\+Stream, float\mbox{[}$\,$\mbox{]} samples)
+\item 
+\mbox{\Hypertarget{class_sav_wav_a5ae5fb3e7ae9b780d03958b068110986}\label{class_sav_wav_a5ae5fb3e7ae9b780d03958b068110986}} 
+static void {\bfseries Write\+Header} (File\+Stream file\+Stream, Audio\+Clip clip)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sav_wav_ad69e10a6de3ebbd5788cda7d32ea454a}\label{class_sav_wav_ad69e10a6de3ebbd5788cda7d32ea454a}} 
+const int {\bfseries H\+E\+A\+D\+E\+R\+\_\+\+S\+I\+ZE} = 44
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sav_wav_ae4f6c8e36fb41663b3776f7a2bbd70cd}\label{class_sav_wav_ae4f6c8e36fb41663b3776f7a2bbd70cd}} 
+\index{SavWav@{SavWav}!Save@{Save}}
+\index{Save@{Save}!SavWav@{SavWav}}
+\doxysubsubsection{\texorpdfstring{Save()}{Save()}}
+{\footnotesize\ttfamily static async void Sav\+Wav.\+Save (\begin{DoxyParamCaption}\item[{string}]{filename,  }\item[{Audio\+Clip}]{clip }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Saves the specified filename. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The filename.\\
+\hline
+{\em clip} & The clip.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sav_wav_aa9201af1b474657d15aa80b89bcfa04a}\label{class_sav_wav_aa9201af1b474657d15aa80b89bcfa04a}} 
+\index{SavWav@{SavWav}!TrimSilence@{TrimSilence}}
+\index{TrimSilence@{TrimSilence}!SavWav@{SavWav}}
+\doxysubsubsection{\texorpdfstring{TrimSilence()}{TrimSilence()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily static Audio\+Clip Sav\+Wav.\+Trim\+Silence (\begin{DoxyParamCaption}\item[{Audio\+Clip}]{clip,  }\item[{float}]{min }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Trims the silence. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em clip} & The clip.\\
+\hline
+{\em min} & The minimum.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sav_wav_a5543f63c8825d24c5a5e8216625f269f}\label{class_sav_wav_a5543f63c8825d24c5a5e8216625f269f}} 
+\index{SavWav@{SavWav}!TrimSilence@{TrimSilence}}
+\index{TrimSilence@{TrimSilence}!SavWav@{SavWav}}
+\doxysubsubsection{\texorpdfstring{TrimSilence()}{TrimSilence()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily static Audio\+Clip Sav\+Wav.\+Trim\+Silence (\begin{DoxyParamCaption}\item[{List$<$ float $>$}]{samples,  }\item[{float}]{min,  }\item[{int}]{channels,  }\item[{int}]{hz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Trims the silence. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em samples} & The samples.\\
+\hline
+{\em min} & The minimum.\\
+\hline
+{\em channels} & The channels.\\
+\hline
+{\em hz} & The hz.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sav_wav_a6d37009ed30c2b81683d64caf0315d3f}\label{class_sav_wav_a6d37009ed30c2b81683d64caf0315d3f}} 
+\index{SavWav@{SavWav}!TrimSilence@{TrimSilence}}
+\index{TrimSilence@{TrimSilence}!SavWav@{SavWav}}
+\doxysubsubsection{\texorpdfstring{TrimSilence()}{TrimSilence()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily static Audio\+Clip Sav\+Wav.\+Trim\+Silence (\begin{DoxyParamCaption}\item[{List$<$ float $>$}]{samples,  }\item[{float}]{min,  }\item[{int}]{channels,  }\item[{int}]{hz,  }\item[{bool}]{\+\_\+3D,  }\item[{bool}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Trims the silence. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em samples} & The samples.\\
+\hline
+{\em min} & The minimum.\\
+\hline
+{\em channels} & The channels.\\
+\hline
+{\em hz} & The hz.\\
+\hline
+{\em \+\_\+3D} & if set to {\ttfamily true} \mbox{[}3 d\mbox{]}.\\
+\hline
+{\em stream} & if set to {\ttfamily true} \mbox{[}stream\mbox{]}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+X\+\_\+\+P\+I\+X\+E\+L\+S/pixelborne/\+Assets/\+Scripts/\+Recording/Sav\+Wav.\+cs\end{DoxyCompactItemize}

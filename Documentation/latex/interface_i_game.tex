@@ -1,0 +1,213 @@
+\hypertarget{interface_i_game}{}\doxysection{I\+Game Interface Reference}
+\label{interface_i_game}\index{IGame@{IGame}}
+
+
+Is implemented by \mbox{\hyperlink{class_singleplayer}{Singleplayer}} and \mbox{\hyperlink{class_multiplayer}{Multiplayer}} class and defines the common methods. It is important to note that the game-\/instances \mbox{\hyperlink{class_singleplayer}{Singleplayer}} and \mbox{\hyperlink{class_multiplayer}{Multiplayer}} work closely together with the camera. When a player dies it tells the active game that it dies. This initiates a fade out in the camera. When the camera finished the fade out it notifies the game and the game can take further actions e.\+g. changing the multiplayer stage and fading in again. Fading in has the same communication structure between the camera and the game.  
+
+
+Inheritance diagram for I\+Game\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_game}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{interface_i_game_a5d6a94df414215d8975ff57585094a8f}{Get\+Winner}} ()
+\begin{DoxyCompactList}\small\item\em Gets the winner. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_i_game_ad7ff9419ff8bf4928c353fa539efbea3}{Register\+Player}} (Game\+Object player)
+\begin{DoxyCompactList}\small\item\em Registers the player to the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_i_game_ada543846e6e92cc28743cac34e396696}{Unregister\+Player}} (Game\+Object player)
+\begin{DoxyCompactList}\small\item\em Unregisters the player from the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_i_game_a87bf62accbac78c2c4db4687ab4d925c}{Lock\+Player\+Input}} (bool is\+Locked)
+\begin{DoxyCompactList}\small\item\em Locks the player input. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_i_game_aaf0c6ab65264fc72c9af8e139233d6ba}{Handle\+Death}} (Game\+Object entity)
+\begin{DoxyCompactList}\small\item\em Handles the death of an entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_i_game_a8c5c2b5a65688ee46bdeed6fbf14118e}{Prepare\+Stage}} ()
+\begin{DoxyCompactList}\small\item\em Prepares the stage. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_i_game_a18a97d33fac8d440fdda9e8187a134b7}{Disable\+Entity\+Collision}} (Game\+Object calling\+Entity)
+\begin{DoxyCompactList}\small\item\em Disables the entity collision. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_i_game_ae24720d32d172ea4faf94a15d13defe3}{Enable\+Entity\+Collision}} (Game\+Object calling\+Entity)
+\begin{DoxyCompactList}\small\item\em Enables the entity collision. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_i_game_a4441af01510d24873bb8e3bc20522029}{Swap\+Hud\+Symbol}} (Game\+Object game\+Object, Sprite sprite)
+\begin{DoxyCompactList}\small\item\em Swaps the sprite symbol in the hud. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Is implemented by \mbox{\hyperlink{class_singleplayer}{Singleplayer}} and \mbox{\hyperlink{class_multiplayer}{Multiplayer}} class and defines the common methods. It is important to note that the game-\/instances \mbox{\hyperlink{class_singleplayer}{Singleplayer}} and \mbox{\hyperlink{class_multiplayer}{Multiplayer}} work closely together with the camera. When a player dies it tells the active game that it dies. This initiates a fade out in the camera. When the camera finished the fade out it notifies the game and the game can take further actions e.\+g. changing the multiplayer stage and fading in again. Fading in has the same communication structure between the camera and the game. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interface_i_game_a18a97d33fac8d440fdda9e8187a134b7}\label{interface_i_game_a18a97d33fac8d440fdda9e8187a134b7}} 
+\index{IGame@{IGame}!DisableEntityCollision@{DisableEntityCollision}}
+\index{DisableEntityCollision@{DisableEntityCollision}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{DisableEntityCollision()}{DisableEntityCollision()}}
+{\footnotesize\ttfamily void I\+Game.\+Disable\+Entity\+Collision (\begin{DoxyParamCaption}\item[{Game\+Object}]{calling\+Entity }\end{DoxyParamCaption})}
+
+
+
+Disables the entity collision. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em calling\+Entity} & The calling entity.\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_multiplayer_abc031df3e93b7dccfe7ca42b5091287e}{Multiplayer}}, and \mbox{\hyperlink{class_singleplayer_ae20057dd98e0de3217793ffe86c46ead}{Singleplayer}}.
+
+\mbox{\Hypertarget{interface_i_game_ae24720d32d172ea4faf94a15d13defe3}\label{interface_i_game_ae24720d32d172ea4faf94a15d13defe3}} 
+\index{IGame@{IGame}!EnableEntityCollision@{EnableEntityCollision}}
+\index{EnableEntityCollision@{EnableEntityCollision}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{EnableEntityCollision()}{EnableEntityCollision()}}
+{\footnotesize\ttfamily void I\+Game.\+Enable\+Entity\+Collision (\begin{DoxyParamCaption}\item[{Game\+Object}]{calling\+Entity }\end{DoxyParamCaption})}
+
+
+
+Enables the entity collision. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em calling\+Entity} & The calling entity.\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_multiplayer_a65d76d4444b23ffd4fe96888f7720db9}{Multiplayer}}, and \mbox{\hyperlink{class_singleplayer_afca70877165372aca69653aa10ed5b62}{Singleplayer}}.
+
+\mbox{\Hypertarget{interface_i_game_a5d6a94df414215d8975ff57585094a8f}\label{interface_i_game_a5d6a94df414215d8975ff57585094a8f}} 
+\index{IGame@{IGame}!GetWinner@{GetWinner}}
+\index{GetWinner@{GetWinner}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{GetWinner()}{GetWinner()}}
+{\footnotesize\ttfamily string I\+Game.\+Get\+Winner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the winner. 
+
+\begin{DoxyReturn}{Returns}
+The winner as a string.
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_multiplayer_ab20291506f621e15bb7462e8f49a47a9}{Multiplayer}}, and \mbox{\hyperlink{class_singleplayer_a1e0dc82944eedee917adc0f7b397518a}{Singleplayer}}.
+
+\mbox{\Hypertarget{interface_i_game_aaf0c6ab65264fc72c9af8e139233d6ba}\label{interface_i_game_aaf0c6ab65264fc72c9af8e139233d6ba}} 
+\index{IGame@{IGame}!HandleDeath@{HandleDeath}}
+\index{HandleDeath@{HandleDeath}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{HandleDeath()}{HandleDeath()}}
+{\footnotesize\ttfamily void I\+Game.\+Handle\+Death (\begin{DoxyParamCaption}\item[{Game\+Object}]{entity }\end{DoxyParamCaption})}
+
+
+
+Handles the death of an entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & The entity.\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_multiplayer_a69fd4c616648aab8b303751836ad48d6}{Multiplayer}}, and \mbox{\hyperlink{class_singleplayer_ac81bdc2a7d53ef00ab730bd4e673a5d8}{Singleplayer}}.
+
+\mbox{\Hypertarget{interface_i_game_a87bf62accbac78c2c4db4687ab4d925c}\label{interface_i_game_a87bf62accbac78c2c4db4687ab4d925c}} 
+\index{IGame@{IGame}!LockPlayerInput@{LockPlayerInput}}
+\index{LockPlayerInput@{LockPlayerInput}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{LockPlayerInput()}{LockPlayerInput()}}
+{\footnotesize\ttfamily void I\+Game.\+Lock\+Player\+Input (\begin{DoxyParamCaption}\item[{bool}]{is\+Locked }\end{DoxyParamCaption})}
+
+
+
+Locks the player input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+Locked} & if set to {\ttfamily true} \mbox{[}is locked\mbox{]}.\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_multiplayer_acce815fffa57ee153227c5b3793edfac}{Multiplayer}}, and \mbox{\hyperlink{class_singleplayer_a8a57184941aff0120973827d3cb7d357}{Singleplayer}}.
+
+\mbox{\Hypertarget{interface_i_game_a8c5c2b5a65688ee46bdeed6fbf14118e}\label{interface_i_game_a8c5c2b5a65688ee46bdeed6fbf14118e}} 
+\index{IGame@{IGame}!PrepareStage@{PrepareStage}}
+\index{PrepareStage@{PrepareStage}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{PrepareStage()}{PrepareStage()}}
+{\footnotesize\ttfamily void I\+Game.\+Prepare\+Stage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prepares the stage. 
+
+
+
+Implemented in \mbox{\hyperlink{class_multiplayer_aa429f7143bfc9578fd847444d546a8b8}{Multiplayer}}, and \mbox{\hyperlink{class_singleplayer_a66028aa4033565047d27353945b492cf}{Singleplayer}}.
+
+\mbox{\Hypertarget{interface_i_game_ad7ff9419ff8bf4928c353fa539efbea3}\label{interface_i_game_ad7ff9419ff8bf4928c353fa539efbea3}} 
+\index{IGame@{IGame}!RegisterPlayer@{RegisterPlayer}}
+\index{RegisterPlayer@{RegisterPlayer}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{RegisterPlayer()}{RegisterPlayer()}}
+{\footnotesize\ttfamily void I\+Game.\+Register\+Player (\begin{DoxyParamCaption}\item[{Game\+Object}]{player }\end{DoxyParamCaption})}
+
+
+
+Registers the player to the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & The player.\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_multiplayer_af9542723afc4d00974ec95eb88faab9b}{Multiplayer}}, and \mbox{\hyperlink{class_singleplayer_a65c30d83bd6c6ca5df706cf8cc8c40af}{Singleplayer}}.
+
+\mbox{\Hypertarget{interface_i_game_a4441af01510d24873bb8e3bc20522029}\label{interface_i_game_a4441af01510d24873bb8e3bc20522029}} 
+\index{IGame@{IGame}!SwapHudSymbol@{SwapHudSymbol}}
+\index{SwapHudSymbol@{SwapHudSymbol}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{SwapHudSymbol()}{SwapHudSymbol()}}
+{\footnotesize\ttfamily void I\+Game.\+Swap\+Hud\+Symbol (\begin{DoxyParamCaption}\item[{Game\+Object}]{game\+Object,  }\item[{Sprite}]{sprite }\end{DoxyParamCaption})}
+
+
+
+Swaps the sprite symbol in the hud. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Object} & The game object.\\
+\hline
+{\em sprite} & The sprite.\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_multiplayer_aa3407115468041922d6d09195b0c10f0}{Multiplayer}}, and \mbox{\hyperlink{class_singleplayer_a625d5e13fee381422f4a977efc3da6f6}{Singleplayer}}.
+
+\mbox{\Hypertarget{interface_i_game_ada543846e6e92cc28743cac34e396696}\label{interface_i_game_ada543846e6e92cc28743cac34e396696}} 
+\index{IGame@{IGame}!UnregisterPlayer@{UnregisterPlayer}}
+\index{UnregisterPlayer@{UnregisterPlayer}!IGame@{IGame}}
+\doxysubsubsection{\texorpdfstring{UnregisterPlayer()}{UnregisterPlayer()}}
+{\footnotesize\ttfamily void I\+Game.\+Unregister\+Player (\begin{DoxyParamCaption}\item[{Game\+Object}]{player }\end{DoxyParamCaption})}
+
+
+
+Unregisters the player from the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & The player.\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_multiplayer_a840bd3133b556fdd7596ef67114a96b3}{Multiplayer}}, and \mbox{\hyperlink{class_singleplayer_a368205cdb2b72a4ced2f27f422e46969}{Singleplayer}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+X\+\_\+\+P\+I\+X\+E\+L\+S/pixelborne/\+Assets/\+Scripts/\+Interface/I\+Game.\+cs\end{DoxyCompactItemize}

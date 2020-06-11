@@ -1,0 +1,370 @@
+\hypertarget{class_multiplayer}{}\doxysection{Multiplayer Class Reference}
+\label{class_multiplayer}\index{Multiplayer@{Multiplayer}}
+
+
+Contains the multiplayer game mode logic and implements the \mbox{\hyperlink{interface_i_game}{I\+Game}} interface for the multiplayer mode. It is a singleton.  
+
+
+Inheritance diagram for Multiplayer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_multiplayer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+async void \mbox{\hyperlink{class_multiplayer_a7809184f8a49e01c6c0d891250ce51b4}{Go}} ()
+\begin{DoxyCompactList}\small\item\em Starts the multiplayer. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_multiplayer_ab20291506f621e15bb7462e8f49a47a9}{Get\+Winner}} ()
+\begin{DoxyCompactList}\small\item\em Gets the winner. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_multiplayer_af9542723afc4d00974ec95eb88faab9b}{Register\+Player}} (Game\+Object player)
+\begin{DoxyCompactList}\small\item\em Registers the player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_multiplayer_a840bd3133b556fdd7596ef67114a96b3}{Unregister\+Player}} (Game\+Object player)
+\begin{DoxyCompactList}\small\item\em Unregisters the player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_multiplayer_acce815fffa57ee153227c5b3793edfac}{Lock\+Player\+Input}} (bool is\+Locked)
+\begin{DoxyCompactList}\small\item\em Locks the player input. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_multiplayer_a69fd4c616648aab8b303751836ad48d6}{Handle\+Death}} (Game\+Object player)
+\begin{DoxyCompactList}\small\item\em Handles the death of a player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_multiplayer_add98b75de377ab545a4dbd86f3d4f6e2}{Faded\+Out}} ()
+\begin{DoxyCompactList}\small\item\em Prepares the game after a camera fade out before fading in again. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_multiplayer_ac63886f9b94296571e4324b2a496687f}{Faded\+In}} ()
+\begin{DoxyCompactList}\small\item\em Prepares the game after a camera fade in finished. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_multiplayer_aa429f7143bfc9578fd847444d546a8b8}{Prepare\+Stage}} ()
+\begin{DoxyCompactList}\small\item\em Prepares the stage. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_multiplayer_a65d76d4444b23ffd4fe96888f7720db9}{Enable\+Entity\+Collision}} (Game\+Object calling\+Entity)
+\begin{DoxyCompactList}\small\item\em Enables the collision between the player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_multiplayer_abc031df3e93b7dccfe7ca42b5091287e}{Disable\+Entity\+Collision}} (Game\+Object calling\+Entity)
+\begin{DoxyCompactList}\small\item\em Disables the collision between the player and the calling entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_multiplayer_a87eb0e5ad9148e71852056d916f668d8}{Set\+Game\+To\+Stage}} (int stage\+Index)
+\begin{DoxyCompactList}\small\item\em Sets the game to stage. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_multiplayer_aa3407115468041922d6d09195b0c10f0}{Swap\+Hud\+Symbol}} (Game\+Object game\+Object, Sprite sprite)
+\begin{DoxyCompactList}\small\item\em Swaps the hud symbol. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_camera_multiplayer}{Camera\+Multiplayer}} \mbox{\hyperlink{class_multiplayer_a759e8ec73ee9ea422eae504940219e2e}{Camera}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the camera. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_multiplayer}{Multiplayer}}? \mbox{\hyperlink{class_multiplayer_a151f55860106ad624442f0fe6d4f0b1e}{Instance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the instance. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_multiplayer_a0f74164ca9c1039c9007742e8e10176a}{D\+E\+B\+U\+G\+\_\+current\+Stage\+Index}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Sets the index of the debug current stage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_multiplayer_a43bd824a079249525774fe56294a9eb9}{Multiplayer}} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \mbox{\hyperlink{class_multiplayer}{Multiplayer}} class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_multiplayer_ac8f9e4e50185a79e1075a349b3d93f3d}\label{class_multiplayer_ac8f9e4e50185a79e1075a349b3d93f3d}} 
+void {\bfseries Reset\+Game} ()
+\item 
+\mbox{\Hypertarget{class_multiplayer_abc094eccbdfa61ea8737d947c980eed0}\label{class_multiplayer_abc094eccbdfa61ea8737d947c980eed0}} 
+void {\bfseries Player\+Died} (Game\+Object player)
+\item 
+\mbox{\Hypertarget{class_multiplayer_a8e1e4e3cb96c22ad8e92ab08413fbba4}\label{class_multiplayer_a8e1e4e3cb96c22ad8e92ab08413fbba4}} 
+void {\bfseries Check\+Has\+Won\+Game} (Game\+Object player)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_multiplayer_aeb8d2012d836e2786b132dd55a5b43ee}\label{class_multiplayer_aeb8d2012d836e2786b132dd55a5b43ee}} 
+Game\+Object {\bfseries m\+\_\+dead\+Player}
+\item 
+\mbox{\Hypertarget{class_multiplayer_ac5682128c5b2a8ca34c99f917c8cf856}\label{class_multiplayer_ac5682128c5b2a8ca34c99f917c8cf856}} 
+Hash\+Set$<$ Game\+Object $>$ {\bfseries m\+\_\+entities\+That\+Requested\+Disable\+Entity\+Collision} = new Hash\+Set$<$Game\+Object$>$()
+\item 
+\mbox{\Hypertarget{class_multiplayer_af27ca360225ffa2c1eccf37286231507}\label{class_multiplayer_af27ca360225ffa2c1eccf37286231507}} 
+int {\bfseries m\+\_\+current\+Stage\+Index} = m\+\_\+\+S\+T\+A\+R\+T\+\_\+\+S\+T\+A\+G\+E\+\_\+\+I\+N\+D\+EX
+\item 
+\mbox{\Hypertarget{class_multiplayer_ac331c13544645230f1c7247803e736b4}\label{class_multiplayer_ac331c13544645230f1c7247803e736b4}} 
+int {\bfseries m\+\_\+winner\+Index}
+\item 
+\mbox{\Hypertarget{class_multiplayer_a9482cececcc14ae18555dab10472b07e}\label{class_multiplayer_a9482cececcc14ae18555dab10472b07e}} 
+List$<$ Game\+Object $>$ {\bfseries m\+\_\+players} = new List$<$Game\+Object$>$()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_multiplayer_a939e7da9bf36e45649bf7f88f175d7fa}\label{class_multiplayer_a939e7da9bf36e45649bf7f88f175d7fa}} 
+static \mbox{\hyperlink{class_multiplayer}{Multiplayer}} {\bfseries s\+\_\+instance}
+\item 
+\mbox{\Hypertarget{class_multiplayer_a95f0efac9717129a90301c71297541ec}\label{class_multiplayer_a95f0efac9717129a90301c71297541ec}} 
+const int {\bfseries m\+\_\+\+A\+M\+O\+U\+N\+T\+\_\+\+O\+F\+\_\+\+S\+T\+A\+G\+ES} = 5
+\item 
+\mbox{\Hypertarget{class_multiplayer_afd0d53eebddbd113ed9630fc14b0365c}\label{class_multiplayer_afd0d53eebddbd113ed9630fc14b0365c}} 
+const int {\bfseries m\+\_\+\+S\+T\+A\+R\+T\+\_\+\+S\+T\+A\+G\+E\+\_\+\+I\+N\+D\+EX} = m\+\_\+\+A\+M\+O\+U\+N\+T\+\_\+\+O\+F\+\_\+\+S\+T\+A\+G\+ES / 2
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains the multiplayer game mode logic and implements the \mbox{\hyperlink{interface_i_game}{I\+Game}} interface for the multiplayer mode. It is a singleton. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_multiplayer_a43bd824a079249525774fe56294a9eb9}\label{class_multiplayer_a43bd824a079249525774fe56294a9eb9}} 
+\index{Multiplayer@{Multiplayer}!Multiplayer@{Multiplayer}}
+\index{Multiplayer@{Multiplayer}!Multiplayer@{Multiplayer}}
+\doxysubsubsection{\texorpdfstring{Multiplayer()}{Multiplayer()}}
+{\footnotesize\ttfamily Multiplayer.\+Multiplayer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Initializes a new instance of the \mbox{\hyperlink{class_multiplayer}{Multiplayer}} class. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_multiplayer_abc031df3e93b7dccfe7ca42b5091287e}\label{class_multiplayer_abc031df3e93b7dccfe7ca42b5091287e}} 
+\index{Multiplayer@{Multiplayer}!DisableEntityCollision@{DisableEntityCollision}}
+\index{DisableEntityCollision@{DisableEntityCollision}!Multiplayer@{Multiplayer}}
+\doxysubsubsection{\texorpdfstring{DisableEntityCollision()}{DisableEntityCollision()}}
+{\footnotesize\ttfamily void Multiplayer.\+Disable\+Entity\+Collision (\begin{DoxyParamCaption}\item[{Game\+Object}]{calling\+Entity }\end{DoxyParamCaption})}
+
+
+
+Disables the collision between the player and the calling entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em calling\+Entity} & The calling entity.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_i_game_a18a97d33fac8d440fdda9e8187a134b7}{I\+Game}}.
+
+\mbox{\Hypertarget{class_multiplayer_a65d76d4444b23ffd4fe96888f7720db9}\label{class_multiplayer_a65d76d4444b23ffd4fe96888f7720db9}} 
+\index{Multiplayer@{Multiplayer}!EnableEntityCollision@{EnableEntityCollision}}
+\index{EnableEntityCollision@{EnableEntityCollision}!Multiplayer@{Multiplayer}}
+\doxysubsubsection{\texorpdfstring{EnableEntityCollision()}{EnableEntityCollision()}}
+{\footnotesize\ttfamily void Multiplayer.\+Enable\+Entity\+Collision (\begin{DoxyParamCaption}\item[{Game\+Object}]{calling\+Entity }\end{DoxyParamCaption})}
+
+
+
+Enables the collision between the player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em calling\+Entity} & The calling entity.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_i_game_ae24720d32d172ea4faf94a15d13defe3}{I\+Game}}.
+
+\mbox{\Hypertarget{class_multiplayer_ac63886f9b94296571e4324b2a496687f}\label{class_multiplayer_ac63886f9b94296571e4324b2a496687f}} 
+\index{Multiplayer@{Multiplayer}!FadedIn@{FadedIn}}
+\index{FadedIn@{FadedIn}!Multiplayer@{Multiplayer}}
+\doxysubsubsection{\texorpdfstring{FadedIn()}{FadedIn()}}
+{\footnotesize\ttfamily void Multiplayer.\+Faded\+In (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prepares the game after a camera fade in finished. 
+
+\mbox{\Hypertarget{class_multiplayer_add98b75de377ab545a4dbd86f3d4f6e2}\label{class_multiplayer_add98b75de377ab545a4dbd86f3d4f6e2}} 
+\index{Multiplayer@{Multiplayer}!FadedOut@{FadedOut}}
+\index{FadedOut@{FadedOut}!Multiplayer@{Multiplayer}}
+\doxysubsubsection{\texorpdfstring{FadedOut()}{FadedOut()}}
+{\footnotesize\ttfamily void Multiplayer.\+Faded\+Out (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prepares the game after a camera fade out before fading in again. 
+
+\mbox{\Hypertarget{class_multiplayer_ab20291506f621e15bb7462e8f49a47a9}\label{class_multiplayer_ab20291506f621e15bb7462e8f49a47a9}} 
+\index{Multiplayer@{Multiplayer}!GetWinner@{GetWinner}}
+\index{GetWinner@{GetWinner}!Multiplayer@{Multiplayer}}
+\doxysubsubsection{\texorpdfstring{GetWinner()}{GetWinner()}}
+{\footnotesize\ttfamily string Multiplayer.\+Get\+Winner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the winner. 
+
+\begin{DoxyReturn}{Returns}
+The winner identified by its index.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_game_a5d6a94df414215d8975ff57585094a8f}{I\+Game}}.
+
+\mbox{\Hypertarget{class_multiplayer_a7809184f8a49e01c6c0d891250ce51b4}\label{class_multiplayer_a7809184f8a49e01c6c0d891250ce51b4}} 
+\index{Multiplayer@{Multiplayer}!Go@{Go}}
+\index{Go@{Go}!Multiplayer@{Multiplayer}}
+\doxysubsubsection{\texorpdfstring{Go()}{Go()}}
+{\footnotesize\ttfamily async void Multiplayer.\+Go (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts the multiplayer. 
+
+\mbox{\Hypertarget{class_multiplayer_a69fd4c616648aab8b303751836ad48d6}\label{class_multiplayer_a69fd4c616648aab8b303751836ad48d6}} 
+\index{Multiplayer@{Multiplayer}!HandleDeath@{HandleDeath}}
+\index{HandleDeath@{HandleDeath}!Multiplayer@{Multiplayer}}
+\doxysubsubsection{\texorpdfstring{HandleDeath()}{HandleDeath()}}
+{\footnotesize\ttfamily void Multiplayer.\+Handle\+Death (\begin{DoxyParamCaption}\item[{Game\+Object}]{player }\end{DoxyParamCaption})}
+
+
+
+Handles the death of a player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & The player.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_i_game_aaf0c6ab65264fc72c9af8e139233d6ba}{I\+Game}}.
+
+\mbox{\Hypertarget{class_multiplayer_acce815fffa57ee153227c5b3793edfac}\label{class_multiplayer_acce815fffa57ee153227c5b3793edfac}} 
+\index{Multiplayer@{Multiplayer}!LockPlayerInput@{LockPlayerInput}}
+\index{LockPlayerInput@{LockPlayerInput}!Multiplayer@{Multiplayer}}
+\doxysubsubsection{\texorpdfstring{LockPlayerInput()}{LockPlayerInput()}}
+{\footnotesize\ttfamily void Multiplayer.\+Lock\+Player\+Input (\begin{DoxyParamCaption}\item[{bool}]{is\+Locked }\end{DoxyParamCaption})}
+
+
+
+Locks the player input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+Locked} & if set to {\ttfamily true} \mbox{[}is locked\mbox{]}.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_i_game_a87bf62accbac78c2c4db4687ab4d925c}{I\+Game}}.
+
+\mbox{\Hypertarget{class_multiplayer_aa429f7143bfc9578fd847444d546a8b8}\label{class_multiplayer_aa429f7143bfc9578fd847444d546a8b8}} 
+\index{Multiplayer@{Multiplayer}!PrepareStage@{PrepareStage}}
+\index{PrepareStage@{PrepareStage}!Multiplayer@{Multiplayer}}
+\doxysubsubsection{\texorpdfstring{PrepareStage()}{PrepareStage()}}
+{\footnotesize\ttfamily void Multiplayer.\+Prepare\+Stage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prepares the stage. 
+
+
+
+Implements \mbox{\hyperlink{interface_i_game_a8c5c2b5a65688ee46bdeed6fbf14118e}{I\+Game}}.
+
+\mbox{\Hypertarget{class_multiplayer_af9542723afc4d00974ec95eb88faab9b}\label{class_multiplayer_af9542723afc4d00974ec95eb88faab9b}} 
+\index{Multiplayer@{Multiplayer}!RegisterPlayer@{RegisterPlayer}}
+\index{RegisterPlayer@{RegisterPlayer}!Multiplayer@{Multiplayer}}
+\doxysubsubsection{\texorpdfstring{RegisterPlayer()}{RegisterPlayer()}}
+{\footnotesize\ttfamily void Multiplayer.\+Register\+Player (\begin{DoxyParamCaption}\item[{Game\+Object}]{player }\end{DoxyParamCaption})}
+
+
+
+Registers the player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & The player.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Error\+: Object "\{player.\+name\}" can not be registered. 2 players have already been assigned.\\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_i_game_ad7ff9419ff8bf4928c353fa539efbea3}{I\+Game}}.
+
+\mbox{\Hypertarget{class_multiplayer_a87eb0e5ad9148e71852056d916f668d8}\label{class_multiplayer_a87eb0e5ad9148e71852056d916f668d8}} 
+\index{Multiplayer@{Multiplayer}!SetGameToStage@{SetGameToStage}}
+\index{SetGameToStage@{SetGameToStage}!Multiplayer@{Multiplayer}}
+\doxysubsubsection{\texorpdfstring{SetGameToStage()}{SetGameToStage()}}
+{\footnotesize\ttfamily void Multiplayer.\+Set\+Game\+To\+Stage (\begin{DoxyParamCaption}\item[{int}]{stage\+Index }\end{DoxyParamCaption})}
+
+
+
+Sets the game to stage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stage\+Index} & Index of the stage.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_multiplayer_aa3407115468041922d6d09195b0c10f0}\label{class_multiplayer_aa3407115468041922d6d09195b0c10f0}} 
+\index{Multiplayer@{Multiplayer}!SwapHudSymbol@{SwapHudSymbol}}
+\index{SwapHudSymbol@{SwapHudSymbol}!Multiplayer@{Multiplayer}}
+\doxysubsubsection{\texorpdfstring{SwapHudSymbol()}{SwapHudSymbol()}}
+{\footnotesize\ttfamily void Multiplayer.\+Swap\+Hud\+Symbol (\begin{DoxyParamCaption}\item[{Game\+Object}]{game\+Object,  }\item[{Sprite}]{sprite }\end{DoxyParamCaption})}
+
+
+
+Swaps the hud symbol. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Object} & The game object.\\
+\hline
+{\em sprite} & The sprite.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_i_game_a4441af01510d24873bb8e3bc20522029}{I\+Game}}.
+
+\mbox{\Hypertarget{class_multiplayer_a840bd3133b556fdd7596ef67114a96b3}\label{class_multiplayer_a840bd3133b556fdd7596ef67114a96b3}} 
+\index{Multiplayer@{Multiplayer}!UnregisterPlayer@{UnregisterPlayer}}
+\index{UnregisterPlayer@{UnregisterPlayer}!Multiplayer@{Multiplayer}}
+\doxysubsubsection{\texorpdfstring{UnregisterPlayer()}{UnregisterPlayer()}}
+{\footnotesize\ttfamily void Multiplayer.\+Unregister\+Player (\begin{DoxyParamCaption}\item[{Game\+Object}]{player }\end{DoxyParamCaption})}
+
+
+
+Unregisters the player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & The player.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_i_game_ada543846e6e92cc28743cac34e396696}{I\+Game}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_multiplayer_a759e8ec73ee9ea422eae504940219e2e}\label{class_multiplayer_a759e8ec73ee9ea422eae504940219e2e}} 
+\index{Multiplayer@{Multiplayer}!Camera@{Camera}}
+\index{Camera@{Camera}!Multiplayer@{Multiplayer}}
+\doxysubsubsection{\texorpdfstring{Camera}{Camera}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_camera_multiplayer}{Camera\+Multiplayer}} Multiplayer.\+Camera\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the camera. 
+
+The camera.\mbox{\Hypertarget{class_multiplayer_a0f74164ca9c1039c9007742e8e10176a}\label{class_multiplayer_a0f74164ca9c1039c9007742e8e10176a}} 
+\index{Multiplayer@{Multiplayer}!DEBUG\_currentStageIndex@{DEBUG\_currentStageIndex}}
+\index{DEBUG\_currentStageIndex@{DEBUG\_currentStageIndex}!Multiplayer@{Multiplayer}}
+\doxysubsubsection{\texorpdfstring{DEBUG\_currentStageIndex}{DEBUG\_currentStageIndex}}
+{\footnotesize\ttfamily int Multiplayer.\+D\+E\+B\+U\+G\+\_\+current\+Stage\+Index\hspace{0.3cm}{\ttfamily [set]}}
+
+
+
+Sets the index of the debug current stage. 
+
+The index of the debug current stage.\mbox{\Hypertarget{class_multiplayer_a151f55860106ad624442f0fe6d4f0b1e}\label{class_multiplayer_a151f55860106ad624442f0fe6d4f0b1e}} 
+\index{Multiplayer@{Multiplayer}!Instance@{Instance}}
+\index{Instance@{Instance}!Multiplayer@{Multiplayer}}
+\doxysubsubsection{\texorpdfstring{Instance}{Instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_multiplayer}{Multiplayer}}? Multiplayer.\+Instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Gets the instance. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+X\+\_\+\+P\+I\+X\+E\+L\+S/pixelborne/\+Assets/\+Scripts/\+Game/Multiplayer.\+cs\end{DoxyCompactItemize}

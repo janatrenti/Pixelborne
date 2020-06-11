@@ -1,0 +1,488 @@
+\hypertarget{class_enemy_actions}{}\doxysection{Enemy\+Actions Class Reference}
+\label{class_enemy_actions}\index{EnemyActions@{EnemyActions}}
+
+
+Is attached to enemy game objects in order to simply let them execute actions that are defined in \mbox{\hyperlink{interface_i_enemy_actions}{I\+Enemy\+Actions}}. It takes care of the animations, physics and health. It is intended to be used with an \mbox{\hyperlink{class_action_pattern_executor}{Action\+Pattern\+Executor}} attached to the same game object. Though it can be used without it.  
+
+
+Inheritance diagram for Enemy\+Actions\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_enemy_actions}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_enemy_actions_ae613d5d72dd9f666eeef41c0c9edd1fa}{Attack\+Up}} ()
+\begin{DoxyCompactList}\small\item\em Starts an upper attack when possible from the current enemy state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_actions_a9f83fbadc51e8fa7ba372a5cb9541984}{Attack\+Middle}} ()
+\begin{DoxyCompactList}\small\item\em Starts a middle attack when possible from the current enemy state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_actions_a3ef97578e8213bab18c15df057d82f55}{Attack\+Down}} ()
+\begin{DoxyCompactList}\small\item\em Starts a down attack when possible from the current enemy state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_actions_acfd5f4d36768e4b0838d0cbc6bd2b526}{Jump}} ()
+\begin{DoxyCompactList}\small\item\em Starts a jump. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_actions_af92aba3f0987395b5822768d7b931ee3}{Start\+Follow\+Player}} ()
+\begin{DoxyCompactList}\small\item\em Starts following the player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_actions_abfbbf56fa75bd0ec975a54ad1b5fafc4}{Stop\+Follow\+Player}} ()
+\begin{DoxyCompactList}\small\item\em Stops following the player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_actions_af40636a7b820ca190fa049f8bc34ed16}{Start\+Auto\+Jumping}} ()
+\begin{DoxyCompactList}\small\item\em Starts automatic jumping. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_actions_ac153fe6f3c571a97304bdba5d7f4fd91}{Stop\+Auto\+Jumping}} ()
+\begin{DoxyCompactList}\small\item\em Stops automatic jumping. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_enemy_actions_a4176db793ae550137ddd6ac49501dcd8}{Get\+Attack\+Up\+Duration}} ()
+\begin{DoxyCompactList}\small\item\em Gets the duration of the attack up animation. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_enemy_actions_a84187183d2727f98622be6565f330bc2}{Get\+Attack\+Middle\+Duration}} ()
+\begin{DoxyCompactList}\small\item\em Gets the duration of the attack middle animation. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_enemy_actions_a6cba783f02fd8adf4ecf285c3ee8708a}{Get\+Attack\+Down\+Duration}} ()
+\begin{DoxyCompactList}\small\item\em Gets the duration of the attack down animation. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_enemy_actions_ad6a6e1537875b47e71e52694245f255f}{Is\+Player\+In\+Attack\+Range}} ()
+\begin{DoxyCompactList}\small\item\em Determines whether \mbox{[}is player in attack range\mbox{]}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_enemy_actions_afabaf931b10edfee0284b78cdf48313e}{Is\+Player\+In\+Sight\+Range}} ()
+\begin{DoxyCompactList}\small\item\em Determines whether \mbox{[}is player in sight range\mbox{]}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_enemy_actions_a99b9df14786bef7e7d582d8beac7025b}{Is\+Enemy\+On\+Ground}} ()
+\begin{DoxyCompactList}\small\item\em Determines whether \mbox{[}is enemy on ground\mbox{]}. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_enemy_actions_a200ce401033c766961da891477d50fe4}{Stop\+Attacking}} ()
+\begin{DoxyCompactList}\small\item\em Stops the attacking. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_actions_a262e5171271a5dd3bcae967341d0042c}{Stop\+Attacking\+Animation}} (int previous\+Attacking\+Direction)
+\begin{DoxyCompactList}\small\item\em Is called at the end of the attack animation and turns the attack off animation when no other attack is already registered. This is part of the attack chaining problem. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_enemy_actions_a3c20cc50c3adcb839954a8377bbe17de}{Awake}} ()
+\begin{DoxyCompactList}\small\item\em Awakes this instance and registers to enemy in the singleplayer instance. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_enemy_actions_a23f6cb42b17642a8e3926295bb66abe1}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Starts this instance. Initially flips the enemy if it is not facing right. It also ensures that the entity is currently not attacking and disables the weapon collider. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_enemy_actions_a16ec5e4e72a1f34877f769535edcc573}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Updates this instance every frame. It takes care of casing the player and automatic jumping. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_enemy_actions_af7529e5da029dbc72c45848a302a3d96}{Die}} ()
+\begin{DoxyCompactList}\small\item\em Initiates the entity dying animation and ensures that the enemy does nothing else. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_enemy_actions_af9fc9e00ad241efa99d275a3e7510336}{On\+Trigger\+Enter2D}} (Collider2D collider)
+\begin{DoxyCompactList}\small\item\em Called when a trigger-\/collider enters the collider of the enemy. It is used to determine if the enemy got hit by a weapon and if that weapon is allowed to deal damage e.\+g. the attack is not canceled. When no \mbox{\hyperlink{class_entity_health}{Entity\+Health}} is attached to the game object the entity counts as not defeatable. This is used for the princess. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_enemy_actions_acedbc9ea03286cdb1025d3b5dcfd9115}\label{class_enemy_actions_acedbc9ea03286cdb1025d3b5dcfd9115}} 
+Rigidbody2D {\bfseries m\+\_\+player\+Rigidbody2D}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static readonly string \mbox{\hyperlink{class_enemy_actions_a3e668c4cd90a67126c18e3fb4f8634b8}{D\+Y\+I\+N\+G\+\_\+\+A\+N\+I\+M\+A\+T\+O\+R\+\_\+\+P\+A\+R\+A\+M\+E\+T\+E\+R\+\_\+\+N\+A\+ME}} = \char`\"{}Is\+Dying\char`\"{}
+\begin{DoxyCompactList}\small\item\em The animator parameter name for the dying animation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_enemy_actions_ae4ae58ae6c130559db29d1db2f396123}\label{class_enemy_actions_ae4ae58ae6c130559db29d1db2f396123}} 
+static readonly string {\bfseries D\+E\+A\+D\+\_\+\+A\+N\+I\+M\+A\+T\+O\+R\+\_\+\+P\+A\+R\+A\+M\+E\+T\+E\+R\+\_\+\+N\+A\+ME} = \char`\"{}Is\+Dead\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_enemy_actions_a8526d7a1f5530e186b367d04221e8ee5}\label{class_enemy_actions_a8526d7a1f5530e186b367d04221e8ee5}} 
+void {\bfseries Update\+Movement\+And\+Auto\+Jumping} ()
+\item 
+\mbox{\Hypertarget{class_enemy_actions_a5a11405e3a4b39aba2710db88e32cd18}\label{class_enemy_actions_a5a11405e3a4b39aba2710db88e32cd18}} 
+void {\bfseries Start\+Attack\+If\+Possible} (int attack\+Direction\+Index)
+\item 
+\mbox{\Hypertarget{class_enemy_actions_a85f4938b592a77940f136cbb7071bf41}\label{class_enemy_actions_a85f4938b592a77940f136cbb7071bf41}} 
+void {\bfseries Destroy\+Self} ()
+\item 
+\mbox{\Hypertarget{class_enemy_actions_a20a241ecc4c886aa26416b9f342f41ba}\label{class_enemy_actions_a20a241ecc4c886aa26416b9f342f41ba}} 
+void {\bfseries On\+Destroy} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_enemy_actions_ad652ee68e9a8a607a14dbdbaf2e57f54}\label{class_enemy_actions_ad652ee68e9a8a607a14dbdbaf2e57f54}} 
+bool {\bfseries m\+\_\+is\+Friendly\+Fire\+Active} = false
+\item 
+\mbox{\Hypertarget{class_enemy_actions_a558fabb32a7a5524753b483e53784e8b}\label{class_enemy_actions_a558fabb32a7a5524753b483e53784e8b}} 
+bool {\bfseries m\+\_\+body\+Should\+Disappear} = true
+\item 
+\mbox{\Hypertarget{class_enemy_actions_a0a056cec6b8f554121e43068c9416b2f}\label{class_enemy_actions_a0a056cec6b8f554121e43068c9416b2f}} 
+float {\bfseries m\+\_\+attack\+Range} = 10.\+0f
+\item 
+\mbox{\Hypertarget{class_enemy_actions_ac87137b66d8b30fbfad5de13659f61fe}\label{class_enemy_actions_ac87137b66d8b30fbfad5de13659f61fe}} 
+float {\bfseries m\+\_\+min\+Player\+Distance} = 0.\+25f
+\item 
+\mbox{\Hypertarget{class_enemy_actions_a8ba261a43a21a53dc5ae5a5a7b9077df}\label{class_enemy_actions_a8ba261a43a21a53dc5ae5a5a7b9077df}} 
+float {\bfseries m\+\_\+sight\+Range} = 10.\+0f
+\item 
+\mbox{\Hypertarget{class_enemy_actions_a6919d138ddaabf18f5c6c902fa1e1ed1}\label{class_enemy_actions_a6919d138ddaabf18f5c6c902fa1e1ed1}} 
+bool {\bfseries m\+\_\+is\+Attack\+Chained} = false
+\item 
+\mbox{\Hypertarget{class_enemy_actions_a40a53406ad1961c1bf40ef5bbba602cb}\label{class_enemy_actions_a40a53406ad1961c1bf40ef5bbba602cb}} 
+bool {\bfseries m\+\_\+is\+Auto\+Jumping} = false
+\item 
+\mbox{\Hypertarget{class_enemy_actions_a1de91deb3dc2e6379b6fb27fc152eee7}\label{class_enemy_actions_a1de91deb3dc2e6379b6fb27fc152eee7}} 
+bool {\bfseries m\+\_\+is\+Following\+Player} = false
+\item 
+\mbox{\Hypertarget{class_enemy_actions_a26d1c97d8764f7f5755c5c18f98a189d}\label{class_enemy_actions_a26d1c97d8764f7f5755c5c18f98a189d}} 
+Stopwatch {\bfseries m\+\_\+stopwatch\+For\+Revive\+Position\+Timing} = new Stopwatch()
+\item 
+\mbox{\Hypertarget{class_enemy_actions_a136efa92a54d3e0cbeda72e9e4f811cc}\label{class_enemy_actions_a136efa92a54d3e0cbeda72e9e4f811cc}} 
+string {\bfseries m\+\_\+player\+Sword\+Name}
+\item 
+\mbox{\Hypertarget{class_enemy_actions_a748a338dc385d152926601b5fa25cdd2}\label{class_enemy_actions_a748a338dc385d152926601b5fa25cdd2}} 
+Vector2 {\bfseries m\+\_\+last\+Position} = new Vector2()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_enemy_actions_a45d1656cd1b5e87d4cf0e335e5edded3}\label{class_enemy_actions_a45d1656cd1b5e87d4cf0e335e5edded3}} 
+static readonly float {\bfseries I\+N\+T\+E\+R\+V\+A\+L\+\_\+\+F\+O\+R\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+C\+H\+E\+CK} = 200
+\item 
+\mbox{\Hypertarget{class_enemy_actions_ab057e62173ca92b918c18a7a2f6f61f7}\label{class_enemy_actions_ab057e62173ca92b918c18a7a2f6f61f7}} 
+static readonly float {\bfseries A\+U\+T\+O\+\_\+\+J\+U\+M\+P\+I\+N\+G\+\_\+\+A\+C\+T\+I\+V\+A\+T\+I\+O\+N\+\_\+\+D\+I\+S\+T\+A\+N\+CE} = 0.\+001f
+\item 
+\mbox{\Hypertarget{class_enemy_actions_a24737a345df4cf3e930d5f34d2b3a3f7}\label{class_enemy_actions_a24737a345df4cf3e930d5f34d2b3a3f7}} 
+static readonly string\mbox{[}$\,$\mbox{]} {\bfseries A\+T\+T\+A\+C\+K\+\_\+\+A\+N\+I\+M\+A\+T\+I\+O\+N\+\_\+\+N\+A\+M\+ES} = \{ \char`\"{}attack\+\_\+up\char`\"{}, \char`\"{}attack\+\_\+mid\char`\"{}, \char`\"{}attack\+\_\+down\char`\"{} \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Is attached to enemy game objects in order to simply let them execute actions that are defined in \mbox{\hyperlink{interface_i_enemy_actions}{I\+Enemy\+Actions}}. It takes care of the animations, physics and health. It is intended to be used with an \mbox{\hyperlink{class_action_pattern_executor}{Action\+Pattern\+Executor}} attached to the same game object. Though it can be used without it. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{m\_princessActions = gameobjectFind(\textcolor{stringliteral}{"princess"}).GetComponent<\mbox{\hyperlink{interface_i_enemy_actions}{IEnemyActions}}>();}
+\DoxyCodeLine{m\_princess.\mbox{\hyperlink{interface_i_enemy_actions_a511c29fefde9cd4bf586b4648428f547}{StartFollowPlayer}}();}
+\end{DoxyCode}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_enemy_actions_a3ef97578e8213bab18c15df057d82f55}\label{class_enemy_actions_a3ef97578e8213bab18c15df057d82f55}} 
+\index{EnemyActions@{EnemyActions}!AttackDown@{AttackDown}}
+\index{AttackDown@{AttackDown}!EnemyActions@{EnemyActions}}
+\doxysubsubsection{\texorpdfstring{AttackDown()}{AttackDown()}}
+{\footnotesize\ttfamily void Enemy\+Actions.\+Attack\+Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts a down attack when possible from the current enemy state. 
+
+
+
+Implements \mbox{\hyperlink{interface_i_enemy_actions_a813251cd67aa47fc7d1660884b02cb13}{I\+Enemy\+Actions}}.
+
+\mbox{\Hypertarget{class_enemy_actions_a9f83fbadc51e8fa7ba372a5cb9541984}\label{class_enemy_actions_a9f83fbadc51e8fa7ba372a5cb9541984}} 
+\index{EnemyActions@{EnemyActions}!AttackMiddle@{AttackMiddle}}
+\index{AttackMiddle@{AttackMiddle}!EnemyActions@{EnemyActions}}
+\doxysubsubsection{\texorpdfstring{AttackMiddle()}{AttackMiddle()}}
+{\footnotesize\ttfamily void Enemy\+Actions.\+Attack\+Middle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts a middle attack when possible from the current enemy state. 
+
+
+
+Implements \mbox{\hyperlink{interface_i_enemy_actions_ae9a2b75009fc96b70e00bae5235ec1c3}{I\+Enemy\+Actions}}.
+
+\mbox{\Hypertarget{class_enemy_actions_ae613d5d72dd9f666eeef41c0c9edd1fa}\label{class_enemy_actions_ae613d5d72dd9f666eeef41c0c9edd1fa}} 
+\index{EnemyActions@{EnemyActions}!AttackUp@{AttackUp}}
+\index{AttackUp@{AttackUp}!EnemyActions@{EnemyActions}}
+\doxysubsubsection{\texorpdfstring{AttackUp()}{AttackUp()}}
+{\footnotesize\ttfamily void Enemy\+Actions.\+Attack\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts an upper attack when possible from the current enemy state. 
+
+
+
+Implements \mbox{\hyperlink{interface_i_enemy_actions_aa3950a102870e8331f156874610d317a}{I\+Enemy\+Actions}}.
+
+\mbox{\Hypertarget{class_enemy_actions_a3c20cc50c3adcb839954a8377bbe17de}\label{class_enemy_actions_a3c20cc50c3adcb839954a8377bbe17de}} 
+\index{EnemyActions@{EnemyActions}!Awake@{Awake}}
+\index{Awake@{Awake}!EnemyActions@{EnemyActions}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily override void Enemy\+Actions.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Awakes this instance and registers to enemy in the singleplayer instance. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_entity_aa4cfcfa274641645c5357da93098d6f7}{Entity}}.
+
+\mbox{\Hypertarget{class_enemy_actions_af7529e5da029dbc72c45848a302a3d96}\label{class_enemy_actions_af7529e5da029dbc72c45848a302a3d96}} 
+\index{EnemyActions@{EnemyActions}!Die@{Die}}
+\index{Die@{Die}!EnemyActions@{EnemyActions}}
+\doxysubsubsection{\texorpdfstring{Die()}{Die()}}
+{\footnotesize\ttfamily override void Enemy\+Actions.\+Die (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Initiates the entity dying animation and ensures that the enemy does nothing else. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_entity_ab21979ed302e0bb64b7cc760bf16d789}{Entity}}.
+
+\mbox{\Hypertarget{class_enemy_actions_a6cba783f02fd8adf4ecf285c3ee8708a}\label{class_enemy_actions_a6cba783f02fd8adf4ecf285c3ee8708a}} 
+\index{EnemyActions@{EnemyActions}!GetAttackDownDuration@{GetAttackDownDuration}}
+\index{GetAttackDownDuration@{GetAttackDownDuration}!EnemyActions@{EnemyActions}}
+\doxysubsubsection{\texorpdfstring{GetAttackDownDuration()}{GetAttackDownDuration()}}
+{\footnotesize\ttfamily float Enemy\+Actions.\+Get\+Attack\+Down\+Duration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the duration of the attack down animation. 
+
+\begin{DoxyReturn}{Returns}
+The attack down animation length.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_enemy_actions_aee09408f1e20a948d6d8d24ab4355f2f}{I\+Enemy\+Actions}}.
+
+\mbox{\Hypertarget{class_enemy_actions_a84187183d2727f98622be6565f330bc2}\label{class_enemy_actions_a84187183d2727f98622be6565f330bc2}} 
+\index{EnemyActions@{EnemyActions}!GetAttackMiddleDuration@{GetAttackMiddleDuration}}
+\index{GetAttackMiddleDuration@{GetAttackMiddleDuration}!EnemyActions@{EnemyActions}}
+\doxysubsubsection{\texorpdfstring{GetAttackMiddleDuration()}{GetAttackMiddleDuration()}}
+{\footnotesize\ttfamily float Enemy\+Actions.\+Get\+Attack\+Middle\+Duration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the duration of the attack middle animation. 
+
+\begin{DoxyReturn}{Returns}
+The attack middle animation length.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_enemy_actions_a1e685bb7f467182edab4c802de0b16e1}{I\+Enemy\+Actions}}.
+
+\mbox{\Hypertarget{class_enemy_actions_a4176db793ae550137ddd6ac49501dcd8}\label{class_enemy_actions_a4176db793ae550137ddd6ac49501dcd8}} 
+\index{EnemyActions@{EnemyActions}!GetAttackUpDuration@{GetAttackUpDuration}}
+\index{GetAttackUpDuration@{GetAttackUpDuration}!EnemyActions@{EnemyActions}}
+\doxysubsubsection{\texorpdfstring{GetAttackUpDuration()}{GetAttackUpDuration()}}
+{\footnotesize\ttfamily float Enemy\+Actions.\+Get\+Attack\+Up\+Duration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the duration of the attack up animation. 
+
+\begin{DoxyReturn}{Returns}
+The attack up animation length.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_enemy_actions_a23c2804acda7f19d747590d9df736442}{I\+Enemy\+Actions}}.
+
+\mbox{\Hypertarget{class_enemy_actions_a99b9df14786bef7e7d582d8beac7025b}\label{class_enemy_actions_a99b9df14786bef7e7d582d8beac7025b}} 
+\index{EnemyActions@{EnemyActions}!IsEnemyOnGround@{IsEnemyOnGround}}
+\index{IsEnemyOnGround@{IsEnemyOnGround}!EnemyActions@{EnemyActions}}
+\doxysubsubsection{\texorpdfstring{IsEnemyOnGround()}{IsEnemyOnGround()}}
+{\footnotesize\ttfamily bool Enemy\+Actions.\+Is\+Enemy\+On\+Ground (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Determines whether \mbox{[}is enemy on ground\mbox{]}. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if \mbox{[}is enemy on ground\mbox{]}; otherwise, {\ttfamily false}.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_enemy_actions_a46534abad99a5d61f30000a368479a4b}{I\+Enemy\+Actions}}.
+
+\mbox{\Hypertarget{class_enemy_actions_ad6a6e1537875b47e71e52694245f255f}\label{class_enemy_actions_ad6a6e1537875b47e71e52694245f255f}} 
+\index{EnemyActions@{EnemyActions}!IsPlayerInAttackRange@{IsPlayerInAttackRange}}
+\index{IsPlayerInAttackRange@{IsPlayerInAttackRange}!EnemyActions@{EnemyActions}}
+\doxysubsubsection{\texorpdfstring{IsPlayerInAttackRange()}{IsPlayerInAttackRange()}}
+{\footnotesize\ttfamily bool Enemy\+Actions.\+Is\+Player\+In\+Attack\+Range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Determines whether \mbox{[}is player in attack range\mbox{]}. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if \mbox{[}is player in attack range\mbox{]}; otherwise, {\ttfamily false}.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_enemy_actions_af2bf15a1a70b68ca4f11fb541051176c}{I\+Enemy\+Actions}}.
+
+\mbox{\Hypertarget{class_enemy_actions_afabaf931b10edfee0284b78cdf48313e}\label{class_enemy_actions_afabaf931b10edfee0284b78cdf48313e}} 
+\index{EnemyActions@{EnemyActions}!IsPlayerInSightRange@{IsPlayerInSightRange}}
+\index{IsPlayerInSightRange@{IsPlayerInSightRange}!EnemyActions@{EnemyActions}}
+\doxysubsubsection{\texorpdfstring{IsPlayerInSightRange()}{IsPlayerInSightRange()}}
+{\footnotesize\ttfamily bool Enemy\+Actions.\+Is\+Player\+In\+Sight\+Range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Determines whether \mbox{[}is player in sight range\mbox{]}. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if \mbox{[}is player in sight range\mbox{]}; otherwise, {\ttfamily false}.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_enemy_actions_a57d6d3fb1d76fb36b86579fa27686294}{I\+Enemy\+Actions}}.
+
+\mbox{\Hypertarget{class_enemy_actions_acfd5f4d36768e4b0838d0cbc6bd2b526}\label{class_enemy_actions_acfd5f4d36768e4b0838d0cbc6bd2b526}} 
+\index{EnemyActions@{EnemyActions}!Jump@{Jump}}
+\index{Jump@{Jump}!EnemyActions@{EnemyActions}}
+\doxysubsubsection{\texorpdfstring{Jump()}{Jump()}}
+{\footnotesize\ttfamily void Enemy\+Actions.\+Jump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts a jump. 
+
+
+
+Implements \mbox{\hyperlink{interface_i_enemy_actions_a52d3c38305caee9a46236403d7fca948}{I\+Enemy\+Actions}}.
+
+\mbox{\Hypertarget{class_enemy_actions_af9fc9e00ad241efa99d275a3e7510336}\label{class_enemy_actions_af9fc9e00ad241efa99d275a3e7510336}} 
+\index{EnemyActions@{EnemyActions}!OnTriggerEnter2D@{OnTriggerEnter2D}}
+\index{OnTriggerEnter2D@{OnTriggerEnter2D}!EnemyActions@{EnemyActions}}
+\doxysubsubsection{\texorpdfstring{OnTriggerEnter2D()}{OnTriggerEnter2D()}}
+{\footnotesize\ttfamily override void Enemy\+Actions.\+On\+Trigger\+Enter2D (\begin{DoxyParamCaption}\item[{Collider2D}]{collider }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Called when a trigger-\/collider enters the collider of the enemy. It is used to determine if the enemy got hit by a weapon and if that weapon is allowed to deal damage e.\+g. the attack is not canceled. When no \mbox{\hyperlink{class_entity_health}{Entity\+Health}} is attached to the game object the entity counts as not defeatable. This is used for the princess. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collider} & The collider that entered the collider of the entity.\\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_entity_a9b54f077224a0dcfa19cb4eb1fc43fda}{Entity}}.
+
+\mbox{\Hypertarget{class_enemy_actions_a23f6cb42b17642a8e3926295bb66abe1}\label{class_enemy_actions_a23f6cb42b17642a8e3926295bb66abe1}} 
+\index{EnemyActions@{EnemyActions}!Start@{Start}}
+\index{Start@{Start}!EnemyActions@{EnemyActions}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily override void Enemy\+Actions.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Starts this instance. Initially flips the enemy if it is not facing right. It also ensures that the entity is currently not attacking and disables the weapon collider. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_entity_a38985eb127db7177b924f32615f44209}{Entity}}.
+
+\mbox{\Hypertarget{class_enemy_actions_af40636a7b820ca190fa049f8bc34ed16}\label{class_enemy_actions_af40636a7b820ca190fa049f8bc34ed16}} 
+\index{EnemyActions@{EnemyActions}!StartAutoJumping@{StartAutoJumping}}
+\index{StartAutoJumping@{StartAutoJumping}!EnemyActions@{EnemyActions}}
+\doxysubsubsection{\texorpdfstring{StartAutoJumping()}{StartAutoJumping()}}
+{\footnotesize\ttfamily void Enemy\+Actions.\+Start\+Auto\+Jumping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts automatic jumping. 
+
+
+
+Implements \mbox{\hyperlink{interface_i_enemy_actions_a09f7121173cce38f952be5f0f660c171}{I\+Enemy\+Actions}}.
+
+\mbox{\Hypertarget{class_enemy_actions_af92aba3f0987395b5822768d7b931ee3}\label{class_enemy_actions_af92aba3f0987395b5822768d7b931ee3}} 
+\index{EnemyActions@{EnemyActions}!StartFollowPlayer@{StartFollowPlayer}}
+\index{StartFollowPlayer@{StartFollowPlayer}!EnemyActions@{EnemyActions}}
+\doxysubsubsection{\texorpdfstring{StartFollowPlayer()}{StartFollowPlayer()}}
+{\footnotesize\ttfamily void Enemy\+Actions.\+Start\+Follow\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts following the player. 
+
+
+
+Implements \mbox{\hyperlink{interface_i_enemy_actions_a511c29fefde9cd4bf586b4648428f547}{I\+Enemy\+Actions}}.
+
+\mbox{\Hypertarget{class_enemy_actions_a200ce401033c766961da891477d50fe4}\label{class_enemy_actions_a200ce401033c766961da891477d50fe4}} 
+\index{EnemyActions@{EnemyActions}!StopAttacking@{StopAttacking}}
+\index{StopAttacking@{StopAttacking}!EnemyActions@{EnemyActions}}
+\doxysubsubsection{\texorpdfstring{StopAttacking()}{StopAttacking()}}
+{\footnotesize\ttfamily override void Enemy\+Actions.\+Stop\+Attacking (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Stops the attacking. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_entity_a4737c0fbc3f55e9e76a061316b18b055}{Entity}}.
+
+\mbox{\Hypertarget{class_enemy_actions_a262e5171271a5dd3bcae967341d0042c}\label{class_enemy_actions_a262e5171271a5dd3bcae967341d0042c}} 
+\index{EnemyActions@{EnemyActions}!StopAttackingAnimation@{StopAttackingAnimation}}
+\index{StopAttackingAnimation@{StopAttackingAnimation}!EnemyActions@{EnemyActions}}
+\doxysubsubsection{\texorpdfstring{StopAttackingAnimation()}{StopAttackingAnimation()}}
+{\footnotesize\ttfamily void Enemy\+Actions.\+Stop\+Attacking\+Animation (\begin{DoxyParamCaption}\item[{int}]{previous\+Attacking\+Direction }\end{DoxyParamCaption})}
+
+
+
+Is called at the end of the attack animation and turns the attack off animation when no other attack is already registered. This is part of the attack chaining problem. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em previous\+Attacking\+Direction} & The attacking direction from the attack animation that called this function.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_enemy_actions_ac153fe6f3c571a97304bdba5d7f4fd91}\label{class_enemy_actions_ac153fe6f3c571a97304bdba5d7f4fd91}} 
+\index{EnemyActions@{EnemyActions}!StopAutoJumping@{StopAutoJumping}}
+\index{StopAutoJumping@{StopAutoJumping}!EnemyActions@{EnemyActions}}
+\doxysubsubsection{\texorpdfstring{StopAutoJumping()}{StopAutoJumping()}}
+{\footnotesize\ttfamily void Enemy\+Actions.\+Stop\+Auto\+Jumping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Stops automatic jumping. 
+
+
+
+Implements \mbox{\hyperlink{interface_i_enemy_actions_a9782def22410fe697198ab0dcb0ece39}{I\+Enemy\+Actions}}.
+
+\mbox{\Hypertarget{class_enemy_actions_abfbbf56fa75bd0ec975a54ad1b5fafc4}\label{class_enemy_actions_abfbbf56fa75bd0ec975a54ad1b5fafc4}} 
+\index{EnemyActions@{EnemyActions}!StopFollowPlayer@{StopFollowPlayer}}
+\index{StopFollowPlayer@{StopFollowPlayer}!EnemyActions@{EnemyActions}}
+\doxysubsubsection{\texorpdfstring{StopFollowPlayer()}{StopFollowPlayer()}}
+{\footnotesize\ttfamily void Enemy\+Actions.\+Stop\+Follow\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Stops following the player. 
+
+
+
+Implements \mbox{\hyperlink{interface_i_enemy_actions_a90a60a00562a422f0dc3be75f222676c}{I\+Enemy\+Actions}}.
+
+\mbox{\Hypertarget{class_enemy_actions_a16ec5e4e72a1f34877f769535edcc573}\label{class_enemy_actions_a16ec5e4e72a1f34877f769535edcc573}} 
+\index{EnemyActions@{EnemyActions}!Update@{Update}}
+\index{Update@{Update}!EnemyActions@{EnemyActions}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily override void Enemy\+Actions.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Updates this instance every frame. It takes care of casing the player and automatic jumping. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_entity_a2813f460ee354c72290c81a83348ee4f}{Entity}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_enemy_actions_a3e668c4cd90a67126c18e3fb4f8634b8}\label{class_enemy_actions_a3e668c4cd90a67126c18e3fb4f8634b8}} 
+\index{EnemyActions@{EnemyActions}!DYING\_ANIMATOR\_PARAMETER\_NAME@{DYING\_ANIMATOR\_PARAMETER\_NAME}}
+\index{DYING\_ANIMATOR\_PARAMETER\_NAME@{DYING\_ANIMATOR\_PARAMETER\_NAME}!EnemyActions@{EnemyActions}}
+\doxysubsubsection{\texorpdfstring{DYING\_ANIMATOR\_PARAMETER\_NAME}{DYING\_ANIMATOR\_PARAMETER\_NAME}}
+{\footnotesize\ttfamily readonly string Enemy\+Actions.\+D\+Y\+I\+N\+G\+\_\+\+A\+N\+I\+M\+A\+T\+O\+R\+\_\+\+P\+A\+R\+A\+M\+E\+T\+E\+R\+\_\+\+N\+A\+ME = \char`\"{}Is\+Dying\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+The animator parameter name for the dying animation. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+X\+\_\+\+P\+I\+X\+E\+L\+S/pixelborne/\+Assets/\+Scripts/\+Enemies/Enemy\+Actions.\+cs\end{DoxyCompactItemize}

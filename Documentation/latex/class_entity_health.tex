@@ -1,0 +1,136 @@
+\hypertarget{class_entity_health}{}\doxysection{Entity\+Health Class Reference}
+\label{class_entity_health}\index{EntityHealth@{EntityHealth}}
+
+
+Manages the health of an entity.  
+
+
+Inheritance diagram for Entity\+Health\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_entity_health}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_entity_health_aa14f18436862908fde37369d8a3b3634}{Revive}} ()
+\begin{DoxyCompactList}\small\item\em Revives the entity by resetting its m\+\_\+current\+Health. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_entity_health_af3a72c827b1c0e43aed8c5d0548bd9d7}{Die}} ()
+\begin{DoxyCompactList}\small\item\em Ensures that the entity has 0 health. It is used to ensure that the health are zero when dying by a death zone. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_entity_health_a8b182d6de6d822109189530c86636909}{Take\+Damage}} (int damage)
+\begin{DoxyCompactList}\small\item\em Deals damage to the entity by reducing its m\+\_\+current\+Health. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_entity_health_a3303ff35c7ba182586a05d2039724729}{Invincible}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a value indicating whether this \mbox{\hyperlink{class_entity_health}{Entity\+Health}} is invincible. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_entity_health_a69da59124e9ea981040589455443731c}{Current\+Health}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the current health. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_entity_health_acd2893f34b66c229f3233815a0326258}{Is\+Zero}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a value indicating whether this instance has zero health. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_entity_health_acb35b1e790f2095d38ef6f7af9decca1}{Max\+Health}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the maximum health. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_entity_health_aa5a42e54d77ba46f93b57d8453751d4f}\label{class_entity_health_aa5a42e54d77ba46f93b57d8453751d4f}} 
+void {\bfseries Start} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_entity_health_ab32ba097a3d0ef82bc44ad0361a6eae0}\label{class_entity_health_ab32ba097a3d0ef82bc44ad0361a6eae0}} 
+int {\bfseries m\+\_\+max\+Health}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages the health of an entity. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_entity_health_af3a72c827b1c0e43aed8c5d0548bd9d7}\label{class_entity_health_af3a72c827b1c0e43aed8c5d0548bd9d7}} 
+\index{EntityHealth@{EntityHealth}!Die@{Die}}
+\index{Die@{Die}!EntityHealth@{EntityHealth}}
+\doxysubsubsection{\texorpdfstring{Die()}{Die()}}
+{\footnotesize\ttfamily void Entity\+Health.\+Die (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Ensures that the entity has 0 health. It is used to ensure that the health are zero when dying by a death zone. 
+
+\mbox{\Hypertarget{class_entity_health_aa14f18436862908fde37369d8a3b3634}\label{class_entity_health_aa14f18436862908fde37369d8a3b3634}} 
+\index{EntityHealth@{EntityHealth}!Revive@{Revive}}
+\index{Revive@{Revive}!EntityHealth@{EntityHealth}}
+\doxysubsubsection{\texorpdfstring{Revive()}{Revive()}}
+{\footnotesize\ttfamily void Entity\+Health.\+Revive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Revives the entity by resetting its m\+\_\+current\+Health. 
+
+\mbox{\Hypertarget{class_entity_health_a8b182d6de6d822109189530c86636909}\label{class_entity_health_a8b182d6de6d822109189530c86636909}} 
+\index{EntityHealth@{EntityHealth}!TakeDamage@{TakeDamage}}
+\index{TakeDamage@{TakeDamage}!EntityHealth@{EntityHealth}}
+\doxysubsubsection{\texorpdfstring{TakeDamage()}{TakeDamage()}}
+{\footnotesize\ttfamily void Entity\+Health.\+Take\+Damage (\begin{DoxyParamCaption}\item[{int}]{damage }\end{DoxyParamCaption})}
+
+
+
+Deals damage to the entity by reducing its m\+\_\+current\+Health. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em damage} & The damage that the entity should take.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_entity_health_a69da59124e9ea981040589455443731c}\label{class_entity_health_a69da59124e9ea981040589455443731c}} 
+\index{EntityHealth@{EntityHealth}!CurrentHealth@{CurrentHealth}}
+\index{CurrentHealth@{CurrentHealth}!EntityHealth@{EntityHealth}}
+\doxysubsubsection{\texorpdfstring{CurrentHealth}{CurrentHealth}}
+{\footnotesize\ttfamily int Entity\+Health.\+Current\+Health\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Gets the current health. 
+
+The current health.\mbox{\Hypertarget{class_entity_health_a3303ff35c7ba182586a05d2039724729}\label{class_entity_health_a3303ff35c7ba182586a05d2039724729}} 
+\index{EntityHealth@{EntityHealth}!Invincible@{Invincible}}
+\index{Invincible@{Invincible}!EntityHealth@{EntityHealth}}
+\doxysubsubsection{\texorpdfstring{Invincible}{Invincible}}
+{\footnotesize\ttfamily bool Entity\+Health.\+Invincible\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets a value indicating whether this \mbox{\hyperlink{class_entity_health}{Entity\+Health}} is invincible. 
+
+{\ttfamily true} if invincible; otherwise, {\ttfamily false}.\mbox{\Hypertarget{class_entity_health_acd2893f34b66c229f3233815a0326258}\label{class_entity_health_acd2893f34b66c229f3233815a0326258}} 
+\index{EntityHealth@{EntityHealth}!IsZero@{IsZero}}
+\index{IsZero@{IsZero}!EntityHealth@{EntityHealth}}
+\doxysubsubsection{\texorpdfstring{IsZero}{IsZero}}
+{\footnotesize\ttfamily bool Entity\+Health.\+Is\+Zero\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets a value indicating whether this instance has zero health. 
+
+{\ttfamily true} if this instance has zero health; otherwise, {\ttfamily false}.\mbox{\Hypertarget{class_entity_health_acb35b1e790f2095d38ef6f7af9decca1}\label{class_entity_health_acb35b1e790f2095d38ef6f7af9decca1}} 
+\index{EntityHealth@{EntityHealth}!MaxHealth@{MaxHealth}}
+\index{MaxHealth@{MaxHealth}!EntityHealth@{EntityHealth}}
+\doxysubsubsection{\texorpdfstring{MaxHealth}{MaxHealth}}
+{\footnotesize\ttfamily int Entity\+Health.\+Max\+Health\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Gets the maximum health. 
+
+The maximum health.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+X\+\_\+\+P\+I\+X\+E\+L\+S/pixelborne/\+Assets/\+Scripts/\+Entity/Entity\+Health.\+cs\end{DoxyCompactItemize}

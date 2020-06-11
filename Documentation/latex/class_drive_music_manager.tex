@@ -1,0 +1,122 @@
+\hypertarget{class_drive_music_manager}{}\doxysection{Drive\+Music\+Manager Class Reference}
+\label{class_drive_music_manager}\index{DriveMusicManager@{DriveMusicManager}}
+
+
+Searches for M\+P3-\/files in the user folder of the current user, assignes a random file to an Audio\+Source component in the scene and plays it.  
+
+
+Inheritance diagram for Drive\+Music\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_drive_music_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_drive_music_manager_a2c8515273c6960c993d3efd0dc10bad9}{Go}} ()
+\begin{DoxyCompactList}\small\item\em Starts the \mbox{\hyperlink{class_drive_music_manager}{Drive\+Music\+Manager}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_drive_music_manager}{Drive\+Music\+Manager}} \mbox{\hyperlink{class_drive_music_manager_a7ae1e5772c3f943e2ae680dbe6113097}{Instance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_drive_music_manager_a52ab31073567ced88fccedf9c53a6b20}\label{class_drive_music_manager_a52ab31073567ced88fccedf9c53a6b20}} 
+void {\bfseries Update} ()
+\item 
+\mbox{\Hypertarget{class_drive_music_manager_ad4a487033a91ba91b3ff4074925ba139}\label{class_drive_music_manager_ad4a487033a91ba91b3ff4074925ba139}} 
+async void {\bfseries Load\+All\+Paths} ()
+\item 
+\mbox{\Hypertarget{class_drive_music_manager_afef61f4fe517e6d4a3865185e4fb792a}\label{class_drive_music_manager_afef61f4fe517e6d4a3865185e4fb792a}} 
+I\+Enumerator {\bfseries Store\+Audio\+Data} ()
+\item 
+\mbox{\Hypertarget{class_drive_music_manager_a473d12000fc2e1cec5612340cd652de6}\label{class_drive_music_manager_a473d12000fc2e1cec5612340cd652de6}} 
+void {\bfseries Store\+Wav\+Audios} ()
+\item 
+\mbox{\Hypertarget{class_drive_music_manager_a0081841dec5de9d6be8aec4d64128e20}\label{class_drive_music_manager_a0081841dec5de9d6be8aec4d64128e20}} 
+I\+Enumerator {\bfseries Set\+New\+Audio\+Clip} ()
+\item 
+\mbox{\Hypertarget{class_drive_music_manager_a71ed44d38727563b0bc1c61bbd6d8a0c}\label{class_drive_music_manager_a71ed44d38727563b0bc1c61bbd6d8a0c}} 
+void {\bfseries On\+Application\+Quit} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_drive_music_manager_ae810e95e59f854ba292caa22686f1f93}\label{class_drive_music_manager_ae810e95e59f854ba292caa22686f1f93}} 
+Audio\+Source {\bfseries m\+\_\+audio\+Player}
+\item 
+\mbox{\Hypertarget{class_drive_music_manager_a38be6d3da45b1360983dbb9d6fb472c4}\label{class_drive_music_manager_a38be6d3da45b1360983dbb9d6fb472c4}} 
+List$<$ byte\mbox{[}$\,$\mbox{]}$>$ {\bfseries m\+\_\+audio\+Data\+Store} = new List$<$byte\mbox{[}$\,$\mbox{]}$>$()
+\item 
+\mbox{\Hypertarget{class_drive_music_manager_a0afa567c149d514df11719a6c81d64eb}\label{class_drive_music_manager_a0afa567c149d514df11719a6c81d64eb}} 
+List$<$ string $>$ {\bfseries m\+\_\+audio\+Paths} = new List$<$string$>$()
+\item 
+\mbox{\Hypertarget{class_drive_music_manager_aa0676b7d2a2aeff7eac31b7fd0d710c3}\label{class_drive_music_manager_aa0676b7d2a2aeff7eac31b7fd0d710c3}} 
+List$<$ \mbox{\hyperlink{class_w_a_v}{W\+AV}} $>$ {\bfseries m\+\_\+wav\+Store} = new List$<$\mbox{\hyperlink{class_w_a_v}{W\+AV}}$>$()
+\item 
+\mbox{\Hypertarget{class_drive_music_manager_a8959d3471323086646c5e25789959427}\label{class_drive_music_manager_a8959d3471323086646c5e25789959427}} 
+bool {\bfseries m\+\_\+is\+Converting\+To\+Wav} = false
+\item 
+\mbox{\Hypertarget{class_drive_music_manager_a1d70efe668788499c57a1e643dea1cf2}\label{class_drive_music_manager_a1d70efe668788499c57a1e643dea1cf2}} 
+bool {\bfseries m\+\_\+is\+Loading\+Paths} = true
+\item 
+\mbox{\Hypertarget{class_drive_music_manager_af971a1702551744727ad5fb041b065f3}\label{class_drive_music_manager_af971a1702551744727ad5fb041b065f3}} 
+bool {\bfseries m\+\_\+is\+Requesting\+Audios} = false
+\item 
+\mbox{\Hypertarget{class_drive_music_manager_ac5864ec4a028221e5dd46185aa5b439f}\label{class_drive_music_manager_ac5864ec4a028221e5dd46185aa5b439f}} 
+bool {\bfseries m\+\_\+is\+Setting\+Audio} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_drive_music_manager_a54fab408638f555cb557e36aada4523b}\label{class_drive_music_manager_a54fab408638f555cb557e36aada4523b}} 
+static \mbox{\hyperlink{class_drive_music_manager}{Drive\+Music\+Manager}} {\bfseries s\+\_\+instance} = null
+\item 
+\mbox{\Hypertarget{class_drive_music_manager_aa5b0d695885d942736503733726d04a8}\label{class_drive_music_manager_aa5b0d695885d942736503733726d04a8}} 
+const int {\bfseries m\+\_\+\+A\+M\+O\+U\+N\+T\+\_\+\+T\+O\+\_\+\+S\+T\+O\+RE} = 3
+\item 
+\mbox{\Hypertarget{class_drive_music_manager_ab7d189d2569681692aa42cbb01afca63}\label{class_drive_music_manager_ab7d189d2569681692aa42cbb01afca63}} 
+const float {\bfseries m\+\_\+\+A\+U\+D\+I\+O\+\_\+\+S\+O\+U\+R\+C\+E\+\_\+\+V\+O\+L\+U\+ME} = 0.\+5f
+\item 
+\mbox{\Hypertarget{class_drive_music_manager_ac6b92f9b398927729ce7696b01dc5143}\label{class_drive_music_manager_ac6b92f9b398927729ce7696b01dc5143}} 
+static readonly Cancellation\+Token\+Source {\bfseries C\+TS} = new Cancellation\+Token\+Source()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Searches for M\+P3-\/files in the user folder of the current user, assignes a random file to an Audio\+Source component in the scene and plays it. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_drive_music_manager_a2c8515273c6960c993d3efd0dc10bad9}\label{class_drive_music_manager_a2c8515273c6960c993d3efd0dc10bad9}} 
+\index{DriveMusicManager@{DriveMusicManager}!Go@{Go}}
+\index{Go@{Go}!DriveMusicManager@{DriveMusicManager}}
+\doxysubsubsection{\texorpdfstring{Go()}{Go()}}
+{\footnotesize\ttfamily void Drive\+Music\+Manager.\+Go (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts the \mbox{\hyperlink{class_drive_music_manager}{Drive\+Music\+Manager}}. 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_drive_music_manager_a7ae1e5772c3f943e2ae680dbe6113097}\label{class_drive_music_manager_a7ae1e5772c3f943e2ae680dbe6113097}} 
+\index{DriveMusicManager@{DriveMusicManager}!Instance@{Instance}}
+\index{Instance@{Instance}!DriveMusicManager@{DriveMusicManager}}
+\doxysubsubsection{\texorpdfstring{Instance}{Instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_drive_music_manager}{Drive\+Music\+Manager}} Drive\+Music\+Manager.\+Instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Gets the instance. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+X\+\_\+\+P\+I\+X\+E\+L\+S/pixelborne/\+Assets/\+Scripts/\+Audio/Drive\+Music\+Manager.\+cs\end{DoxyCompactItemize}

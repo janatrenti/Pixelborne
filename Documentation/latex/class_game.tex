@@ -1,0 +1,126 @@
+\hypertarget{class_game}{}\doxysection{Game Class Reference}
+\label{class_game}\index{Game@{Game}}
+
+
+Provides basic global game functionality and holds a reference to the currently running \mbox{\hyperlink{interface_i_game}{I\+Game}}. It has only static methods and attributes.  
+
+
+Inheritance diagram for Game\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game}
+\end{center}
+\end{figure}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_game_ad5127b4e731b29c6e977a80aca4b39cc}{Pause}} ()
+\begin{DoxyCompactList}\small\item\em Pauses the game. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_game_a180841425a0d11f51be8dfe56709054f}{Finish}} ()
+\begin{DoxyCompactList}\small\item\em Finishes the game and changes to the winning screen. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_game_a97d59c0ad184fbdb3f139ca31c7bf97d}{Freeze}} ()
+\begin{DoxyCompactList}\small\item\em Freezes the game. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_game_acc43baad715dd8db011057f21899ac37}{Unfreeze}} ()
+\begin{DoxyCompactList}\small\item\em Unfreezes the game. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_game_a94724302c3ed54e1b2b5b74027ebef1d}{Swap\+Hud\+Symbol}} (Game\+Object game\+Object, Sprite sprite)
+\begin{DoxyCompactList}\small\item\em Swaps the sprite symbol in the hud. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{interface_i_game}{I\+Game}} \mbox{\hyperlink{class_game_a40659f1e41dcc80e2011a12669338c99}{Current}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the currently active game instance. \end{DoxyCompactList}\item 
+static Game\+Mode \mbox{\hyperlink{class_game_a03b0dc219272966d1bc46825412f91e0}{Mode}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the game mode. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides basic global game functionality and holds a reference to the currently running \mbox{\hyperlink{interface_i_game}{I\+Game}}. It has only static methods and attributes. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_a180841425a0d11f51be8dfe56709054f}\label{class_game_a180841425a0d11f51be8dfe56709054f}} 
+\index{Game@{Game}!Finish@{Finish}}
+\index{Finish@{Finish}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Finish()}{Finish()}}
+{\footnotesize\ttfamily static void Game.\+Finish (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Finishes the game and changes to the winning screen. 
+
+\mbox{\Hypertarget{class_game_a97d59c0ad184fbdb3f139ca31c7bf97d}\label{class_game_a97d59c0ad184fbdb3f139ca31c7bf97d}} 
+\index{Game@{Game}!Freeze@{Freeze}}
+\index{Freeze@{Freeze}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Freeze()}{Freeze()}}
+{\footnotesize\ttfamily static void Game.\+Freeze (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Freezes the game. 
+
+\mbox{\Hypertarget{class_game_ad5127b4e731b29c6e977a80aca4b39cc}\label{class_game_ad5127b4e731b29c6e977a80aca4b39cc}} 
+\index{Game@{Game}!Pause@{Pause}}
+\index{Pause@{Pause}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Pause()}{Pause()}}
+{\footnotesize\ttfamily static void Game.\+Pause (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Pauses the game. 
+
+\mbox{\Hypertarget{class_game_a94724302c3ed54e1b2b5b74027ebef1d}\label{class_game_a94724302c3ed54e1b2b5b74027ebef1d}} 
+\index{Game@{Game}!SwapHudSymbol@{SwapHudSymbol}}
+\index{SwapHudSymbol@{SwapHudSymbol}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{SwapHudSymbol()}{SwapHudSymbol()}}
+{\footnotesize\ttfamily static void Game.\+Swap\+Hud\+Symbol (\begin{DoxyParamCaption}\item[{Game\+Object}]{game\+Object,  }\item[{Sprite}]{sprite }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Swaps the sprite symbol in the hud. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Object} & The game object.\\
+\hline
+{\em sprite} & The sprite.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_acc43baad715dd8db011057f21899ac37}\label{class_game_acc43baad715dd8db011057f21899ac37}} 
+\index{Game@{Game}!Unfreeze@{Unfreeze}}
+\index{Unfreeze@{Unfreeze}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Unfreeze()}{Unfreeze()}}
+{\footnotesize\ttfamily static void Game.\+Unfreeze (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Unfreezes the game. 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_game_a40659f1e41dcc80e2011a12669338c99}\label{class_game_a40659f1e41dcc80e2011a12669338c99}} 
+\index{Game@{Game}!Current@{Current}}
+\index{Current@{Current}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Current}{Current}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_i_game}{I\+Game}} Game.\+Current\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the currently active game instance. 
+
+The currently active game.\mbox{\Hypertarget{class_game_a03b0dc219272966d1bc46825412f91e0}\label{class_game_a03b0dc219272966d1bc46825412f91e0}} 
+\index{Game@{Game}!Mode@{Mode}}
+\index{Mode@{Mode}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Mode}{Mode}}
+{\footnotesize\ttfamily Game\+Mode Game.\+Mode\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the game mode. 
+
+The game mode.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+X\+\_\+\+P\+I\+X\+E\+L\+S/pixelborne/\+Assets/\+Scripts/\+Game/Game.\+cs\end{DoxyCompactItemize}

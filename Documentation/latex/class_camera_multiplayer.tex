@@ -1,0 +1,115 @@
+\hypertarget{class_camera_multiplayer}{}\doxysection{Camera\+Multiplayer Class Reference}
+\label{class_camera_multiplayer}\index{CameraMultiplayer@{CameraMultiplayer}}
+
+
+It controls the camera movement and fades to black of the multiplayer scene camera.  
+
+
+Inheritance diagram for Camera\+Multiplayer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_camera_multiplayer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_camera_multiplayer_a81ac5434065044bf5c02c977ea73f1fc}{Set\+Position}} (int index)
+\begin{DoxyCompactList}\small\item\em Moves the center of both the camera and the fade to black canvas object to the given position while retaining the z-\/position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_camera_multiplayer_a6acb6c65dabb69035cbfe0cff1b6131b}{Faded\+Out}} ()
+\begin{DoxyCompactList}\small\item\em Is called when the camera faded out and invokes the Faded\+Out-\/\+Methdod on the current \mbox{\hyperlink{class_multiplayer}{Multiplayer}} instance. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_camera_multiplayer_ab3d5009994dabdcc90ddeb964ddf4432}{Faded\+In}} ()
+\begin{DoxyCompactList}\small\item\em Is called when the camera faded in and invokes the Faded\+In-\/\+Methdod on the current \mbox{\hyperlink{class_multiplayer}{Multiplayer}} instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+I\+List$<$ Vector2 $>$ \mbox{\hyperlink{class_camera_multiplayer_a64a6c0038329381211ef04fc1e2b128d}{Positions}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the camera spawn positions from outer left to outer right stage as they are in the scene. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_camera_multiplayer_ac93885c6f4009ed89ebe78c93b13a02b}\label{class_camera_multiplayer_ac93885c6f4009ed89ebe78c93b13a02b}} 
+void {\bfseries Awake} ()
+\item 
+\mbox{\Hypertarget{class_camera_multiplayer_a566213027e295368b67b2e82023c4730}\label{class_camera_multiplayer_a566213027e295368b67b2e82023c4730}} 
+void {\bfseries Start} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_camera_multiplayer_a30498f0a68e3fae44315e08a922471b6}\label{class_camera_multiplayer_a30498f0a68e3fae44315e08a922471b6}} 
+Transform {\bfseries m\+\_\+camera\+Positions\+Transform}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+It controls the camera movement and fades to black of the multiplayer scene camera. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_camera_multiplayer_ab3d5009994dabdcc90ddeb964ddf4432}\label{class_camera_multiplayer_ab3d5009994dabdcc90ddeb964ddf4432}} 
+\index{CameraMultiplayer@{CameraMultiplayer}!FadedIn@{FadedIn}}
+\index{FadedIn@{FadedIn}!CameraMultiplayer@{CameraMultiplayer}}
+\doxysubsubsection{\texorpdfstring{FadedIn()}{FadedIn()}}
+{\footnotesize\ttfamily override void Camera\+Multiplayer.\+Faded\+In (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Is called when the camera faded in and invokes the Faded\+In-\/\+Methdod on the current \mbox{\hyperlink{class_multiplayer}{Multiplayer}} instance. 
+
+
+
+Implements \mbox{\hyperlink{class_game_camera_abbae085944df68d0a9fec35066c2daa2}{Game\+Camera}}.
+
+\mbox{\Hypertarget{class_camera_multiplayer_a6acb6c65dabb69035cbfe0cff1b6131b}\label{class_camera_multiplayer_a6acb6c65dabb69035cbfe0cff1b6131b}} 
+\index{CameraMultiplayer@{CameraMultiplayer}!FadedOut@{FadedOut}}
+\index{FadedOut@{FadedOut}!CameraMultiplayer@{CameraMultiplayer}}
+\doxysubsubsection{\texorpdfstring{FadedOut()}{FadedOut()}}
+{\footnotesize\ttfamily override void Camera\+Multiplayer.\+Faded\+Out (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Is called when the camera faded out and invokes the Faded\+Out-\/\+Methdod on the current \mbox{\hyperlink{class_multiplayer}{Multiplayer}} instance. 
+
+
+
+Implements \mbox{\hyperlink{class_game_camera_ac171feb57fe779fd10fa33a1b4b06b01}{Game\+Camera}}.
+
+\mbox{\Hypertarget{class_camera_multiplayer_a81ac5434065044bf5c02c977ea73f1fc}\label{class_camera_multiplayer_a81ac5434065044bf5c02c977ea73f1fc}} 
+\index{CameraMultiplayer@{CameraMultiplayer}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!CameraMultiplayer@{CameraMultiplayer}}
+\doxysubsubsection{\texorpdfstring{SetPosition()}{SetPosition()}}
+{\footnotesize\ttfamily void Camera\+Multiplayer.\+Set\+Position (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Moves the center of both the camera and the fade to black canvas object to the given position while retaining the z-\/position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index in the camera spawn positions list.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_camera_multiplayer_a64a6c0038329381211ef04fc1e2b128d}\label{class_camera_multiplayer_a64a6c0038329381211ef04fc1e2b128d}} 
+\index{CameraMultiplayer@{CameraMultiplayer}!Positions@{Positions}}
+\index{Positions@{Positions}!CameraMultiplayer@{CameraMultiplayer}}
+\doxysubsubsection{\texorpdfstring{Positions}{Positions}}
+{\footnotesize\ttfamily I\+List$<$Vector2$>$ Camera\+Multiplayer.\+Positions\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the camera spawn positions from outer left to outer right stage as they are in the scene. 
+
+The positions.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+X\+\_\+\+P\+I\+X\+E\+L\+S/pixelborne/\+Assets/\+Scripts/\+Camera/Camera\+Multiplayer.\+cs\end{DoxyCompactItemize}

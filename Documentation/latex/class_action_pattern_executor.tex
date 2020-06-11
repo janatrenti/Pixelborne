@@ -1,0 +1,145 @@
+\hypertarget{class_action_pattern_executor}{}\doxysection{Action\+Pattern\+Executor Class Reference}
+\label{class_action_pattern_executor}\index{ActionPatternExecutor@{ActionPatternExecutor}}
+
+
+Executes automatically actions on objects that have a proper implementation of the \mbox{\hyperlink{interface_i_enemy_actions}{I\+Enemy\+Actions}} interface. The entity that is executed by this class should have an attack and sight range.  
+
+
+Inheritance diagram for Action\+Pattern\+Executor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_action_pattern_executor}
+\end{center}
+\end{figure}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_action_pattern_executor_a53eb2bf1058a3915ee13730c7b510fd4}\label{class_action_pattern_executor_a53eb2bf1058a3915ee13730c7b510fd4}} 
+enum {\bfseries Entity\+Mode} \{ {\bfseries I\+N\+\_\+\+S\+I\+G\+H\+T\+\_\+\+R\+A\+N\+GE} = 0, 
+{\bfseries O\+U\+T\+\_\+\+O\+F\+\_\+\+S\+I\+G\+H\+T\+\_\+\+R\+A\+N\+GE} = 1, 
+{\bfseries I\+N\+\_\+\+A\+T\+T\+A\+C\+K\+\_\+\+R\+A\+N\+GE} = 2
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_action_pattern_executor_a402f09858d8b6ee9ed6123c012b2f0af}\label{class_action_pattern_executor_a402f09858d8b6ee9ed6123c012b2f0af}} 
+void {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{class_action_pattern_executor_a8b4b44ee66a7dad7b01c1396b999207d}\label{class_action_pattern_executor_a8b4b44ee66a7dad7b01c1396b999207d}} 
+Tuple$<$ int, float $>$\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} {\bfseries parse\+Attack\+Patterns} ()
+\item 
+\mbox{\Hypertarget{class_action_pattern_executor_abac343b7a27842f5e6f8fbef61abf59b}\label{class_action_pattern_executor_abac343b7a27842f5e6f8fbef61abf59b}} 
+void {\bfseries Reset\+Action\+Pattern} ()
+\item 
+\mbox{\Hypertarget{class_action_pattern_executor_a81b2729ce83e50fe1ee1e8e35903dbc8}\label{class_action_pattern_executor_a81b2729ce83e50fe1ee1e8e35903dbc8}} 
+void {\bfseries Update} ()
+\item 
+\mbox{\Hypertarget{class_action_pattern_executor_a39208201808db4e38423e7c8f60691f9}\label{class_action_pattern_executor_a39208201808db4e38423e7c8f60691f9}} 
+void {\bfseries Randomly\+Select\+Next\+Attack\+Pattern\+In\+Range} ()
+\item 
+\mbox{\Hypertarget{class_action_pattern_executor_aa2a6d9833caac3e03f67c7923cbb01fa}\label{class_action_pattern_executor_aa2a6d9833caac3e03f67c7923cbb01fa}} 
+Tuple$<$ int, float $>$\mbox{[}$\,$\mbox{]} {\bfseries Parse\+Attack\+Pattern} (string attack\+Pattern\+String)
+\item 
+\mbox{\Hypertarget{class_action_pattern_executor_a5d7229f27ea8b4427d46f5afff20be2b}\label{class_action_pattern_executor_a5d7229f27ea8b4427d46f5afff20be2b}} 
+void {\bfseries Prepare\+Attack\+Pattern\+Parsing\+Dict} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_action_pattern_executor_aa5c51f80506e493d25b857167835619b}\label{class_action_pattern_executor_aa5c51f80506e493d25b857167835619b}} 
+string\mbox{[}$\,$\mbox{]} {\bfseries m\+\_\+attack\+Pattern\+Strings\+While\+In\+Attack\+Range}
+\item 
+\mbox{\Hypertarget{class_action_pattern_executor_a10ebadc21b4acc0bb29a5fb938a9b3a3}\label{class_action_pattern_executor_a10ebadc21b4acc0bb29a5fb938a9b3a3}} 
+string {\bfseries m\+\_\+attack\+Pattern\+String\+While\+In\+Sight\+Range}
+\item 
+\mbox{\Hypertarget{class_action_pattern_executor_a4d6c92fae8fcf6511a3fd9f29ad8e150}\label{class_action_pattern_executor_a4d6c92fae8fcf6511a3fd9f29ad8e150}} 
+string {\bfseries m\+\_\+attack\+Pattern\+String\+While\+Out\+Of\+Sight}
+\item 
+\mbox{\Hypertarget{class_action_pattern_executor_aca3c0aa578fe6d85813bf09bf1bdf27d}\label{class_action_pattern_executor_aca3c0aa578fe6d85813bf09bf1bdf27d}} 
+\mbox{\hyperlink{interface_i_enemy_actions}{I\+Enemy\+Actions}} {\bfseries m\+\_\+entity\+Attack\+And\+Movement}
+\item 
+\mbox{\Hypertarget{class_action_pattern_executor_a5fab1bdbe694c77e688379593214f412}\label{class_action_pattern_executor_a5fab1bdbe694c77e688379593214f412}} 
+List$<$ Action $>$ {\bfseries m\+\_\+actions}
+\item 
+\mbox{\Hypertarget{class_action_pattern_executor_abfd27c45a4af72151e4129c63170365d}\label{class_action_pattern_executor_abfd27c45a4af72151e4129c63170365d}} 
+Random {\bfseries random} = new Random()
+\item 
+\mbox{\Hypertarget{class_action_pattern_executor_a00033e5c65e572a3c0de0d54116f84f3}\label{class_action_pattern_executor_a00033e5c65e572a3c0de0d54116f84f3}} 
+int {\bfseries m\+\_\+next\+Attack\+Pattern\+Index}
+\item 
+\mbox{\Hypertarget{class_action_pattern_executor_a9cb7ee39acec514ab59aee16535e8ff8}\label{class_action_pattern_executor_a9cb7ee39acec514ab59aee16535e8ff8}} 
+float {\bfseries m\+\_\+time\+To\+Wait\+Until\+Next\+Action}
+\item 
+\mbox{\Hypertarget{class_action_pattern_executor_a4c23cf9ce3d959917d1e962acf5faebe}\label{class_action_pattern_executor_a4c23cf9ce3d959917d1e962acf5faebe}} 
+bool {\bfseries m\+\_\+is\+Waiting\+On\+Being\+Grounded}
+\item 
+\mbox{\Hypertarget{class_action_pattern_executor_a0a7de7f1a7daa5aa05de7aa8b22774a9}\label{class_action_pattern_executor_a0a7de7f1a7daa5aa05de7aa8b22774a9}} 
+Tuple$<$ int, float $>$\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} {\bfseries m\+\_\+attack\+Patterns}
+\item 
+\mbox{\Hypertarget{class_action_pattern_executor_a8792dbecf0b72e4e9628d2fdcbd314ce}\label{class_action_pattern_executor_a8792dbecf0b72e4e9628d2fdcbd314ce}} 
+int {\bfseries m\+\_\+current\+Attack\+Pattern\+List\+Index}
+\item 
+\mbox{\Hypertarget{class_action_pattern_executor_a68aaa1996e0409080904f5e5e174e59e}\label{class_action_pattern_executor_a68aaa1996e0409080904f5e5e174e59e}} 
+Entity\+Mode {\bfseries m\+\_\+current\+Entity\+Mode} = Entity\+Mode.\+O\+U\+T\+\_\+\+O\+F\+\_\+\+S\+I\+G\+H\+T\+\_\+\+R\+A\+N\+GE
+\item 
+\mbox{\Hypertarget{class_action_pattern_executor_ae86a84a860c15a322c99ef76b528857e}\label{class_action_pattern_executor_ae86a84a860c15a322c99ef76b528857e}} 
+Dictionary$<$ string, Tuple$<$ int, float $>$ $>$ {\bfseries m\+\_\+attack\+Pattern\+String\+To\+Internal\+Identifications}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_action_pattern_executor_a1c772aad9f41bd06dd139db5a8686142}\label{class_action_pattern_executor_a1c772aad9f41bd06dd139db5a8686142}} 
+static readonly string {\bfseries A\+T\+T\+A\+C\+K\+\_\+\+U\+P\+\_\+\+I\+D\+E\+N\+T\+I\+F\+I\+C\+A\+T\+I\+ON} = \char`\"{}AU\char`\"{}
+\item 
+\mbox{\Hypertarget{class_action_pattern_executor_ac251169d3a76b7c8df690eb198606cdc}\label{class_action_pattern_executor_ac251169d3a76b7c8df690eb198606cdc}} 
+static readonly string {\bfseries A\+T\+T\+A\+C\+K\+\_\+\+M\+I\+D\+\_\+\+I\+D\+E\+N\+T\+I\+F\+I\+C\+A\+T\+I\+ON} = \char`\"{}AM\char`\"{}
+\item 
+\mbox{\Hypertarget{class_action_pattern_executor_a497ce95040faeeec0bd015c97bf62a21}\label{class_action_pattern_executor_a497ce95040faeeec0bd015c97bf62a21}} 
+static readonly string {\bfseries A\+T\+T\+A\+C\+K\+\_\+\+D\+O\+W\+N\+\_\+\+I\+D\+E\+N\+T\+I\+F\+I\+C\+A\+T\+I\+ON} = \char`\"{}AD\char`\"{}
+\item 
+\mbox{\Hypertarget{class_action_pattern_executor_a9f3a95e33138e31bf7e49fdf4061a6e3}\label{class_action_pattern_executor_a9f3a95e33138e31bf7e49fdf4061a6e3}} 
+static readonly string {\bfseries J\+U\+M\+P\+\_\+\+I\+D\+E\+N\+T\+I\+F\+I\+C\+A\+T\+I\+ON} = \char`\"{}J\+U\+MP\char`\"{}
+\item 
+\mbox{\Hypertarget{class_action_pattern_executor_adbc42a0c67d048e2266afa8e262328f8}\label{class_action_pattern_executor_adbc42a0c67d048e2266afa8e262328f8}} 
+static readonly string {\bfseries S\+T\+A\+R\+T\+\_\+\+F\+O\+L\+L\+O\+W\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+I\+D\+E\+N\+T\+I\+F\+I\+C\+A\+T\+I\+ON} = \char`\"{}S\+T\+A\+R\+TF\char`\"{}
+\item 
+\mbox{\Hypertarget{class_action_pattern_executor_a7280bd3f86577f465fc930202d89f700}\label{class_action_pattern_executor_a7280bd3f86577f465fc930202d89f700}} 
+static readonly string {\bfseries S\+T\+O\+P\+\_\+\+F\+O\+L\+L\+O\+W\+\_\+\+P\+L\+A\+Y\+E\+R\+\_\+\+I\+D\+E\+N\+T\+I\+F\+I\+C\+A\+T\+I\+ON} = \char`\"{}S\+T\+O\+PF\char`\"{}
+\item 
+\mbox{\Hypertarget{class_action_pattern_executor_ad22a30fd152f78afbec8055ac410dbfc}\label{class_action_pattern_executor_ad22a30fd152f78afbec8055ac410dbfc}} 
+static readonly string {\bfseries S\+T\+A\+R\+T\+\_\+\+A\+U\+T\+O\+\_\+\+J\+U\+M\+P\+I\+N\+G\+\_\+\+I\+D\+E\+N\+T\+I\+F\+I\+C\+A\+T\+I\+ON} = \char`\"{}S\+T\+A\+R\+T\+A\+U\+T\+O\+J\+U\+MP\char`\"{}
+\item 
+\mbox{\Hypertarget{class_action_pattern_executor_ab6a310b8c1fff618dfb5a5429006a7f9}\label{class_action_pattern_executor_ab6a310b8c1fff618dfb5a5429006a7f9}} 
+static readonly string {\bfseries S\+T\+O\+P\+\_\+\+A\+U\+T\+O\+\_\+\+J\+U\+M\+P\+I\+N\+G\+\_\+\+I\+D\+E\+N\+T\+I\+F\+I\+C\+A\+T\+I\+ON} = \char`\"{}S\+T\+O\+P\+A\+U\+T\+O\+J\+U\+MP\char`\"{}
+\item 
+\mbox{\Hypertarget{class_action_pattern_executor_a07f377b9ec94f46abea531e671a35e0c}\label{class_action_pattern_executor_a07f377b9ec94f46abea531e671a35e0c}} 
+static readonly string {\bfseries S\+E\+P\+E\+R\+A\+T\+I\+O\+N\+\_\+\+I\+D\+E\+N\+T\+I\+F\+I\+C\+A\+T\+I\+ON} = \char`\"{}$\vert$\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Executes automatically actions on objects that have a proper implementation of the \mbox{\hyperlink{interface_i_enemy_actions}{I\+Enemy\+Actions}} interface. The entity that is executed by this class should have an attack and sight range. 
+
+The actions are divided into 3 pattern. The first pattern is the m\+\_\+attack\+Pattern\+String\+While\+Out\+Of\+Sight. It is executed if not Is\+Player\+In\+Sight\+Range(). The second pattern is the m\+\_\+attack\+Pattern\+String\+While\+In\+Sight\+Range. It is executed if Is\+Player\+Ino\+Attack\+Range() and not Is\+Player\+In\+S\+Attack\+Range. The last pattern is the m\+\_\+attack\+Pattern\+String\+While\+In\+Attack\+Range. It is executed if Is\+Player\+In\+Attack\+Range(). This pattern is actually a list of individual patterns. After one individual pattern has finished the next one is chosen randomly.
+
+Each pattern is provided as a string with the grammar below. It basically contains a series of actions that are looped infinitely. The identifications of these actions can be found below. After each action a waiting time can be specified. If no waiting time is specified, the duration of that action is taken as the waiting time.
+
+When the attack pattern changes the currently executed action is finished and then the new attack pattern starts from the beginning.
+
+The attack pattern need to be set in the unity editor.
+
+{\ttfamily  A\+T\+T\+A\+CK P\+A\+T\+T\+E\+RN G\+R\+A\+M\+M\+AR\+: A\+T\+T\+A\+C\+K\+\_\+\+P\+A\+T\+T\+E\+RN = A\+T\+T\+A\+C\+K\+\_\+\+T\+O\+K\+EN A\+T\+T\+A\+C\+K\+\_\+\+P\+A\+T\+T\+E\+R\+N\+\_\+1 or epsilon A\+T\+T\+A\+C\+K\+\_\+\+P\+A\+T\+T\+E\+R\+N\+\_\+1 = $\vert$\+A\+T\+T\+A\+C\+K\+\_\+\+T\+O\+K\+EN or epsilon A\+T\+T\+A\+C\+K\+\_\+\+T\+O\+K\+EN = A\+T\+T\+A\+C\+K\+\_\+\+I\+N\+S\+T\+R\+U\+C\+T\+I\+ON or A\+T\+T\+A\+C\+K\+\_\+\+I\+N\+S\+T\+R\+U\+C\+T\+I\+O\+N$\vert$\+T\+I\+M\+E\+O\+UT T\+I\+M\+E\+O\+UT = float A\+T\+T\+A\+C\+K\+\_\+\+I\+N\+S\+T\+R\+U\+C\+T\+I\+ON = one of the constant strings below }
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Example assignment of the attack pattern in the unity editor.}
+\DoxyCodeLine{m\_attackPatternStringWhileOutOfSight = \textcolor{stringliteral}{"STOPF"};}
+\DoxyCodeLine{m\_attackPatternStringWhileInSightRange = \textcolor{stringliteral}{"STARTF"};}
+\DoxyCodeLine{m\_attackPatternStringWhileInAttackRange = [\textcolor{stringliteral}{"AU|AM|AD|2"}, \textcolor{stringliteral}{"AD|JUMP|0.5|AD|3|AU"}];}
+\end{DoxyCode}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+X\+\_\+\+P\+I\+X\+E\+L\+S/pixelborne/\+Assets/\+Scripts/\+Enemies/Action\+Pattern\+Executor.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,87 @@
+\hypertarget{class_dialogue_stage1}{}\doxysection{Dialogue\+Stage1 Class Reference}
+\label{class_dialogue_stage1}\index{DialogueStage1@{DialogueStage1}}
+
+
+Manages the displaying of the dialog in stage 1 of the singleplayer mode.  
+
+
+Inheritance diagram for Dialogue\+Stage1\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_dialogue_stage1}
+\end{center}
+\end{figure}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dialogue_stage1_a1a660ebc78d67ca2d3d6b6bbefa389cb}\label{class_dialogue_stage1_a1a660ebc78d67ca2d3d6b6bbefa389cb}} 
+override void {\bfseries Start} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+override string\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} {\bfseries Dialogue\+Holder}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dialogue_stage1_ac2cc5486d7a8d8fb88644dea8f9392bc}\label{class_dialogue_stage1_ac2cc5486d7a8d8fb88644dea8f9392bc}} 
+enum {\bfseries Mode} \{ {\bfseries Displaying}, 
+{\bfseries Waiting\+For\+Trigger}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dialogue_stage1_ae257321565a2efeca082f9fc4f8fa82d}\label{class_dialogue_stage1_ae257321565a2efeca082f9fc4f8fa82d}} 
+void {\bfseries Update} ()
+\item 
+\mbox{\Hypertarget{class_dialogue_stage1_aacb4ddacba2f237d314476501a4348f6}\label{class_dialogue_stage1_aacb4ddacba2f237d314476501a4348f6}} 
+bool {\bfseries Are\+First\+Enemies\+Killed} ()
+\item 
+\mbox{\Hypertarget{class_dialogue_stage1_a7828574bd022461a8998956c6323c249}\label{class_dialogue_stage1_a7828574bd022461a8998956c6323c249}} 
+void {\bfseries Change\+Part} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dialogue_stage1_af9e77dc1c7d3938631686be0f362203c}\label{class_dialogue_stage1_af9e77dc1c7d3938631686be0f362203c}} 
+Mode {\bfseries m\+\_\+mode} = Mode.\+Waiting\+For\+Trigger
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Manages the displaying of the dialog in stage 1 of the singleplayer mode. 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_dialogue_stage1_a0e0f2e471bcab57dc004c2be0f8555e5}\label{class_dialogue_stage1_a0e0f2e471bcab57dc004c2be0f8555e5}} 
+\index{DialogueStage1@{DialogueStage1}!DialogueHolder@{DialogueHolder}}
+\index{DialogueHolder@{DialogueHolder}!DialogueStage1@{DialogueStage1}}
+\doxysubsubsection{\texorpdfstring{DialogueHolder}{DialogueHolder}}
+{\footnotesize\ttfamily override string \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} Dialogue\+Stage1.\+Dialogue\+Holder\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keyword}{new} \textcolor{keywordtype}{string}[] \{ \$\textcolor{stringliteral}{"Knight \{DEFAULT\_KNIGHT\}! To me!"} \},}
+\DoxyCodeLine{        \textcolor{keyword}{new} \textcolor{keywordtype}{string}[] \{}
+\DoxyCodeLine{            \textcolor{stringliteral}{"It's terrible!"},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"The demons have found the shards of Dark Crystal in our dungeons."},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"They have stolen them...\(\backslash\)nAnd they took my daughter, the princess!"},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"I fear they plan to use her blood and the stones to summon their Dark King!"},}
+\DoxyCodeLine{            \$\textcolor{stringliteral}{"Knight \{DEFAULT\_KNIGHT\}!"},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Find them! Find my daughter and the stones or we are all doomed!"},}
+\DoxyCodeLine{            \$\textcolor{stringliteral}{"Knight \{DEFAULT\_KNIGHT\}! You must hurry!"}}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+X\+\_\+\+P\+I\+X\+E\+L\+S/pixelborne/\+Assets/\+Scripts/\+Story/Dialogue\+Stage1.\+cs\end{DoxyCompactItemize}

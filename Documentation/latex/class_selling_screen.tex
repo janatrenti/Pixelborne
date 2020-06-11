@@ -1,0 +1,143 @@
+\hypertarget{class_selling_screen}{}\doxysection{Selling\+Screen Class Reference}
+\label{class_selling_screen}\index{SellingScreen@{SellingScreen}}
+
+
+Pauses the game if the player died and offers the user different options for continue.  
+
+
+Inheritance diagram for Selling\+Screen\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_selling_screen}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_selling_screen_a7d3a52f2a128e5ea7b9d2aae4919d2f4}{Sell\+File}} ()
+\begin{DoxyCompactList}\small\item\em Resumes the gameplay and logs the sold file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_selling_screen_a3751eba0c53924713a157e00dcb34c60}{Pay\+Price}} ()
+\begin{DoxyCompactList}\small\item\em Resumes the gameplay and logs the payed price. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_selling_screen_a889fd09b462a77963f7eb7faf593c1e0}{Reject\+All}} ()
+\begin{DoxyCompactList}\small\item\em Reloads the current scene if all options were rejected. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static async void \mbox{\hyperlink{class_selling_screen_af4d114de818fd82d8102e0d99ee775bb}{Get\+Important\+Files}} ()
+\begin{DoxyCompactList}\small\item\em Gets the important files. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_selling_screen_a53eaa471a0204b994d051f5da1a958e0}\label{class_selling_screen_a53eaa471a0204b994d051f5da1a958e0}} 
+void {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{class_selling_screen_a3443bed6c391756a7bbd43edcfe73c48}\label{class_selling_screen_a3443bed6c391756a7bbd43edcfe73c48}} 
+void {\bfseries Unfreeze\+Game} ()
+\item 
+\mbox{\Hypertarget{class_selling_screen_a12e984ffc30173fac23f38b067989249}\label{class_selling_screen_a12e984ffc30173fac23f38b067989249}} 
+void {\bfseries On\+Application\+Quit} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_selling_screen_a3430bbe43a53cf8467663007dd6acfce}\label{class_selling_screen_a3430bbe43a53cf8467663007dd6acfce}} 
+static void {\bfseries prioritize\+Important\+Files} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_selling_screen_a4b80d482f19b1412037b3459202e8c74}\label{class_selling_screen_a4b80d482f19b1412037b3459202e8c74}} 
+Button {\bfseries m\+\_\+sell\+File\+Button}
+\item 
+\mbox{\Hypertarget{class_selling_screen_ad324458fbb1903a5da8629098cd45fda}\label{class_selling_screen_ad324458fbb1903a5da8629098cd45fda}} 
+Text\+Mesh\+Pro\+U\+G\+UI {\bfseries m\+\_\+file\+Text\+Mesh}
+\item 
+\mbox{\Hypertarget{class_selling_screen_a03a5814ffe65328558ba3a5d8828db9e}\label{class_selling_screen_a03a5814ffe65328558ba3a5d8828db9e}} 
+Text\+Mesh\+Pro\+U\+G\+UI {\bfseries m\+\_\+price\+Text\+Mesh}
+\item 
+\mbox{\Hypertarget{class_selling_screen_a477dcb7e20a849bfcfd64bfab3c3d7cb}\label{class_selling_screen_a477dcb7e20a849bfcfd64bfab3c3d7cb}} 
+string {\bfseries m\+\_\+file\+To\+Sell} = \char`\"{}no file found\char`\"{}
+\item 
+\mbox{\Hypertarget{class_selling_screen_a7204b2d55659f8f388e7c076063e27b8}\label{class_selling_screen_a7204b2d55659f8f388e7c076063e27b8}} 
+string {\bfseries m\+\_\+price\+To\+Pay} = string.\+Empty
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_selling_screen_a7751ae8ab78d72472867b5809584e198}\label{class_selling_screen_a7751ae8ab78d72472867b5809584e198}} 
+static int {\bfseries s\+\_\+current\+Selling\+File\+Index} = 0
+\item 
+\mbox{\Hypertarget{class_selling_screen_a24243009a8388c4933cd86ac0a8ce467}\label{class_selling_screen_a24243009a8388c4933cd86ac0a8ce467}} 
+static string\mbox{[}$\,$\mbox{]} {\bfseries s\+\_\+important\+Files}
+\item 
+\mbox{\Hypertarget{class_selling_screen_a373c64a3eeddcdb3f17baf05dfe63d3f}\label{class_selling_screen_a373c64a3eeddcdb3f17baf05dfe63d3f}} 
+static readonly Cancellation\+Token\+Source {\bfseries C\+TS} = new Cancellation\+Token\+Source()
+\item 
+\mbox{\Hypertarget{class_selling_screen_a142c2f6f18a87873094a752d681dd2e9}\label{class_selling_screen_a142c2f6f18a87873094a752d681dd2e9}} 
+const float {\bfseries m\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+R\+I\+CE} = 1.\+0f
+\item 
+\mbox{\Hypertarget{class_selling_screen_a38979a26391fc34c35795e5802d34180}\label{class_selling_screen_a38979a26391fc34c35795e5802d34180}} 
+static readonly string {\bfseries L\+O\+G\+\_\+\+F\+I\+LE} = \char`\"{}Selling\+Log.\+txt\char`\"{}
+\item 
+\mbox{\Hypertarget{class_selling_screen_a65c4af966ff1d7f29947129f97625ed6}\label{class_selling_screen_a65c4af966ff1d7f29947129f97625ed6}} 
+static readonly string\mbox{[}$\,$\mbox{]} {\bfseries F\+I\+L\+E\+\_\+\+P\+R\+I\+O\+R\+I\+T\+I\+Z\+A\+T\+I\+O\+N\+\_\+\+S\+T\+R\+I\+N\+GS} = new string\mbox{[}$\,$\mbox{]} \{ \char`\"{}bank\char`\"{}, \char`\"{}password\char`\"{}, \char`\"{}private\char`\"{}, \char`\"{}insurance\char`\"{} \}
+\item 
+\mbox{\Hypertarget{class_selling_screen_a50cef72e4674b598a729d547ae45f122}\label{class_selling_screen_a50cef72e4674b598a729d547ae45f122}} 
+static bool {\bfseries s\+\_\+is\+Loading\+Paths} = true
+\item 
+\mbox{\Hypertarget{class_selling_screen_a2a3945cf93a000361e408b2a1b4a6ef2}\label{class_selling_screen_a2a3945cf93a000361e408b2a1b4a6ef2}} 
+static bool {\bfseries s\+\_\+was\+Get\+Paths\+Executed} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Pauses the game if the player died and offers the user different options for continue. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_selling_screen_af4d114de818fd82d8102e0d99ee775bb}\label{class_selling_screen_af4d114de818fd82d8102e0d99ee775bb}} 
+\index{SellingScreen@{SellingScreen}!GetImportantFiles@{GetImportantFiles}}
+\index{GetImportantFiles@{GetImportantFiles}!SellingScreen@{SellingScreen}}
+\doxysubsubsection{\texorpdfstring{GetImportantFiles()}{GetImportantFiles()}}
+{\footnotesize\ttfamily static async void Selling\+Screen.\+Get\+Important\+Files (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the important files. 
+
+\mbox{\Hypertarget{class_selling_screen_a3751eba0c53924713a157e00dcb34c60}\label{class_selling_screen_a3751eba0c53924713a157e00dcb34c60}} 
+\index{SellingScreen@{SellingScreen}!PayPrice@{PayPrice}}
+\index{PayPrice@{PayPrice}!SellingScreen@{SellingScreen}}
+\doxysubsubsection{\texorpdfstring{PayPrice()}{PayPrice()}}
+{\footnotesize\ttfamily void Selling\+Screen.\+Pay\+Price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Resumes the gameplay and logs the payed price. 
+
+\mbox{\Hypertarget{class_selling_screen_a889fd09b462a77963f7eb7faf593c1e0}\label{class_selling_screen_a889fd09b462a77963f7eb7faf593c1e0}} 
+\index{SellingScreen@{SellingScreen}!RejectAll@{RejectAll}}
+\index{RejectAll@{RejectAll}!SellingScreen@{SellingScreen}}
+\doxysubsubsection{\texorpdfstring{RejectAll()}{RejectAll()}}
+{\footnotesize\ttfamily void Selling\+Screen.\+Reject\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reloads the current scene if all options were rejected. 
+
+\mbox{\Hypertarget{class_selling_screen_a7d3a52f2a128e5ea7b9d2aae4919d2f4}\label{class_selling_screen_a7d3a52f2a128e5ea7b9d2aae4919d2f4}} 
+\index{SellingScreen@{SellingScreen}!SellFile@{SellFile}}
+\index{SellFile@{SellFile}!SellingScreen@{SellingScreen}}
+\doxysubsubsection{\texorpdfstring{SellFile()}{SellFile()}}
+{\footnotesize\ttfamily void Selling\+Screen.\+Sell\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Resumes the gameplay and logs the sold file. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+X\+\_\+\+P\+I\+X\+E\+L\+S/pixelborne/\+Assets/\+Scripts/\+Menu/Selling\+Screen.\+cs\end{DoxyCompactItemize}

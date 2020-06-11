@@ -1,0 +1,3774 @@
+fileFormatVersion: 2
+guid: 359c9e19a37c4c8498fe08f9c0e4894b
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: BossDemon_noCrown_0
+    21300002: BossDemon_noCrown_1
+    21300004: BossDemon_noCrown_2
+    21300006: BossDemon_noCrown_3
+    21300008: BossDemon_noCrown_4
+    21300010: BossDemon_noCrown_5
+    21300012: BossDemon_noCrown_6
+    21300014: BossDemon_noCrown_7
+    21300016: BossDemon_noCrown_8
+    21300018: BossDemon_noCrown_9
+    21300020: BossDemon_noCrown_10
+    21300022: BossDemon_noCrown_11
+    21300024: BossDemon_noCrown_12
+    21300026: BossDemon_noCrown_13
+    21300028: BossDemon_noCrown_14
+    21300030: BossDemon_noCrown_15
+    21300032: BossDemon_noCrown_16
+    21300034: BossDemon_noCrown_17
+    21300036: BossDemon_noCrown_18
+    21300038: BossDemon_noCrown_19
+    21300040: BossDemon_noCrown_20
+    21300042: BossDemon_noCrown_21
+    21300044: BossDemon_noCrown_22
+    21300046: BossDemon_noCrown_23
+    21300048: BossDemon_noCrown_24
+    21300050: BossDemon_noCrown_25
+    21300052: BossDemon_noCrown_26
+    21300054: BossDemon_noCrown_27
+    21300056: BossDemon_noCrown_28
+    21300058: BossDemon_noCrown_29
+    21300060: BossDemon_noCrown_30
+    21300062: BossDemon_noCrown_31
+    21300064: BossDemon_noCrown_32
+    21300066: BossDemon_noCrown_33
+    21300068: BossDemon_noCrown_34
+    21300070: BossDemon_noCrown_35
+    21300072: BossDemon_noCrown_36
+    21300074: BossDemon_noCrown_37
+    21300076: BossDemon_noCrown_38
+    21300078: BossDemon_noCrown_39
+    21300080: BossDemon_noCrown_40
+    21300082: BossDemon_noCrown_41
+    21300084: BossDemon_noCrown_42
+    21300086: BossDemon_noCrown_43
+    21300088: BossDemon_noCrown_44
+    21300090: BossDemon_noCrown_45
+    21300092: BossDemon_noCrown_46
+    21300094: BossDemon_noCrown_47
+    21300096: BossDemon_noCrown_48
+    21300098: BossDemon_noCrown_49
+    21300100: BossDemon_noCrown_50
+    21300102: BossDemon_noCrown_51
+    21300104: BossDemon_noCrown_52
+    21300106: BossDemon_noCrown_53
+    21300108: BossDemon_noCrown_54
+    21300110: BossDemon_noCrown_55
+    21300112: BossDemon_noCrown_56
+    21300114: BossDemon_noCrown_57
+    21300116: BossDemon_noCrown_58
+    21300118: BossDemon_noCrown_59
+    21300120: BossDemon_noCrown_60
+    21300122: BossDemon_noCrown_61
+    21300124: BossDemon_noCrown_62
+    21300126: BossDemon_noCrown_63
+    21300128: BossDemon_noCrown_64
+    21300130: BossDemon_noCrown_65
+    21300132: BossDemon_noCrown_66
+    21300134: BossDemon_noCrown_67
+    21300136: BossDemon_noCrown_68
+    21300138: BossDemon_noCrown_69
+    21300140: BossDemon_noCrown_70
+    21300142: BossDemon_noCrown_71
+    21300144: BossDemon_noCrown_72
+    21300146: BossDemon_noCrown_73
+    21300148: BossDemon_noCrown_74
+    21300150: BossDemon_noCrown_75
+    21300152: BossDemon_noCrown_76
+    21300154: BossDemon_noCrown_77
+    21300156: BossDemon_noCrown_78
+    21300158: BossDemon_noCrown_79
+    21300160: BossDemon_noCrown_80
+    21300162: BossDemon_noCrown_81
+    21300164: BossDemon_noCrown_82
+    21300166: BossDemon_noCrown_83
+    21300168: BossDemon_noCrown_84
+    21300170: BossDemon_noCrown_85
+    21300172: BossDemon_noCrown_86
+    21300174: BossDemon_noCrown_87
+    21300176: BossDemon_noCrown_88
+    21300178: BossDemon_noCrown_89
+    21300180: BossDemon_noCrown_90
+    21300182: BossDemon_noCrown_91
+    21300184: BossDemon_noCrown_92
+    21300186: BossDemon_noCrown_93
+    21300188: BossDemon_noCrown_94
+    21300190: BossDemon_noCrown_95
+    21300192: BossDemon_noCrown_96
+    21300194: BossDemon_noCrown_97
+    21300196: BossDemon_noCrown_98
+    21300198: BossDemon_noCrown_99
+    21300200: BossDemon_noCrown_100
+    21300202: BossDemon_noCrown_101
+    21300204: BossDemon_noCrown_102
+    21300206: BossDemon_noCrown_103
+    21300208: BossDemon_noCrown_104
+    21300210: BossDemon_noCrown_105
+    21300212: BossDemon_noCrown_106
+    21300214: BossDemon_noCrown_107
+    21300216: BossDemon_noCrown_108
+    21300218: BossDemon_noCrown_109
+    21300220: BossDemon_noCrown_110
+    21300222: BossDemon_noCrown_111
+    21300224: BossDemon_noCrown_112
+    21300226: BossDemon_noCrown_113
+    21300228: BossDemon_noCrown_114
+    21300230: BossDemon_noCrown_115
+    21300232: BossDemon_noCrown_116
+    21300234: BossDemon_noCrown_117
+    21300236: BossDemon_noCrown_118
+    21300238: BossDemon_noCrown_119
+    21300240: BossDemon_noCrown_120
+    21300242: BossDemon_noCrown_121
+    21300244: BossDemon_noCrown_122
+    21300246: BossDemon_noCrown_123
+    21300248: BossDemon_noCrown_124
+    21300250: BossDemon_noCrown_125
+    21300252: BossDemon_noCrown_126
+    21300254: BossDemon_noCrown_127
+    21300256: BossDemon_noCrown_128
+    21300258: BossDemon_noCrown_129
+    21300260: BossDemon_noCrown_130
+    21300262: BossDemon_noCrown_131
+    21300264: BossDemon_noCrown_132
+    21300266: BossDemon_noCrown_133
+    21300268: BossDemon_noCrown_134
+    21300270: BossDemon_noCrown_135
+    21300272: BossDemon_noCrown_136
+    21300274: BossDemon_noCrown_137
+    21300276: BossDemon_noCrown_138
+    21300278: BossDemon_noCrown_139
+    21300280: BossDemon_noCrown_140
+    21300282: BossDemon_noCrown_141
+    21300284: BossDemon_noCrown_142
+    21300286: BossDemon_noCrown_143
+    21300288: BossDemon_noCrown_144
+    21300290: BossDemon_noCrown_145
+    21300292: BossDemon_noCrown_146
+    21300294: BossDemon_noCrown_147
+    21300296: BossDemon_noCrown_148
+    21300298: BossDemon_noCrown_149
+    21300300: BossDemon_noCrown_150
+    21300302: BossDemon_noCrown_151
+    21300304: BossDemon_noCrown_152
+    21300306: BossDemon_noCrown_153
+    21300308: BossDemon_noCrown_154
+    21300310: BossDemon_noCrown_155
+    21300312: BossDemon_noCrown_156
+    21300314: BossDemon_noCrown_157
+    21300316: BossDemon_noCrown_158
+    21300318: BossDemon_noCrown_159
+    21300320: BossDemon_noCrown_160
+    21300322: BossDemon_noCrown_161
+    21300324: BossDemon_noCrown_162
+    21300326: BossDemon_noCrown_163
+    21300328: BossDemon_noCrown_164
+    21300330: BossDemon_noCrown_165
+    21300332: BossDemon_noCrown_166
+    21300334: BossDemon_noCrown_167
+    21300336: BossDemon_noCrown_168
+    21300338: BossDemon_noCrown_169
+    21300340: BossDemon_noCrown_170
+    21300342: BossDemon_noCrown_171
+    21300344: BossDemon_noCrown_172
+    21300346: BossDemon_noCrown_173
+    21300348: BossDemon_noCrown_174
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BossDemon_noCrown_0
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 884
+        width: 31
+        height: 49
+      alignment: 9
+      pivot: {x: 0.13146383, y: 0.031543966}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 330e04338a21a9fef85067a3aa1bbd03
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_1
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 884
+        width: 29
+        height: 54
+      alignment: 9
+      pivot: {x: 0.21377827, y: 0.0272635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afe8ea40593de9b3493fe41b67255fc5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_2
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 884
+        width: 39
+        height: 52
+      alignment: 9
+      pivot: {x: 0.58031404, y: 0.033174954}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4edc5c2922a391ec9b3387283bb311d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_3
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 884
+        width: 44
+        height: 54
+      alignment: 9
+      pivot: {x: 0.67440796, y: 0.0272635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e1b77b154ad98763b45ee95d4ee8651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_4
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 884
+        width: 39
+        height: 58
+      alignment: 9
+      pivot: {x: 0.6445649, y: 0.035564553}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f5e633b82a544a9f9ac021b0704863e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_5
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 884
+        width: 65
+        height: 55
+      alignment: 9
+      pivot: {x: 0.21327937, y: 0.027316006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c86577e51bf85f5396bb98e0f001594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_6
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 884
+        width: 56
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33a1e2500d9c63d9b8dda28ae7e1db96
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_7
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 884
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fe673c17ec5467358d1859ce34a7984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_8
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 888
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a73407fe719b6eafbb72b53fafbd8160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_9
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 884
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d32e1b65a10ff4aebe81be891356be4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_10
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 884
+        width: 33
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb9fc24d5b8328885a7904a8f2332967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_11
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 884
+        width: 33
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 855c0c5c5ca0e1c5c914f62d53b13853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_12
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 884
+        width: 69
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d2faa6fae68e4a5e9b4182f8ccb6ffd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_13
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 884
+        width: 73
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd9ab6e7d290c305f816d18a8b89762c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_14
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 884
+        width: 56
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16ce161e104e4a153a6e6f21d1e1aace
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_15
+      rect:
+        serializedVersion: 2
+        x: 1457
+        y: 884
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d05e64208ad84b473aeb2d1d2b8043d6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_16
+      rect:
+        serializedVersion: 2
+        x: 1487
+        y: 888
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 496ef685cf9f66885bf630ccf9f9fb10
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_17
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 807
+        width: 32
+        height: 50
+      alignment: 9
+      pivot: {x: 0.25039887, y: 0.02703125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7283c6274635d99f88987e48b5b6c3b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_18
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 808
+        width: 24
+        height: 50
+      alignment: 9
+      pivot: {x: 0.33033752, y: 0.0051062014}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e12c2984895b79b4821d43306a00a5b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_19
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 807
+        width: 30
+        height: 49
+      alignment: 9
+      pivot: {x: 0.3486074, y: 0.007790079}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5e5b6d5d0b9fbe3ca57f3561e08970d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_20
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 807
+        width: 40
+        height: 49
+      alignment: 9
+      pivot: {x: 0.49608383, y: 0.0045950753}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 505b7e7d70b3245169aba4b869d58279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_21
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 807
+        width: 29
+        height: 49
+      alignment: 9
+      pivot: {x: 0.42439428, y: 0.0045950753}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bed9d8d7e5b031970a09357a17da2427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_22
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 807
+        width: 55
+        height: 44
+      alignment: 9
+      pivot: {x: 0.21525101, y: 0.008807096}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 714013364dab99287bee679bd85f83ed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_23
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 807
+        width: 69
+        height: 42
+      alignment: 9
+      pivot: {x: 0.19585474, y: 0.0040617445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e342c5379012ca7ea84dc477ef404d6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_24
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 807
+        width: 78
+        height: 42
+      alignment: 9
+      pivot: {x: 0.16268139, y: 0.00033278693}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e4daba4d8336902981860e399ec6515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_25
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 807
+        width: 67
+        height: 44
+      alignment: 9
+      pivot: {x: 0.15872602, y: 0.008807096}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa527ddc6cd6c4c5f87ae4659198b81b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_26
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 807
+        width: 38
+        height: 49
+      alignment: 9
+      pivot: {x: 0.14143933, y: 0.0045950753}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f01505ccc7781aff93cf49de6a51643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_27
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 807
+        width: 25
+        height: 25
+      alignment: 9
+      pivot: {x: 0.34338868, y: 0.011369629}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db67e09d74cd190e1bca16749dc3de97
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_28
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 730
+        width: 24
+        height: 49
+      alignment: 9
+      pivot: {x: 0.23743422, y: 0.007949518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c61cf3db1b91edb2baa9a7fa2b42b7e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_29
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 730
+        width: 24
+        height: 49
+      alignment: 9
+      pivot: {x: 0.27168146, y: 0.007949518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5333bc4d4f35345649b970fd540799aa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_30
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 730
+        width: 57
+        height: 44
+      alignment: 9
+      pivot: {x: 0.19236997, y: 0.008076061}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bca647275785e854ac6ddbb28837aad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_31
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 730
+        width: 68
+        height: 42
+      alignment: 9
+      pivot: {x: 0.18975426, y: 0.017268589}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20c6698c8759d3cb79477dce762275f0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_32
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 730
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f9aad475446c142d99de3377498cc5c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_33
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 730
+        width: 49
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3538f46aab4103a6aa90762e99a7578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_34
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 730
+        width: 38
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9d33a2287e765b8e90615923f720731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_35
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 730
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dfb4082311a9901e826a62bf8487b02
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_36
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 730
+        width: 66
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5d604d29d0cc00f482b391150fdc9d8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_37
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 730
+        width: 66
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8515893aaf744053c82d989bf465682d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_38
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 730
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dfc5f3b5c579d4a0aec333576ed7e3b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_39
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 730
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc317ea4e30961c7a594ec0a766d718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_40
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 653
+        width: 42
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4e4ec6a55f013f29b8e6570f50127d6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_41
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 653
+        width: 25
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca7ba19bd7c46fe1aba735ea7877e535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_42
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 654
+        width: 33
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79d059f3cbb3ca399970d16a29ebf560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_43
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 655
+        width: 32
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b72f1319a3a42b36a98addd2d182d86d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_44
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 653
+        width: 50
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9ab138cb3ad3293db83e79ff8a2c064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_45
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 653
+        width: 67
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1859ca30dc569742fac0ccc2ba303bb0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_46
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 653
+        width: 66
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cf94dc6b98cc638da70b8fcc6be6bc5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_47
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 653
+        width: 51
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cad54549da779917c96aeb6ecacd8bd0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_48
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 653
+        width: 29
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a89573b3e5569a181b9b03297ea46a95
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_49
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 653
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 053bcd8d08eb59212907f750863f5ee6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_50
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 653
+        width: 37
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7db8e935a9e504ce0ae534213319c735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_51
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 653
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b86b14ff2c414a1997aff21cf95db5a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_52
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 653
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5bbcca891ebcfa90b100d57f44cdea3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_53
+      rect:
+        serializedVersion: 2
+        x: 1357
+        y: 653
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a26b415d7e6d76aaa9f9f4f5087e4db0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_54
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 576
+        width: 19
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 635a10b7f54954fe2a575dccf9361906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_55
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 572
+        width: 24
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea25fc6144bdbe5debad2f2b4aad4995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_56
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 575
+        width: 24
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a19a2a53115681eb68d791a9b15d7a56
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_57
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 573
+        width: 23
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cca4d654d9f90283294208964fb24d23
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_58
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 568
+        width: 13
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84c30cd1a14902128928ee94a1b86fad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_59
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 568
+        width: 15
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07ec8c6c7f21d63e080bcaed41e5c60b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_60
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 568
+        width: 13
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72db750307be62bb4a465b008d60bf2d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_61
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 568
+        width: 13
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52728cf57ca3933d080f6087ed4f1c27
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_62
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 568
+        width: 13
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca40e2c6ce4ebd6778a94193ffefe044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_63
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 578
+        width: 15
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b999185ddaec41f192951c6a206fdf5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_64
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 580
+        width: 17
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e469f9bc2e7931d5b81045d9bbcfe293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_65
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 576
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 630343e059a195fcca60832f4f7fdbcb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_66
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 576
+        width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d5d7a31688ed24198586162824d7457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_67
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 576
+        width: 19
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82ea3685a7411732091efd1b715827af
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_68
+      rect:
+        serializedVersion: 2
+        x: 1457
+        y: 576
+        width: 18
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f96652fb5c76c541fb7d1ca5dcbb5f43
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_69
+      rect:
+        serializedVersion: 2
+        x: 1558
+        y: 576
+        width: 20
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2523070a6db05e75ab25dc30ddaaf7a9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_70
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 474
+        width: 19
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 269fcbbb87ee874cf8c294da9f2570ac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_71
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 474
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 235dc2691a2e4259e9b8fe170cf8f818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_72
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 474
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68f5af172fa8973c8ba57cecfed3bc33
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_73
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 474
+        width: 42
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f725e609a947f4f9199efab6e4581e10
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_74
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 499
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a2def3e6e181f708a30603133f30ce1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_75
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 499
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6adbebb0683fbc084b9b1f3aed337dcb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_76
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 499
+        width: 27
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6afa72456662fd96b454e3b798c8a6b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_77
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 499
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa5f49326fe7b5d2f8cd98cb937559c4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_78
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 499
+        width: 18
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98ae828c4b1927e31995beccaa3f12a2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_79
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 499
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c822d5aaf2f78f0a85063995690facb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_80
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 499
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53a8f088ce9af28b6b7fa1191902a355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_81
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 499
+        width: 18
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1265091a63be534618506d222679c66a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_82
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 499
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dcfe65801bd9ce458125acd4ba60be1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_83
+      rect:
+        serializedVersion: 2
+        x: 1556
+        y: 499
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecd9accec1acbdceb85758915095df48
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_84
+      rect:
+        serializedVersion: 2
+        x: 1649
+        y: 499
+        width: 35
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b0816c330628de0eb525cc32566e925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_85
+      rect:
+        serializedVersion: 2
+        x: 1761
+        y: 499
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f04ac2649a9deda282b018b4effd191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_86
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 474
+        width: 43
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f1f0e92567f818e68ac7a5d90de3b32
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_87
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 474
+        width: 56
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cfc2fd05c2be7226bfb669c678d1057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_88
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 397
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dd961eed42f92931936c45c621d5feb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_89
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 397
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5332754e86e1a929187bc643b0c20042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_90
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 397
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53de3197125d83b38bbbfba6092aaff4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_91
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 397
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f149669afcdca045d8edff3c04a0b895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_92
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 397
+        width: 19
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20ba0d4c2e266b6cf87c08bf53b085af
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_93
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 397
+        width: 20
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c7219bb523e54ecd9df0033ba95b390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_94
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 397
+        width: 19
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 458e6ab3ec87b1ad58c95cee7b670ed3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_95
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 397
+        width: 19
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71dd80130fe04d03b9f9532f4aa1e5cc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_96
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 397
+        width: 20
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5689cbba5cbafb29b73d657ac88ad94
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_97
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 397
+        width: 19
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c416debe2770304ea25efc53ad1ff1c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_98
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 397
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a51718fc386ebcc069aaa02a1f9a12b9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_99
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 397
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e601eef5eea124c0aab5febf7cb071d6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_100
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 397
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6b055245acfcde5f98c96fd609a5fa0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_101
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 397
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 065f110e31401995e861928c49b233f6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_102
+      rect:
+        serializedVersion: 2
+        x: 1458
+        y: 397
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e966e004744681dca1af91500f4607a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_103
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 397
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 653ac949550fad77389a0ebd0738b0e4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_104
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 320
+        width: 25
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ff1cff3608140f94901071494b02735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_105
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 321
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6dbeac87d045d3398604e2ff537f013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_106
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 320
+        width: 25
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcde3b8c6ffd9f15e8f4ff385214029c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_107
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 322
+        width: 25
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b501aae971a63310086d9c875d99b23b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_108
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 322
+        width: 25
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32f6dcd7f51d437efa66f71d428a57e3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_109
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 323
+        width: 25
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebc67d822def8296685aa4343c11de0d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_110
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 323
+        width: 25
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf52cc3493d9c3d6d87684b7ea20393c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_111
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 323
+        width: 25
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec3251e3a0ae0860a2d640547c2b9b0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_112
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 320
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fc8e5b768038466dbd3df00ad947d2d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_113
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 320
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a46516d50619a8a799f577394fd468bf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_114
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 320
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c7820ca9b20d2282bc0d8baadd1da26
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_115
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 320
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08ae92ad6b30bf0378170d3fae1e999f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_116
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 320
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b9617c68313f7489b43354f8ad03f2c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_117
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 320
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b8d82528dbd3a8598cde353b090aff6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_118
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 247
+        width: 45
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 831947c0576ff4a41a7b05981954d563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_119
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 233
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33fe80e99de51cbafbb1227a743bf8b7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_120
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 245
+        width: 53
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27ab722a97f01b303911bf4b04998e2b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_121
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 247
+        width: 58
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 541538d2b4952c6a987bddacb85190c3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_122
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 246
+        width: 53
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 632673b0a1a6b8fbd97e9c892cc181ce
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_123
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 247
+        width: 37
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a5fe8c549f91b8b096779f6ca985434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_124
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 247
+        width: 36
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbf7d486e10043c5ebed3c883ae24a7e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_125
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 247
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47d1714e815cfd8139cdd7e898a2a684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_126
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 246
+        width: 42
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d426ac419c29bd2f58350229aad170b8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_127
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 247
+        width: 51
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8ed89ccd005bf2ecaf83d271962a81c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_128
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 247
+        width: 49
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b94ecebc3debfa3f5a5ebed17e6f5cd8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_129
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 247
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f311a12938667fafb074fde8e1d42f4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_130
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 247
+        width: 24
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7253336687ea81a7c8e5124313263ed5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_131
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 166
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aef682a1efe25d19b50bb325191f056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_132
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 166
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d0a9e0fec47e4a73b02321837649fc9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_133
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 174
+        width: 41
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 132bba12eca5a482c83c6f0bf31ca66e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_134
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 169
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fddc2a98587ac0eead2626ecab65f65
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_135
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 166
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e97bacaa72211791ab10beec04bbeb33
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_136
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 166
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eec873cc56f564d56a7623bcbb1a09d0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_137
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 166
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c00bd7fb9c2621287913a460a7422c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_138
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 166
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d86690f32ef722b3382796df263dc7c1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_139
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 166
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e63e53865ec50c04493cb86f469f69c0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_140
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 166
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b054f7bc5ff0a1981aee121283e67ca9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_141
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 166
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67731aba050ed92f48c47ecde4f40fd7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_142
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 166
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10dd84fd8d93ac2c9a8c9a42d497cdbd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_143
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 166
+        width: 25
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e715e24f92e271d89494fbbab48ad38
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_144
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 166
+        width: 26
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 429cae9ec98aacfa9a9b580b7540d27e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_145
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 89
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7251385daf9542adb2309f34a68010b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_146
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 89
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3789062656bd65ce8891de257d09cf66
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_147
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 90
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7f39300ae14eea56a235f0678c6d02e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_148
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 89
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a55560b21c0afc30c94c06ac340e0834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_149
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 89
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce1c53a53cba2842badc808e11aaecca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_150
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 89
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c4200855b04de966bdb627c169116e1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_151
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 89
+        width: 21
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4603e174ad835f44fb6fcc6b65b5070a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_152
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 89
+        width: 21
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c22cb5615db158bf4917f2a2ca537a80
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_153
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 90
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63cd520c45c2da314aa5952461d02637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_154
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 89
+        width: 36
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02ba84d915bfdf7e0b119ff642ba09c0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_155
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 89
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d301954d49e567cdbb6a3ab702be3e2f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_156
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 89
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b5d72ee714bbc08b8e4936e7830e6b0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_157
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 89
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e45943bd339e2860eb2b3ea2e9efae15
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_158
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 89
+        width: 35
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80f8b0e2b8031df3d8506980fc41e8e0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_159
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 89
+        width: 38
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d9af8c7bab9c6ac683586278291e3c0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_160
+      rect:
+        serializedVersion: 2
+        x: 1551
+        y: 89
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 718befd00cbc1e3a99a47239c06fc2f6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_161
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 89
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef5cae79803a8fa3c815623923942bb9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_162
+      rect:
+        serializedVersion: 2
+        x: 1759
+        y: 89
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8aa6ba5232a9a5aabf20a4050d025d0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_163
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 12
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fc3f52e9baaf0a0dbf81df07a196729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_164
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 12
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b795d9865eb8fef39c61dd77213c0b5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_165
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 12
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edd714e7e467075478f3333bfc5ac898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_166
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 12
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da6965cff6d425a35a287b011aff9fcf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_167
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 12
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6df254bdb7e3cc1aacedc0b5690af38
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_168
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 12
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e53060ac50dd93a9b4deec706b4c0f2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_169
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 12
+        width: 31
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 644a26e86ea9033c5a5d179c020db648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_170
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 12
+        width: 31
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7410bf15ca50185f947f8f1e1d4fb5c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_171
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 12
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3aa33a5bc51f208d96a464e270dc8bd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_172
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 12
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 343d92c104c1054e99817c5235355789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_173
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 12
+        width: 30
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d8349acbdf824eaa9b4e53b9e973818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossDemon_noCrown_174
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 868
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9baabae74ddc30518a4b7116353dab8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 4f2107f0e90dc08478c3f5879ec0c69f
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

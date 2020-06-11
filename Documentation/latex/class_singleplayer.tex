@@ -1,0 +1,412 @@
+\hypertarget{class_singleplayer}{}\doxysection{Singleplayer Class Reference}
+\label{class_singleplayer}\index{Singleplayer@{Singleplayer}}
+
+
+Contains the \mbox{\hyperlink{class_singleplayer}{Singleplayer}} game mode logic and implements the \mbox{\hyperlink{interface_i_game}{I\+Game}} interface for the singleplayer mode. It is a singleton.  
+
+
+Inheritance diagram for Singleplayer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_singleplayer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_singleplayer_a2436201424ee9e36b6ffc5b91ee1f6a8}{Go}} ()
+\begin{DoxyCompactList}\small\item\em Starts the singleplayer. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_singleplayer_a1e0dc82944eedee917adc0f7b397518a}{Get\+Winner}} ()
+\begin{DoxyCompactList}\small\item\em Gets the winner. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_singleplayer_a65c30d83bd6c6ca5df706cf8cc8c40af}{Register\+Player}} (Game\+Object player)
+\begin{DoxyCompactList}\small\item\em Registers the player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_singleplayer_a368205cdb2b72a4ced2f27f422e46969}{Unregister\+Player}} (Game\+Object player)
+\begin{DoxyCompactList}\small\item\em Unregisters the player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_singleplayer_af9869d35945a106e5b446f31c80d8ef4}{Revive\+Player}} ()
+\begin{DoxyCompactList}\small\item\em Revives the player at the revive position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_singleplayer_a8a57184941aff0120973827d3cb7d357}{Lock\+Player\+Input}} (bool is\+Locked)
+\begin{DoxyCompactList}\small\item\em Locks the player and enemy input. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_singleplayer_ac81bdc2a7d53ef00ab730bd4e673a5d8}{Handle\+Death}} (Game\+Object entity)
+\begin{DoxyCompactList}\small\item\em Handles the death of a player. Enemies should not call this method. It will throw an exception. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_singleplayer_a8ecfa8d18bcc2fdb193397fb7da36367}{Reset\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Resets the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_singleplayer_a66028aa4033565047d27353945b492cf}{Prepare\+Stage}} ()
+\begin{DoxyCompactList}\small\item\em Prepares the stage. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_singleplayer_aea9147965c8d2cbada428100f947d07b}{Begin\+Stage}} ()
+\begin{DoxyCompactList}\small\item\em Begins the stage. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_singleplayer_a3d9f4acb92f71b5139a122fdaf4f05f0}{End\+Stage}} ()
+\begin{DoxyCompactList}\small\item\em Ends the stage. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_singleplayer_a8e1ad6b720b5aa0ee97daa05e24bc8a4}{Faded\+Out}} ()
+\begin{DoxyCompactList}\small\item\em Is invoked when the camera faded out and prepares the stage. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_singleplayer_acd3153b27a0ac8de8379c3077b8582ee}{Faded\+In}} ()
+\begin{DoxyCompactList}\small\item\em Is invoked when the camera faded in and starts the stage by disabling the input lock. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_singleplayer_afca70877165372aca69653aa10ed5b62}{Enable\+Entity\+Collision}} (Game\+Object calling\+Entity)
+\begin{DoxyCompactList}\small\item\em Enables the collision between the player and enemy layer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_singleplayer_ae20057dd98e0de3217793ffe86c46ead}{Disable\+Entity\+Collision}} (Game\+Object calling\+Entity)
+\begin{DoxyCompactList}\small\item\em Disables the collision between the player and enemy layer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_singleplayer_a625d5e13fee381422f4a977efc3da6f6}{Swap\+Hud\+Symbol}} (Game\+Object game\+Object, Sprite sprite)
+\begin{DoxyCompactList}\small\item\em Swaps the hud symbol. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_camera_singleplayer}{Camera\+Singleplayer}} \mbox{\hyperlink{class_singleplayer_ad6da6eeefdfcda4597ff3ec693326142}{Camera}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the camera. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_singleplayer_a79aaeb51eb1f1f6439f5bfc2a06d4cb7}{Price\+To\+Pay}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the price to pay for a revive. \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{class_singleplayer_ab13d01e4142d6fdbab88b486561ecb13}{Player}} = null\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the player. \end{DoxyCompactList}\item 
+List$<$ Game\+Object $>$ \mbox{\hyperlink{class_singleplayer_a97215a44193ce379363e64ae27ea89e1}{Active\+Enemies}} = new List$<$Game\+Object$>$()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the active enemies. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_singleplayer}{Singleplayer}} \mbox{\hyperlink{class_singleplayer_a20bf442614a271a9a7f90adced0f5d1e}{Instance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the instance. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_singleplayer_a731b4f6fb76ccf8a22338088be411b61}{D\+E\+B\+U\+G\+\_\+current\+Stage\+Index}}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Sets the index of the debug current stage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_singleplayer_a1f50aef8a5716bf646938aabaf67f184}\label{class_singleplayer_a1f50aef8a5716bf646938aabaf67f184}} 
+Hash\+Set$<$ Game\+Object $>$ {\bfseries m\+\_\+entities\+That\+Requested\+Disable\+Entity\+Collision} = new Hash\+Set$<$Game\+Object$>$()
+\item 
+\mbox{\Hypertarget{class_singleplayer_a7c71de09ae1be604a42e81209b3b2886}\label{class_singleplayer_a7c71de09ae1be604a42e81209b3b2886}} 
+int {\bfseries m\+\_\+current\+Stage\+Index} = m\+\_\+\+S\+T\+A\+R\+T\+\_\+\+S\+T\+A\+G\+E\+\_\+\+I\+N\+D\+EX
+\item 
+\mbox{\Hypertarget{class_singleplayer_a69ffdd614de50d98a600342860cbf9dd}\label{class_singleplayer_a69ffdd614de50d98a600342860cbf9dd}} 
+int {\bfseries m\+\_\+enemy\+Layer}
+\item 
+\mbox{\Hypertarget{class_singleplayer_a25c60f023b3aa2ea516ad3cef33ec273}\label{class_singleplayer_a25c60f023b3aa2ea516ad3cef33ec273}} 
+\mbox{\hyperlink{class_player_actions}{Player\+Actions}} {\bfseries m\+\_\+player\+Movement}
+\item 
+\mbox{\Hypertarget{class_singleplayer_ab01bb60464537b61035332ceafbdce00}\label{class_singleplayer_ab01bb60464537b61035332ceafbdce00}} 
+Vector2 {\bfseries m\+\_\+player\+Revive\+Position}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_singleplayer_a9ddd56fc11f2e2b0eade780dd9bf8794}\label{class_singleplayer_a9ddd56fc11f2e2b0eade780dd9bf8794}} 
+static \mbox{\hyperlink{class_singleplayer}{Singleplayer}} {\bfseries s\+\_\+instance} = null
+\item 
+\mbox{\Hypertarget{class_singleplayer_aa3c4a71d0d9d0a9c040e63b4f7a8ff85}\label{class_singleplayer_aa3c4a71d0d9d0a9c040e63b4f7a8ff85}} 
+static readonly int {\bfseries m\+\_\+\+S\+T\+A\+R\+T\+\_\+\+S\+T\+A\+G\+E\+\_\+\+I\+N\+D\+EX} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains the \mbox{\hyperlink{class_singleplayer}{Singleplayer}} game mode logic and implements the \mbox{\hyperlink{interface_i_game}{I\+Game}} interface for the singleplayer mode. It is a singleton. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_singleplayer_aea9147965c8d2cbada428100f947d07b}\label{class_singleplayer_aea9147965c8d2cbada428100f947d07b}} 
+\index{Singleplayer@{Singleplayer}!BeginStage@{BeginStage}}
+\index{BeginStage@{BeginStage}!Singleplayer@{Singleplayer}}
+\doxysubsubsection{\texorpdfstring{BeginStage()}{BeginStage()}}
+{\footnotesize\ttfamily void Singleplayer.\+Begin\+Stage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Begins the stage. 
+
+\mbox{\Hypertarget{class_singleplayer_ae20057dd98e0de3217793ffe86c46ead}\label{class_singleplayer_ae20057dd98e0de3217793ffe86c46ead}} 
+\index{Singleplayer@{Singleplayer}!DisableEntityCollision@{DisableEntityCollision}}
+\index{DisableEntityCollision@{DisableEntityCollision}!Singleplayer@{Singleplayer}}
+\doxysubsubsection{\texorpdfstring{DisableEntityCollision()}{DisableEntityCollision()}}
+{\footnotesize\ttfamily void Singleplayer.\+Disable\+Entity\+Collision (\begin{DoxyParamCaption}\item[{Game\+Object}]{calling\+Entity }\end{DoxyParamCaption})}
+
+
+
+Disables the collision between the player and enemy layer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em calling\+Entity} & The calling entity.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_i_game_a18a97d33fac8d440fdda9e8187a134b7}{I\+Game}}.
+
+\mbox{\Hypertarget{class_singleplayer_afca70877165372aca69653aa10ed5b62}\label{class_singleplayer_afca70877165372aca69653aa10ed5b62}} 
+\index{Singleplayer@{Singleplayer}!EnableEntityCollision@{EnableEntityCollision}}
+\index{EnableEntityCollision@{EnableEntityCollision}!Singleplayer@{Singleplayer}}
+\doxysubsubsection{\texorpdfstring{EnableEntityCollision()}{EnableEntityCollision()}}
+{\footnotesize\ttfamily void Singleplayer.\+Enable\+Entity\+Collision (\begin{DoxyParamCaption}\item[{Game\+Object}]{calling\+Entity }\end{DoxyParamCaption})}
+
+
+
+Enables the collision between the player and enemy layer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em calling\+Entity} & The calling entity.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_i_game_ae24720d32d172ea4faf94a15d13defe3}{I\+Game}}.
+
+\mbox{\Hypertarget{class_singleplayer_a3d9f4acb92f71b5139a122fdaf4f05f0}\label{class_singleplayer_a3d9f4acb92f71b5139a122fdaf4f05f0}} 
+\index{Singleplayer@{Singleplayer}!EndStage@{EndStage}}
+\index{EndStage@{EndStage}!Singleplayer@{Singleplayer}}
+\doxysubsubsection{\texorpdfstring{EndStage()}{EndStage()}}
+{\footnotesize\ttfamily void Singleplayer.\+End\+Stage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Ends the stage. 
+
+\mbox{\Hypertarget{class_singleplayer_acd3153b27a0ac8de8379c3077b8582ee}\label{class_singleplayer_acd3153b27a0ac8de8379c3077b8582ee}} 
+\index{Singleplayer@{Singleplayer}!FadedIn@{FadedIn}}
+\index{FadedIn@{FadedIn}!Singleplayer@{Singleplayer}}
+\doxysubsubsection{\texorpdfstring{FadedIn()}{FadedIn()}}
+{\footnotesize\ttfamily void Singleplayer.\+Faded\+In (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Is invoked when the camera faded in and starts the stage by disabling the input lock. 
+
+\mbox{\Hypertarget{class_singleplayer_a8e1ad6b720b5aa0ee97daa05e24bc8a4}\label{class_singleplayer_a8e1ad6b720b5aa0ee97daa05e24bc8a4}} 
+\index{Singleplayer@{Singleplayer}!FadedOut@{FadedOut}}
+\index{FadedOut@{FadedOut}!Singleplayer@{Singleplayer}}
+\doxysubsubsection{\texorpdfstring{FadedOut()}{FadedOut()}}
+{\footnotesize\ttfamily void Singleplayer.\+Faded\+Out (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Is invoked when the camera faded out and prepares the stage. 
+
+\mbox{\Hypertarget{class_singleplayer_a1e0dc82944eedee917adc0f7b397518a}\label{class_singleplayer_a1e0dc82944eedee917adc0f7b397518a}} 
+\index{Singleplayer@{Singleplayer}!GetWinner@{GetWinner}}
+\index{GetWinner@{GetWinner}!Singleplayer@{Singleplayer}}
+\doxysubsubsection{\texorpdfstring{GetWinner()}{GetWinner()}}
+{\footnotesize\ttfamily string Singleplayer.\+Get\+Winner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the winner. 
+
+\begin{DoxyReturn}{Returns}
+\char`\"{}\+You\char`\"{}.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_game_a5d6a94df414215d8975ff57585094a8f}{I\+Game}}.
+
+\mbox{\Hypertarget{class_singleplayer_a2436201424ee9e36b6ffc5b91ee1f6a8}\label{class_singleplayer_a2436201424ee9e36b6ffc5b91ee1f6a8}} 
+\index{Singleplayer@{Singleplayer}!Go@{Go}}
+\index{Go@{Go}!Singleplayer@{Singleplayer}}
+\doxysubsubsection{\texorpdfstring{Go()}{Go()}}
+{\footnotesize\ttfamily void Singleplayer.\+Go (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts the singleplayer. 
+
+\mbox{\Hypertarget{class_singleplayer_ac81bdc2a7d53ef00ab730bd4e673a5d8}\label{class_singleplayer_ac81bdc2a7d53ef00ab730bd4e673a5d8}} 
+\index{Singleplayer@{Singleplayer}!HandleDeath@{HandleDeath}}
+\index{HandleDeath@{HandleDeath}!Singleplayer@{Singleplayer}}
+\doxysubsubsection{\texorpdfstring{HandleDeath()}{HandleDeath()}}
+{\footnotesize\ttfamily void Singleplayer.\+Handle\+Death (\begin{DoxyParamCaption}\item[{Game\+Object}]{entity }\end{DoxyParamCaption})}
+
+
+
+Handles the death of a player. Enemies should not call this method. It will throw an exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & The player game object.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Expected player as argument but got\+: \{entity\}\\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_i_game_aaf0c6ab65264fc72c9af8e139233d6ba}{I\+Game}}.
+
+\mbox{\Hypertarget{class_singleplayer_a8a57184941aff0120973827d3cb7d357}\label{class_singleplayer_a8a57184941aff0120973827d3cb7d357}} 
+\index{Singleplayer@{Singleplayer}!LockPlayerInput@{LockPlayerInput}}
+\index{LockPlayerInput@{LockPlayerInput}!Singleplayer@{Singleplayer}}
+\doxysubsubsection{\texorpdfstring{LockPlayerInput()}{LockPlayerInput()}}
+{\footnotesize\ttfamily void Singleplayer.\+Lock\+Player\+Input (\begin{DoxyParamCaption}\item[{bool}]{is\+Locked }\end{DoxyParamCaption})}
+
+
+
+Locks the player and enemy input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+Locked} & if set to {\ttfamily true} \mbox{[}is locked\mbox{]}.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_i_game_a87bf62accbac78c2c4db4687ab4d925c}{I\+Game}}.
+
+\mbox{\Hypertarget{class_singleplayer_a66028aa4033565047d27353945b492cf}\label{class_singleplayer_a66028aa4033565047d27353945b492cf}} 
+\index{Singleplayer@{Singleplayer}!PrepareStage@{PrepareStage}}
+\index{PrepareStage@{PrepareStage}!Singleplayer@{Singleplayer}}
+\doxysubsubsection{\texorpdfstring{PrepareStage()}{PrepareStage()}}
+{\footnotesize\ttfamily void Singleplayer.\+Prepare\+Stage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prepares the stage. 
+
+
+
+Implements \mbox{\hyperlink{interface_i_game_a8c5c2b5a65688ee46bdeed6fbf14118e}{I\+Game}}.
+
+\mbox{\Hypertarget{class_singleplayer_a65c30d83bd6c6ca5df706cf8cc8c40af}\label{class_singleplayer_a65c30d83bd6c6ca5df706cf8cc8c40af}} 
+\index{Singleplayer@{Singleplayer}!RegisterPlayer@{RegisterPlayer}}
+\index{RegisterPlayer@{RegisterPlayer}!Singleplayer@{Singleplayer}}
+\doxysubsubsection{\texorpdfstring{RegisterPlayer()}{RegisterPlayer()}}
+{\footnotesize\ttfamily void Singleplayer.\+Register\+Player (\begin{DoxyParamCaption}\item[{Game\+Object}]{player }\end{DoxyParamCaption})}
+
+
+
+Registers the player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & The player.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & Error\+: Object "\{player.\+name\}" can not be registered. Player has already been assigned.\\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_i_game_ad7ff9419ff8bf4928c353fa539efbea3}{I\+Game}}.
+
+\mbox{\Hypertarget{class_singleplayer_a8ecfa8d18bcc2fdb193397fb7da36367}\label{class_singleplayer_a8ecfa8d18bcc2fdb193397fb7da36367}} 
+\index{Singleplayer@{Singleplayer}!ResetGame@{ResetGame}}
+\index{ResetGame@{ResetGame}!Singleplayer@{Singleplayer}}
+\doxysubsubsection{\texorpdfstring{ResetGame()}{ResetGame()}}
+{\footnotesize\ttfamily void Singleplayer.\+Reset\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Resets the game. 
+
+\mbox{\Hypertarget{class_singleplayer_af9869d35945a106e5b446f31c80d8ef4}\label{class_singleplayer_af9869d35945a106e5b446f31c80d8ef4}} 
+\index{Singleplayer@{Singleplayer}!RevivePlayer@{RevivePlayer}}
+\index{RevivePlayer@{RevivePlayer}!Singleplayer@{Singleplayer}}
+\doxysubsubsection{\texorpdfstring{RevivePlayer()}{RevivePlayer()}}
+{\footnotesize\ttfamily void Singleplayer.\+Revive\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Revives the player at the revive position. 
+
+\mbox{\Hypertarget{class_singleplayer_a625d5e13fee381422f4a977efc3da6f6}\label{class_singleplayer_a625d5e13fee381422f4a977efc3da6f6}} 
+\index{Singleplayer@{Singleplayer}!SwapHudSymbol@{SwapHudSymbol}}
+\index{SwapHudSymbol@{SwapHudSymbol}!Singleplayer@{Singleplayer}}
+\doxysubsubsection{\texorpdfstring{SwapHudSymbol()}{SwapHudSymbol()}}
+{\footnotesize\ttfamily void Singleplayer.\+Swap\+Hud\+Symbol (\begin{DoxyParamCaption}\item[{Game\+Object}]{game\+Object,  }\item[{Sprite}]{sprite }\end{DoxyParamCaption})}
+
+
+
+Swaps the hud symbol. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Object} & The game object.\\
+\hline
+{\em sprite} & The sprite.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_i_game_a4441af01510d24873bb8e3bc20522029}{I\+Game}}.
+
+\mbox{\Hypertarget{class_singleplayer_a368205cdb2b72a4ced2f27f422e46969}\label{class_singleplayer_a368205cdb2b72a4ced2f27f422e46969}} 
+\index{Singleplayer@{Singleplayer}!UnregisterPlayer@{UnregisterPlayer}}
+\index{UnregisterPlayer@{UnregisterPlayer}!Singleplayer@{Singleplayer}}
+\doxysubsubsection{\texorpdfstring{UnregisterPlayer()}{UnregisterPlayer()}}
+{\footnotesize\ttfamily void Singleplayer.\+Unregister\+Player (\begin{DoxyParamCaption}\item[{Game\+Object}]{player }\end{DoxyParamCaption})}
+
+
+
+Unregisters the player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & The player.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_i_game_ada543846e6e92cc28743cac34e396696}{I\+Game}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_singleplayer_a97215a44193ce379363e64ae27ea89e1}\label{class_singleplayer_a97215a44193ce379363e64ae27ea89e1}} 
+\index{Singleplayer@{Singleplayer}!ActiveEnemies@{ActiveEnemies}}
+\index{ActiveEnemies@{ActiveEnemies}!Singleplayer@{Singleplayer}}
+\doxysubsubsection{\texorpdfstring{ActiveEnemies}{ActiveEnemies}}
+{\footnotesize\ttfamily List$<$Game\+Object$>$ Singleplayer.\+Active\+Enemies = new List$<$Game\+Object$>$()\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the active enemies. 
+
+The active enemies.\mbox{\Hypertarget{class_singleplayer_ad6da6eeefdfcda4597ff3ec693326142}\label{class_singleplayer_ad6da6eeefdfcda4597ff3ec693326142}} 
+\index{Singleplayer@{Singleplayer}!Camera@{Camera}}
+\index{Camera@{Camera}!Singleplayer@{Singleplayer}}
+\doxysubsubsection{\texorpdfstring{Camera}{Camera}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_camera_singleplayer}{Camera\+Singleplayer}} Singleplayer.\+Camera\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the camera. 
+
+The camera.\mbox{\Hypertarget{class_singleplayer_a731b4f6fb76ccf8a22338088be411b61}\label{class_singleplayer_a731b4f6fb76ccf8a22338088be411b61}} 
+\index{Singleplayer@{Singleplayer}!DEBUG\_currentStageIndex@{DEBUG\_currentStageIndex}}
+\index{DEBUG\_currentStageIndex@{DEBUG\_currentStageIndex}!Singleplayer@{Singleplayer}}
+\doxysubsubsection{\texorpdfstring{DEBUG\_currentStageIndex}{DEBUG\_currentStageIndex}}
+{\footnotesize\ttfamily int Singleplayer.\+D\+E\+B\+U\+G\+\_\+current\+Stage\+Index\hspace{0.3cm}{\ttfamily [set]}}
+
+
+
+Sets the index of the debug current stage. 
+
+The index of the debug current stage.\mbox{\Hypertarget{class_singleplayer_a20bf442614a271a9a7f90adced0f5d1e}\label{class_singleplayer_a20bf442614a271a9a7f90adced0f5d1e}} 
+\index{Singleplayer@{Singleplayer}!Instance@{Instance}}
+\index{Instance@{Instance}!Singleplayer@{Singleplayer}}
+\doxysubsubsection{\texorpdfstring{Instance}{Instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_singleplayer}{Singleplayer}} Singleplayer.\+Instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Gets the instance. 
+
+\mbox{\Hypertarget{class_singleplayer_ab13d01e4142d6fdbab88b486561ecb13}\label{class_singleplayer_ab13d01e4142d6fdbab88b486561ecb13}} 
+\index{Singleplayer@{Singleplayer}!Player@{Player}}
+\index{Player@{Player}!Singleplayer@{Singleplayer}}
+\doxysubsubsection{\texorpdfstring{Player}{Player}}
+{\footnotesize\ttfamily Game\+Object Singleplayer.\+Player = null\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the player. 
+
+The player.\mbox{\Hypertarget{class_singleplayer_a79aaeb51eb1f1f6439f5bfc2a06d4cb7}\label{class_singleplayer_a79aaeb51eb1f1f6439f5bfc2a06d4cb7}} 
+\index{Singleplayer@{Singleplayer}!PriceToPay@{PriceToPay}}
+\index{PriceToPay@{PriceToPay}!Singleplayer@{Singleplayer}}
+\doxysubsubsection{\texorpdfstring{PriceToPay}{PriceToPay}}
+{\footnotesize\ttfamily float Singleplayer.\+Price\+To\+Pay\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the price to pay for a revive. 
+
+The price to pay.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+X\+\_\+\+P\+I\+X\+E\+L\+S/pixelborne/\+Assets/\+Scripts/\+Game/Singleplayer.\+cs\end{DoxyCompactItemize}

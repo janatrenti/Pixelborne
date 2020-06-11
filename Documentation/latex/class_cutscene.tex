@@ -1,0 +1,78 @@
+\hypertarget{class_cutscene}{}\doxysection{Cutscene Class Reference}
+\label{class_cutscene}\index{Cutscene@{Cutscene}}
+
+
+Implements basic functionality of a cutscene.  
+
+
+Inheritance diagram for Cutscene\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_cutscene}
+\end{center}
+\end{figure}
+\doxysubsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_cutscene_a98d3467369833fb1bc778516f559d977}\label{class_cutscene_a98d3467369833fb1bc778516f559d977}} 
+enum {\bfseries Cut\+Scene\+Mode} \{ \newline
+{\bfseries Fade\+Image}, 
+{\bfseries Display\+Text}, 
+{\bfseries Animate\+Images}, 
+{\bfseries Done}, 
+\newline
+{\bfseries Nothing}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_cutscene_a6773d03492f169024564915d07690ae7}\label{class_cutscene_a6773d03492f169024564915d07690ae7}} 
+virtual void {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{class_cutscene_a49fa15a823cba90fff0eeac9da597273}\label{class_cutscene_a49fa15a823cba90fff0eeac9da597273}} 
+virtual void {\bfseries Update} ()
+\item 
+\mbox{\Hypertarget{class_cutscene_ae17d252a9e572480faaa0e0951aca348}\label{class_cutscene_ae17d252a9e572480faaa0e0951aca348}} 
+abstract Cut\+Scene\+Mode {\bfseries Change\+Story\+Part} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_cutscene_a5f0de9a033753bdbbcf494be5bb11fd8}\label{class_cutscene_a5f0de9a033753bdbbcf494be5bb11fd8}} 
+float {\bfseries m\+\_\+fade\+Time} = 3000
+\item 
+\mbox{\Hypertarget{class_cutscene_ab48382767a45f00bdacba30ecd7187fb}\label{class_cutscene_ab48382767a45f00bdacba30ecd7187fb}} 
+Image {\bfseries m\+\_\+background\+Image}
+\item 
+\mbox{\Hypertarget{class_cutscene_a359a736b25d1c38378217c579216ae86}\label{class_cutscene_a359a736b25d1c38378217c579216ae86}} 
+Text\+Mesh\+Pro\+U\+G\+UI {\bfseries m\+\_\+story}
+\item 
+\mbox{\Hypertarget{class_cutscene_aaa2349a42dc60f003df6cc12d03aaaf6}\label{class_cutscene_aaa2349a42dc60f003df6cc12d03aaaf6}} 
+Cut\+Scene\+Mode {\bfseries m\+\_\+mode}
+\item 
+\mbox{\Hypertarget{class_cutscene_a2c75448d8cd86e9a84ef53ec4ff5055e}\label{class_cutscene_a2c75448d8cd86e9a84ef53ec4ff5055e}} 
+int {\bfseries m\+\_\+story\+Part} = 0
+\item 
+\mbox{\Hypertarget{class_cutscene_aac308f130a10e476035f70bb877d8407}\label{class_cutscene_aac308f130a10e476035f70bb877d8407}} 
+int {\bfseries m\+\_\+text\+Part} = 0
+\item 
+\mbox{\Hypertarget{class_cutscene_a1781c826d0295f1b848edfbc965417ff}\label{class_cutscene_a1781c826d0295f1b848edfbc965417ff}} 
+Stopwatch {\bfseries m\+\_\+stopwatch} = new Stopwatch()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_cutscene_a168144acec2ac673124c98de632a8c69}\label{class_cutscene_a168144acec2ac673124c98de632a8c69}} 
+virtual string\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} {\bfseries Story\+Holder}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implements basic functionality of a cutscene. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+X\+\_\+\+P\+I\+X\+E\+L\+S/pixelborne/\+Assets/\+Scripts/\+Story/Cut\+Scene.\+cs\end{DoxyCompactItemize}

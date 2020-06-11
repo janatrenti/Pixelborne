@@ -1,0 +1,95 @@
+\hypertarget{class_audio_recorder}{}\doxysection{Audio\+Recorder Class Reference}
+\label{class_audio_recorder}\index{AudioRecorder@{AudioRecorder}}
+
+
+Is responsible for recording and saving the 10 seconds long audio clips.  
+
+
+Inheritance diagram for Audio\+Recorder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_audio_recorder}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_audio_recorder_a567094f041b26a3894521a1cefd85ce1}{Microphone\+Available}} ()
+\begin{DoxyCompactList}\small\item\em Returns if a microphone is available. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_audio_recorder_a03d28ac89911942ca3e69feb96e2b30e}{Record}} ()
+\begin{DoxyCompactList}\small\item\em Initiates the recording of a 10 seconds long audio clip if no recording is already running. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_audio_recorder_ab8322ffbc189384be61bbc67153c19e1}\label{class_audio_recorder_ab8322ffbc189384be61bbc67153c19e1}} 
+void {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{class_audio_recorder_a71a1dfe553cef432842652aae29b4de9}\label{class_audio_recorder_a71a1dfe553cef432842652aae29b4de9}} 
+void {\bfseries Fixed\+Update} ()
+\item 
+\mbox{\Hypertarget{class_audio_recorder_a55a09580a573274074494eb0a583322b}\label{class_audio_recorder_a55a09580a573274074494eb0a583322b}} 
+void {\bfseries Save\+Recording} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_audio_recorder_ac265bbe9d360c0a308418914a8fc323d}\label{class_audio_recorder_ac265bbe9d360c0a308418914a8fc323d}} 
+Audio\+Clip {\bfseries m\+\_\+microphone\+Clip}
+\item 
+\mbox{\Hypertarget{class_audio_recorder_a3666fb25c1bd16a6d6b03a43a9cf8e53}\label{class_audio_recorder_a3666fb25c1bd16a6d6b03a43a9cf8e53}} 
+bool {\bfseries m\+\_\+is\+Recording} = false
+\item 
+\mbox{\Hypertarget{class_audio_recorder_a0bdc42c86757787305a0c5520a492354}\label{class_audio_recorder_a0bdc42c86757787305a0c5520a492354}} 
+Stopwatch {\bfseries m\+\_\+stopwatch\+For\+Recording} = new Stopwatch()
+\item 
+\mbox{\Hypertarget{class_audio_recorder_a0e9f1557f33ed1ea9b3ca2ffd2310da1}\label{class_audio_recorder_a0e9f1557f33ed1ea9b3ca2ffd2310da1}} 
+string {\bfseries m\+\_\+filedir}
+\item 
+\mbox{\Hypertarget{class_audio_recorder_ab699bf1846551cf7324ef65fb70c6c1f}\label{class_audio_recorder_ab699bf1846551cf7324ef65fb70c6c1f}} 
+string {\bfseries m\+\_\+selected\+Device}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_audio_recorder_a901a88bd798c5c65e53a566bcab8c463}\label{class_audio_recorder_a901a88bd798c5c65e53a566bcab8c463}} 
+static readonly int {\bfseries R\+E\+C\+O\+R\+D\+\_\+\+D\+U\+R\+A\+T\+I\+ON} = 10000
+\item 
+\mbox{\Hypertarget{class_audio_recorder_aaf806eff16a72d3979866ac92f554f8d}\label{class_audio_recorder_aaf806eff16a72d3979866ac92f554f8d}} 
+static readonly string {\bfseries A\+U\+D\+I\+O\+\_\+\+R\+E\+C\+O\+R\+D\+\_\+\+D\+IR} = \char`\"{}records\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Is responsible for recording and saving the 10 seconds long audio clips. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_audio_recorder_a567094f041b26a3894521a1cefd85ce1}\label{class_audio_recorder_a567094f041b26a3894521a1cefd85ce1}} 
+\index{AudioRecorder@{AudioRecorder}!MicrophoneAvailable@{MicrophoneAvailable}}
+\index{MicrophoneAvailable@{MicrophoneAvailable}!AudioRecorder@{AudioRecorder}}
+\doxysubsubsection{\texorpdfstring{MicrophoneAvailable()}{MicrophoneAvailable()}}
+{\footnotesize\ttfamily bool Audio\+Recorder.\+Microphone\+Available (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns if a microphone is available. 
+
+\begin{DoxyReturn}{Returns}
+Is a microphone available.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_audio_recorder_a03d28ac89911942ca3e69feb96e2b30e}\label{class_audio_recorder_a03d28ac89911942ca3e69feb96e2b30e}} 
+\index{AudioRecorder@{AudioRecorder}!Record@{Record}}
+\index{Record@{Record}!AudioRecorder@{AudioRecorder}}
+\doxysubsubsection{\texorpdfstring{Record()}{Record()}}
+{\footnotesize\ttfamily void Audio\+Recorder.\+Record (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initiates the recording of a 10 seconds long audio clip if no recording is already running. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+X\+\_\+\+P\+I\+X\+E\+L\+S/pixelborne/\+Assets/\+Scripts/\+Recording/Audio\+Recorder.\+cs\end{DoxyCompactItemize}

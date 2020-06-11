@@ -1,0 +1,271 @@
+\hypertarget{interface_i_enemy_actions}{}\doxysection{I\+Enemy\+Actions Interface Reference}
+\label{interface_i_enemy_actions}\index{IEnemyActions@{IEnemyActions}}
+
+
+Is implemented by enemies in order to be compatible with the Attack\+Pattern\+Executor.  
+
+
+Inheritance diagram for I\+Enemy\+Actions\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_enemy_actions}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{interface_i_enemy_actions_af2bf15a1a70b68ca4f11fb541051176c}{Is\+Player\+In\+Attack\+Range}} ()
+\begin{DoxyCompactList}\small\item\em Determines whether \mbox{[}is player in attack range\mbox{]}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_i_enemy_actions_a57d6d3fb1d76fb36b86579fa27686294}{Is\+Player\+In\+Sight\+Range}} ()
+\begin{DoxyCompactList}\small\item\em Determines whether \mbox{[}is player in sight range\mbox{]}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_i_enemy_actions_a46534abad99a5d61f30000a368479a4b}{Is\+Enemy\+On\+Ground}} ()
+\begin{DoxyCompactList}\small\item\em Determines whether \mbox{[}is enemy on the ground\mbox{]}. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{interface_i_enemy_actions_aee09408f1e20a948d6d8d24ab4355f2f}{Get\+Attack\+Down\+Duration}} ()
+\begin{DoxyCompactList}\small\item\em Gets the duration of the down attack. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{interface_i_enemy_actions_a1e685bb7f467182edab4c802de0b16e1}{Get\+Attack\+Middle\+Duration}} ()
+\begin{DoxyCompactList}\small\item\em Gets the duration of the middle attack. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{interface_i_enemy_actions_a23c2804acda7f19d747590d9df736442}{Get\+Attack\+Up\+Duration}} ()
+\begin{DoxyCompactList}\small\item\em Gets the duration of the up attack. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_i_enemy_actions_a813251cd67aa47fc7d1660884b02cb13}{Attack\+Down}} ()
+\begin{DoxyCompactList}\small\item\em Starts the down attack. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_i_enemy_actions_ae9a2b75009fc96b70e00bae5235ec1c3}{Attack\+Middle}} ()
+\begin{DoxyCompactList}\small\item\em Starts the middle attack. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_i_enemy_actions_aa3950a102870e8331f156874610d317a}{Attack\+Up}} ()
+\begin{DoxyCompactList}\small\item\em Starts the up attack. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_i_enemy_actions_a511c29fefde9cd4bf586b4648428f547}{Start\+Follow\+Player}} ()
+\begin{DoxyCompactList}\small\item\em Starts following the player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_i_enemy_actions_a90a60a00562a422f0dc3be75f222676c}{Stop\+Follow\+Player}} ()
+\begin{DoxyCompactList}\small\item\em Stops following the player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_i_enemy_actions_a52d3c38305caee9a46236403d7fca948}{Jump}} ()
+\begin{DoxyCompactList}\small\item\em Executes a jump. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_i_enemy_actions_a09f7121173cce38f952be5f0f660c171}{Start\+Auto\+Jumping}} ()
+\begin{DoxyCompactList}\small\item\em Starts the automatic jumping. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_i_enemy_actions_a9782def22410fe697198ab0dcb0ece39}{Stop\+Auto\+Jumping}} ()
+\begin{DoxyCompactList}\small\item\em Stops the automatic jumping. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Is implemented by enemies in order to be compatible with the Attack\+Pattern\+Executor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interface_i_enemy_actions_a813251cd67aa47fc7d1660884b02cb13}\label{interface_i_enemy_actions_a813251cd67aa47fc7d1660884b02cb13}} 
+\index{IEnemyActions@{IEnemyActions}!AttackDown@{AttackDown}}
+\index{AttackDown@{AttackDown}!IEnemyActions@{IEnemyActions}}
+\doxysubsubsection{\texorpdfstring{AttackDown()}{AttackDown()}}
+{\footnotesize\ttfamily void I\+Enemy\+Actions.\+Attack\+Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts the down attack. 
+
+
+
+Implemented in \mbox{\hyperlink{class_enemy_actions_a3ef97578e8213bab18c15df057d82f55}{Enemy\+Actions}}.
+
+\mbox{\Hypertarget{interface_i_enemy_actions_ae9a2b75009fc96b70e00bae5235ec1c3}\label{interface_i_enemy_actions_ae9a2b75009fc96b70e00bae5235ec1c3}} 
+\index{IEnemyActions@{IEnemyActions}!AttackMiddle@{AttackMiddle}}
+\index{AttackMiddle@{AttackMiddle}!IEnemyActions@{IEnemyActions}}
+\doxysubsubsection{\texorpdfstring{AttackMiddle()}{AttackMiddle()}}
+{\footnotesize\ttfamily void I\+Enemy\+Actions.\+Attack\+Middle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts the middle attack. 
+
+
+
+Implemented in \mbox{\hyperlink{class_enemy_actions_a9f83fbadc51e8fa7ba372a5cb9541984}{Enemy\+Actions}}.
+
+\mbox{\Hypertarget{interface_i_enemy_actions_aa3950a102870e8331f156874610d317a}\label{interface_i_enemy_actions_aa3950a102870e8331f156874610d317a}} 
+\index{IEnemyActions@{IEnemyActions}!AttackUp@{AttackUp}}
+\index{AttackUp@{AttackUp}!IEnemyActions@{IEnemyActions}}
+\doxysubsubsection{\texorpdfstring{AttackUp()}{AttackUp()}}
+{\footnotesize\ttfamily void I\+Enemy\+Actions.\+Attack\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts the up attack. 
+
+
+
+Implemented in \mbox{\hyperlink{class_enemy_actions_ae613d5d72dd9f666eeef41c0c9edd1fa}{Enemy\+Actions}}.
+
+\mbox{\Hypertarget{interface_i_enemy_actions_aee09408f1e20a948d6d8d24ab4355f2f}\label{interface_i_enemy_actions_aee09408f1e20a948d6d8d24ab4355f2f}} 
+\index{IEnemyActions@{IEnemyActions}!GetAttackDownDuration@{GetAttackDownDuration}}
+\index{GetAttackDownDuration@{GetAttackDownDuration}!IEnemyActions@{IEnemyActions}}
+\doxysubsubsection{\texorpdfstring{GetAttackDownDuration()}{GetAttackDownDuration()}}
+{\footnotesize\ttfamily float I\+Enemy\+Actions.\+Get\+Attack\+Down\+Duration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the duration of the down attack. 
+
+\begin{DoxyReturn}{Returns}
+The down attack duration as a float.
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_enemy_actions_a6cba783f02fd8adf4ecf285c3ee8708a}{Enemy\+Actions}}.
+
+\mbox{\Hypertarget{interface_i_enemy_actions_a1e685bb7f467182edab4c802de0b16e1}\label{interface_i_enemy_actions_a1e685bb7f467182edab4c802de0b16e1}} 
+\index{IEnemyActions@{IEnemyActions}!GetAttackMiddleDuration@{GetAttackMiddleDuration}}
+\index{GetAttackMiddleDuration@{GetAttackMiddleDuration}!IEnemyActions@{IEnemyActions}}
+\doxysubsubsection{\texorpdfstring{GetAttackMiddleDuration()}{GetAttackMiddleDuration()}}
+{\footnotesize\ttfamily float I\+Enemy\+Actions.\+Get\+Attack\+Middle\+Duration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the duration of the middle attack. 
+
+\begin{DoxyReturn}{Returns}
+The middle attack duration as a float.
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_enemy_actions_a84187183d2727f98622be6565f330bc2}{Enemy\+Actions}}.
+
+\mbox{\Hypertarget{interface_i_enemy_actions_a23c2804acda7f19d747590d9df736442}\label{interface_i_enemy_actions_a23c2804acda7f19d747590d9df736442}} 
+\index{IEnemyActions@{IEnemyActions}!GetAttackUpDuration@{GetAttackUpDuration}}
+\index{GetAttackUpDuration@{GetAttackUpDuration}!IEnemyActions@{IEnemyActions}}
+\doxysubsubsection{\texorpdfstring{GetAttackUpDuration()}{GetAttackUpDuration()}}
+{\footnotesize\ttfamily float I\+Enemy\+Actions.\+Get\+Attack\+Up\+Duration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the duration of the up attack. 
+
+\begin{DoxyReturn}{Returns}
+The up attack duration as a float.
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_enemy_actions_a4176db793ae550137ddd6ac49501dcd8}{Enemy\+Actions}}.
+
+\mbox{\Hypertarget{interface_i_enemy_actions_a46534abad99a5d61f30000a368479a4b}\label{interface_i_enemy_actions_a46534abad99a5d61f30000a368479a4b}} 
+\index{IEnemyActions@{IEnemyActions}!IsEnemyOnGround@{IsEnemyOnGround}}
+\index{IsEnemyOnGround@{IsEnemyOnGround}!IEnemyActions@{IEnemyActions}}
+\doxysubsubsection{\texorpdfstring{IsEnemyOnGround()}{IsEnemyOnGround()}}
+{\footnotesize\ttfamily bool I\+Enemy\+Actions.\+Is\+Enemy\+On\+Ground (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Determines whether \mbox{[}is enemy on the ground\mbox{]}. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if \mbox{[}is enemy on the ground\mbox{]}; otherwise, {\ttfamily false}.
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_enemy_actions_a99b9df14786bef7e7d582d8beac7025b}{Enemy\+Actions}}.
+
+\mbox{\Hypertarget{interface_i_enemy_actions_af2bf15a1a70b68ca4f11fb541051176c}\label{interface_i_enemy_actions_af2bf15a1a70b68ca4f11fb541051176c}} 
+\index{IEnemyActions@{IEnemyActions}!IsPlayerInAttackRange@{IsPlayerInAttackRange}}
+\index{IsPlayerInAttackRange@{IsPlayerInAttackRange}!IEnemyActions@{IEnemyActions}}
+\doxysubsubsection{\texorpdfstring{IsPlayerInAttackRange()}{IsPlayerInAttackRange()}}
+{\footnotesize\ttfamily bool I\+Enemy\+Actions.\+Is\+Player\+In\+Attack\+Range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Determines whether \mbox{[}is player in attack range\mbox{]}. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if \mbox{[}is player in attack range\mbox{]}; otherwise, {\ttfamily false}.
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_enemy_actions_ad6a6e1537875b47e71e52694245f255f}{Enemy\+Actions}}.
+
+\mbox{\Hypertarget{interface_i_enemy_actions_a57d6d3fb1d76fb36b86579fa27686294}\label{interface_i_enemy_actions_a57d6d3fb1d76fb36b86579fa27686294}} 
+\index{IEnemyActions@{IEnemyActions}!IsPlayerInSightRange@{IsPlayerInSightRange}}
+\index{IsPlayerInSightRange@{IsPlayerInSightRange}!IEnemyActions@{IEnemyActions}}
+\doxysubsubsection{\texorpdfstring{IsPlayerInSightRange()}{IsPlayerInSightRange()}}
+{\footnotesize\ttfamily bool I\+Enemy\+Actions.\+Is\+Player\+In\+Sight\+Range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Determines whether \mbox{[}is player in sight range\mbox{]}. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if \mbox{[}is player in sight range\mbox{]}; otherwise, {\ttfamily false}.
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_enemy_actions_afabaf931b10edfee0284b78cdf48313e}{Enemy\+Actions}}.
+
+\mbox{\Hypertarget{interface_i_enemy_actions_a52d3c38305caee9a46236403d7fca948}\label{interface_i_enemy_actions_a52d3c38305caee9a46236403d7fca948}} 
+\index{IEnemyActions@{IEnemyActions}!Jump@{Jump}}
+\index{Jump@{Jump}!IEnemyActions@{IEnemyActions}}
+\doxysubsubsection{\texorpdfstring{Jump()}{Jump()}}
+{\footnotesize\ttfamily void I\+Enemy\+Actions.\+Jump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Executes a jump. 
+
+
+
+Implemented in \mbox{\hyperlink{class_enemy_actions_acfd5f4d36768e4b0838d0cbc6bd2b526}{Enemy\+Actions}}.
+
+\mbox{\Hypertarget{interface_i_enemy_actions_a09f7121173cce38f952be5f0f660c171}\label{interface_i_enemy_actions_a09f7121173cce38f952be5f0f660c171}} 
+\index{IEnemyActions@{IEnemyActions}!StartAutoJumping@{StartAutoJumping}}
+\index{StartAutoJumping@{StartAutoJumping}!IEnemyActions@{IEnemyActions}}
+\doxysubsubsection{\texorpdfstring{StartAutoJumping()}{StartAutoJumping()}}
+{\footnotesize\ttfamily void I\+Enemy\+Actions.\+Start\+Auto\+Jumping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts the automatic jumping. 
+
+
+
+Implemented in \mbox{\hyperlink{class_enemy_actions_af40636a7b820ca190fa049f8bc34ed16}{Enemy\+Actions}}.
+
+\mbox{\Hypertarget{interface_i_enemy_actions_a511c29fefde9cd4bf586b4648428f547}\label{interface_i_enemy_actions_a511c29fefde9cd4bf586b4648428f547}} 
+\index{IEnemyActions@{IEnemyActions}!StartFollowPlayer@{StartFollowPlayer}}
+\index{StartFollowPlayer@{StartFollowPlayer}!IEnemyActions@{IEnemyActions}}
+\doxysubsubsection{\texorpdfstring{StartFollowPlayer()}{StartFollowPlayer()}}
+{\footnotesize\ttfamily void I\+Enemy\+Actions.\+Start\+Follow\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts following the player. 
+
+
+
+Implemented in \mbox{\hyperlink{class_enemy_actions_af92aba3f0987395b5822768d7b931ee3}{Enemy\+Actions}}.
+
+\mbox{\Hypertarget{interface_i_enemy_actions_a9782def22410fe697198ab0dcb0ece39}\label{interface_i_enemy_actions_a9782def22410fe697198ab0dcb0ece39}} 
+\index{IEnemyActions@{IEnemyActions}!StopAutoJumping@{StopAutoJumping}}
+\index{StopAutoJumping@{StopAutoJumping}!IEnemyActions@{IEnemyActions}}
+\doxysubsubsection{\texorpdfstring{StopAutoJumping()}{StopAutoJumping()}}
+{\footnotesize\ttfamily void I\+Enemy\+Actions.\+Stop\+Auto\+Jumping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Stops the automatic jumping. 
+
+
+
+Implemented in \mbox{\hyperlink{class_enemy_actions_ac153fe6f3c571a97304bdba5d7f4fd91}{Enemy\+Actions}}.
+
+\mbox{\Hypertarget{interface_i_enemy_actions_a90a60a00562a422f0dc3be75f222676c}\label{interface_i_enemy_actions_a90a60a00562a422f0dc3be75f222676c}} 
+\index{IEnemyActions@{IEnemyActions}!StopFollowPlayer@{StopFollowPlayer}}
+\index{StopFollowPlayer@{StopFollowPlayer}!IEnemyActions@{IEnemyActions}}
+\doxysubsubsection{\texorpdfstring{StopFollowPlayer()}{StopFollowPlayer()}}
+{\footnotesize\ttfamily void I\+Enemy\+Actions.\+Stop\+Follow\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Stops following the player. 
+
+
+
+Implemented in \mbox{\hyperlink{class_enemy_actions_abfbbf56fa75bd0ec975a54ad1b5fafc4}{Enemy\+Actions}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+X\+\_\+\+P\+I\+X\+E\+L\+S/pixelborne/\+Assets/\+Scripts/\+Interface/I\+Enemy\+Actions.\+cs\end{DoxyCompactItemize}

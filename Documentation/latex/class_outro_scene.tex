@@ -1,0 +1,115 @@
+\hypertarget{class_outro_scene}{}\doxysection{Outro\+Scene Class Reference}
+\label{class_outro_scene}\index{OutroScene@{OutroScene}}
+
+
+Manages the displaying of images and text in the outro scene of the singleplayer mode.  
+
+
+Inheritance diagram for Outro\+Scene\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_outro_scene}
+\end{center}
+\end{figure}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_outro_scene_a6461fd9259c12031bba260b2ab298cb1}\label{class_outro_scene_a6461fd9259c12031bba260b2ab298cb1}} 
+override void {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{class_outro_scene_a3d44ff8ea292940d90ee1bceb76a8826}\label{class_outro_scene_a3d44ff8ea292940d90ee1bceb76a8826}} 
+override void {\bfseries Update} ()
+\item 
+\mbox{\Hypertarget{class_outro_scene_a3abeb887eecb0cec97342a6392e814d2}\label{class_outro_scene_a3abeb887eecb0cec97342a6392e814d2}} 
+override Cut\+Scene\+Mode {\bfseries Change\+Story\+Part} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+override string\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} {\bfseries Story\+Holder}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_outro_scene_a4e508bce5a46d4c4b112db27c1f8b325}\label{class_outro_scene_a4e508bce5a46d4c4b112db27c1f8b325}} 
+float {\bfseries m\+\_\+animation\+Time} = 500
+\item 
+\mbox{\Hypertarget{class_outro_scene_a5cb202bf806b1be5efd3991927eeaafd}\label{class_outro_scene_a5cb202bf806b1be5efd3991927eeaafd}} 
+int {\bfseries m\+\_\+animation\+Part} = 0
+\item 
+string\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} {\bfseries m\+\_\+image\+Holder}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_outro_scene_a4d90cf85d42716c63551edbd8e98719a}\label{class_outro_scene_a4d90cf85d42716c63551edbd8e98719a}} 
+static readonly string {\bfseries T\+H\+E\+\_\+\+E\+ND} = \char`\"{}T\+HE E\+ND\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Manages the displaying of images and text in the outro scene of the singleplayer mode. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_outro_scene_a3a6b034df73b78f84e659c95ad447444}\label{class_outro_scene_a3a6b034df73b78f84e659c95ad447444}} 
+\index{OutroScene@{OutroScene}!m\_imageHolder@{m\_imageHolder}}
+\index{m\_imageHolder@{m\_imageHolder}!OutroScene@{OutroScene}}
+\doxysubsubsection{\texorpdfstring{m\_imageHolder}{m\_imageHolder}}
+{\footnotesize\ttfamily string \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} Outro\+Scene.\+m\+\_\+image\+Holder\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keyword}{new} \textcolor{keywordtype}{string}[] \{ \textcolor{stringliteral}{"OutroImages/dark\_crown\_destroyed"} \},}
+\DoxyCodeLine{        \textcolor{keyword}{new} \textcolor{keywordtype}{string}[] \{ \textcolor{stringliteral}{"OutroImages/possessed\_land"} \},}
+\DoxyCodeLine{        \textcolor{keyword}{new} \textcolor{keywordtype}{string}[] \{}
+\DoxyCodeLine{            \textcolor{stringliteral}{"OutroImages/possessed\_land"},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"OutroImages/retreating\_shadows"},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"OutroImages/shadows\_almost\_gone"},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"OutroImages/free\_once\_more"}}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_outro_scene_a0293662c67fce6ac03b09bf1600ae377}\label{class_outro_scene_a0293662c67fce6ac03b09bf1600ae377}} 
+\index{OutroScene@{OutroScene}!StoryHolder@{StoryHolder}}
+\index{StoryHolder@{StoryHolder}!OutroScene@{OutroScene}}
+\doxysubsubsection{\texorpdfstring{StoryHolder}{StoryHolder}}
+{\footnotesize\ttfamily override string \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} Outro\+Scene.\+Story\+Holder\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keyword}{new} \textcolor{keywordtype}{string}[] \{}
+\DoxyCodeLine{            \textcolor{stringliteral}{"And as the crown splintered, a terrible screech rang out as its Dark Crystal cracked and dulled."},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"A cold wind filled the world, a whisper of hate and ancient darkness."},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"And then... silence."}}
+\DoxyCodeLine{        \},}
+\DoxyCodeLine{        \textcolor{keyword}{new} \textcolor{keywordtype}{string}[] \{}
+\DoxyCodeLine{            \textcolor{stringliteral}{"As one, the demons all over the land froze."},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"As one, they started wailing and screeching and turning on one another."},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"And then, they disappeared as if sucked through a crack in the world, leaving not a trace."}}
+\DoxyCodeLine{        \},}
+\DoxyCodeLine{        \textcolor{keyword}{new} \textcolor{keywordtype}{string}[] \{}
+\DoxyCodeLine{            \textcolor{stringliteral}{"And what remained was a beautiful kingdom, battered, but unbroken."},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"What remained were triumphant people under the wise rule of a just queen."},}
+\DoxyCodeLine{            \textcolor{stringliteral}{"What remained was light and warmth and hope."}}
+\DoxyCodeLine{        \},}
+\DoxyCodeLine{        \textcolor{keyword}{new} \textcolor{keywordtype}{string}[] \{ THE\_END \},}
+\DoxyCodeLine{        \textcolor{keyword}{new} \textcolor{keywordtype}{string}[] \{ \$\textcolor{stringliteral}{"\{THE\_END\}\(\backslash\)n\(\backslash\)nThank you for playing Pixelborne.\(\backslash\)nPress space to return to the main menu."} \}}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+X\+\_\+\+P\+I\+X\+E\+L\+S/pixelborne/\+Assets/\+Scripts/\+Story/Outro\+Scene.\+cs\end{DoxyCompactItemize}
